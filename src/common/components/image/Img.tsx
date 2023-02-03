@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { IImg } from "./IImg";
 
-export default function Img({image, alt, width, height} : IImg){
+export default function Img({image, alt, width, height, marginRight} : IImg){
 
     return(
         <Image
@@ -9,6 +9,7 @@ export default function Img({image, alt, width, height} : IImg){
             alt={alt}
             width={width}
             height={height}
+            className={`${marginRight && "marginRight"}`}
         />
     )
 

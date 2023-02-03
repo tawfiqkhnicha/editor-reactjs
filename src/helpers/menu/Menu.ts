@@ -26,6 +26,7 @@ export const Menu  = [
             }
         ],
     },
+    
     {
         type: "item",
         href: "/our-expertise",
@@ -41,6 +42,7 @@ export const Menu  = [
         href: "/imagine",
         title: "Imagine"
     },
+   
     {
         type: "dropdown",
         dropdownTitle: "Our Strengths",
@@ -63,21 +65,29 @@ export const Menu  = [
             }
         ],
     },
-   /* 
+   
     {
         type: "dropdown",
-        style: "language",
+        style: "lang",
         elements: [
             {
                 title: "English",
-                icon: ""
+                href: "#",
+                icon: "/en.png"
             },
             {
                 title: "Français",
-                icon: ""
+                href: "#",
+                icon: "/fr.png"
             },
         ],
     },
 
-*/
+{
+    type: "linkBtn",
+    href: "/contact",
+    title: "Contact"
+},
+
+
 ];
