@@ -53,6 +53,8 @@ li {
 .navbar-container{
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -70,7 +72,6 @@ li {
 }
 
 .navBar-collapse{
-  width: 80%;
   display: flex !important;
   flex-wrap: nowrap !important;
   align-items: center !important;
@@ -79,18 +80,17 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-  width: 80%;
+  flex-wrap: nowrap;
+  gap: 30px;
 }
 .footer{
-  bottom:0;
-  left: 0;
-  right: 0;
-  background-color: #181236;
-  color: #fff;
-  display: flex;
-  justify-content: center;
+  bottom:0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  background-color: #181236 !important;
+  color: #fff !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 .main-btn{
@@ -176,9 +176,7 @@ li {
   padding-bottom: 10px;
 }
 
-.section{
-  background-color: red;
-}
+
 .widget-title{
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: 16px !important;
@@ -266,7 +264,134 @@ li {
   padding-right: 20% !important;
   padding-left: 20% !important;
 }
+
+.highlight-spot
+{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  cursor: pointer;
+  background-color: #05f2f2;
+    
+}
+.highlight-spot:hover
+{
+    cursor: pointer;
+}
+.highlight-spot:after
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1,1);
+  pointer-events: none;
+  content: "";
+  display: block;
+  width: 26.4px;
+  height: 26.4px;
+  border-radius: 100%;
+  border: 1px solid #05f2f2;
+  transition: border-color 1s linear;
+  animation: icon-pulse 2s linear infinite;
+}
+
+.hotspot-image{
+  width: 100%;
+  height: auto;
+}
+
+@keyframes icon-pulse {
+  
+  0%{
+    transform: translate(-50%, -50%) scale(1,1);
+    opacity: 0;
+  }
+
+  20%{
+    transform: translate(-50%, -50%) scale(1.5,1.5);
+    opacity: 0.9;
+  }
+
+  50%{
+    transform: translate(-50%, -50%) scale(2,2);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(-50%, -50%) scale(2,2);
+    opacity: 0;
+  }
+}
+
+.center-y{
+  transform: translateY(-50%);
+}
+.center-x{
+  margin: 50 auto;
+}
+
+.sectors{
+  top: 40%;
+  left: 28%
+}
+.businesses{
+  top: 59%;
+  left: 27.2% 
+
+}
+.data{
+  top: 73%;
+  left: 29.5%
+}
+.technology{
+  top: 87%;
+  left: 31.6% 
+}
+
+.data-center{
+  top: 50%;
+  left: 47.4%
+}
+.data-end{
+  top: 32.5%;
+  left: 69.5% 
+}
+
+
 @media only screen and (max-width: 1000px) {
+
+  .highlight-spot{
+    width: 18px;
+    height: 18px;
+  }
+
+.sectors{
+  top: 40%;
+  left: 14.5%
+}
+.businesses{
+  top: 59%;
+  left: 13% 
+
+}
+.data{
+  top: 73%;
+  left: 16.5%
+}
+.technology{
+  top: 87%;
+  left: 19.9% 
+}
+
+.data-center{
+  top: 50%;
+  left: 45.5%
+}
+.data-end{
+  top: 32.5%;
+  left: 81.5% 
+}
   .navbar-container{
     width: 100%;
   }
@@ -300,8 +425,8 @@ li {
   }
 
   .site-padding{
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
   }
   .dropdown-item{
     padding: 0px 40px 0px 40px;

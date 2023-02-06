@@ -10,12 +10,12 @@ export default function Footer(){
             
 <footer className="text-start text-lg-start text-muted  mt-auto ">
   <section className="footer ">
-    <div className="container text-start text-md-start my-5">
+    <div className="text-start text-md-start my-5 w-100 site-padding">
       <div className="row mt-3">
-    
         {FooterItems.map(item =>{
             return  <Widget title={item.title} items={item.items} type={item.type}/>
-        })}  
+        })}   
+      
         
       </div>
     </div>
