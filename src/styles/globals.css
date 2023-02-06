@@ -263,8 +263,8 @@ li {
 }
 
 .site-padding{
-  padding-right: 20%;
-  padding-left: 20%;
+  padding-right: 20% !important;
+  padding-left: 20% !important;
 }
 @media only screen and (max-width: 1000px) {
   .navbar-container{
@@ -312,3 +312,100 @@ li {
   }
 
 }
+.HeaderPage{ 
+  background-color: white; 
+  padding-left: 10px;
+}
+
+.contentPage{ 
+  background-color: white; 
+  padding-left: 10px;
+}
+
+ 
+.left-border {
+  border-left: 0.4rem solid #1EEDE2;
+  padding-left: 18px;
+  }
+
+  
+  
+    ul.bullet-before  li::before {
+      content: "\2022";
+      color: black;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+    }
+  
+
+    .flech{ 
+      height: 42rem;
+    }
+    
+    
+    .btn-footer {
+      margin: auto; 
+      text-align: center;
+      width: fit-content;
+    }
+
+    .footerPageOurorigin{ 
+      padding: 50px;
+      color:white;
+      background-color: #181236; 
+      padding-left: 10px;
+    }
+
+    .container {
+      display: flex;
+      overflow: auto;
+      position: relative;
+    }
+    
+    .image-container {
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+    
+    .content-container {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  
+
+    .item {
+      display: flex; 
+      padding: 50px;
+      margin: 10px;
+    }
+    
+    .meta {
+      margin-right: 5px;
+      position: sticky;
+      top: 10px;
+      align-self: flex-start;
+    }
+    
+    .sub-item-container {
+      background-color: yellow;
+      display: flex;
+      flex-flow: wrap;
+    }
+    
+    .sub-item {
+      background-color: blue;
+      height: 200px;
+      width: 150px;
+      margin: 5px;
+    }
+    
+    .image{ 
+      height: 100%;
+      width: 300px; 
+    }
+    

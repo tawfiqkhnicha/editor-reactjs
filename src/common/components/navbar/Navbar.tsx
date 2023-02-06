@@ -62,7 +62,7 @@ export default function Navbar({ items }: INavbar) {
 
     return () => window.removeEventListener('resize', handleWindowResize);
 
-  }, [window.innerWidth])
+  },  )
 
   return (
 

@@ -9,7 +9,7 @@ export default function Template(props: any){
             <Navbar 
                 items={Menu}
             />
-            <section className="section my-5 site-padding">
+            <section className="section my-5 ">
                 {props.children}
             </section>
             <Footer />
