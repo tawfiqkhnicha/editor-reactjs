@@ -8,8 +8,6 @@ export default function Button({title, variant, href, action}: IButton){
                 {title}
             </button> : <Link href={href} className="btn main-btn animated-button">  {title} </Link>}
         </>
-  
-    
-
+   
     )
 }
