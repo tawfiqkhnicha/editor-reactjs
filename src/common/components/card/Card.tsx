@@ -1,7 +1,8 @@
 import { useState } from "react"
-import { IHeaderPage } from "./IHeaderPage"
+import Button from "../button/Button"
+import { ICard } from "./ICard"
 
-export default function HeaderPage({ HeaderTitle, styleHeaderPage, content, styleContentPage }: IHeaderPage) {
+export default function Card({ HeaderTitle, styleHeaderPage, content, styleContentPage }: ICard) {
 
     const [isOpen, setOpen] = useState(false)
 
@@ -19,6 +20,8 @@ export default function HeaderPage({ HeaderTitle, styleHeaderPage, content, styl
                 <div dangerouslySetInnerHTML={{ __html: content }} />
 
             </article>
+            
+        
         </section>
 
 

@@ -1,4 +1,4 @@
-export interface IHeaderPage {
+export interface ICard {
     HeaderTitle: string  ,  
     styleHeaderPage:string  , 
     styleContentPage: string  ,

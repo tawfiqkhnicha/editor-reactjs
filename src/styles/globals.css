@@ -447,7 +447,9 @@ li {
   padding-left: 10px;
 }
 
- 
+.gridstyle{
+  background-color: #28283f;
+}
 .left-border {
   border-left: 0.4rem solid #1EEDE2;
   padding-left: 18px;
