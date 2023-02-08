@@ -1,12 +1,8 @@
 export interface IWidget{
-    type?: string,
-    image?: any,
-    title?: string,
-    items: {
-        icon?: string,
-        href?: any
-        title?: string
-    }[]
+
+    children?: React.ReactNode,
+    size?: number
+    className?: string
 
     
 }

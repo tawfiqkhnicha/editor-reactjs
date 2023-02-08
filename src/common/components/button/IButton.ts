@@ -1,9 +1,9 @@
 import { Url } from "url";
 
 export interface IButton{
-    title: string,
-    variant: string,
+    title?: string,
+    variant?: string,
     href?: any,
     action?: () => void,
-    animated: boolean
+    animated?: boolean
 }
