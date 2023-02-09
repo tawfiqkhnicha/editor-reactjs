@@ -78,13 +78,13 @@ export default function Home() {
 
      <Section background={true} fullWidth={false} className="position-relative height-l ">
       <Card cardStyle="site-padding  card-absolute "  styleContentPage="text-white" HeaderTitle="<h2>What if we carried <br> your project? </H2>" styleHeaderPage="left-border text-white" content="<p>Do you need human or technological resources to mature your ideas?</p>"/>
-        <Button className="btn-absolute" variant="link" title="Let's innovate together" href="/imagine"/>
+        <Button styleButton="btn-absolute" variant="link" title="Let's innovate together" href="/imagine"/>
         <img className="position-absolute imagine-image"  src="/Bandeau-Imagine.png" />
       </Section>
 
       <Section className="contact-us-home" background={false} fullWidth={false}>
                 <Card   cardStyle=" contact-us-home-card" styleHeaderPage="left-border"   HeaderTitle="<h2>Contactez-nous </H2>" content="<p>afin de discuter plus en détails de vos enjeux.</p>"/>
-                <Button className="contact-us-section-btn" variant="link" title="Parlons-en" href="/contact"/>
+                <Button styleButton="contact-us-section-btn" variant="link" title="Parlons-en" href="/contact"/>
                 <img src="/bulle.png" className="bulle-image"/>
       </Section>
      
