@@ -1,7 +1,8 @@
 export interface  ISection {
 
     children?: React.ReactNode
-    background?: boolean
-    fullWidth?: boolean
+    background?: boolean,
+    fullWidth?: boolean,
+    className?: string
 
 }

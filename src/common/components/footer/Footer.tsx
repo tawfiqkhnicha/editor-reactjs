@@ -12,8 +12,8 @@ export default function Footer(){
       
 <footer className="text-start text-lg-start text-muted  mt-auto ">
 
-  <Section fullWidth={true} background={true}>
-          <Grid>
+  <Section fullWidth={false} background={true}>
+          <Grid className="p-5">
           {FooterItems.map(item =>{
             return <Widget size={3}>
 
@@ -50,22 +50,6 @@ export default function Footer(){
             
           </Grid>
   </Section>
- {/** 
-  
-   <section className="footer ">
-    <div className="text-start text-md-start my-5 w-100 site-padding">
-      <div className="row mt-3">
-        {FooterItems.map(item =>{
-            return  <Widget title={item.title} items={item.items} type={item.type}/>
-        })}   
-      
-        
-      </div>
-    </div>
-  </section>
-  
- */} 
-
   <div className="copyright">
      <p className="copyright-text mt-2"> &copy; {new Date().getFullYear()} by Menaps - All Right Reserved </p>
   </div>

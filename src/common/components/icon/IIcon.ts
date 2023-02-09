@@ -1,5 +1,6 @@
 export interface IIcon{
 
     icon: string,
-    text?: string
+    text?: string,
+    textColor?: string
 }

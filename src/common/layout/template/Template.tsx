@@ -9,7 +9,7 @@ export default function Template(props: any){
             <Navbar 
                 items={Menu}
             />
-            <main className="my-5 ">
+            <main >
                 {props.children}
             </main>
             <Footer />

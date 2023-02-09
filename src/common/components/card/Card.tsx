@@ -2,7 +2,7 @@ import { useState } from "react"
 import Button from "../button/Button"
 import { ICard } from "./ICard"
 
-export default function Card({ HeaderTitle, styleHeaderPage, content, styleContentPage, cardStyle }: ICard) {
+export default function Card({ HeaderTitle, styleHeaderPage, content, styleContentPage, cardStyle, action }: ICard) {
 
     const [isOpen, setOpen] = useState(false)
 
@@ -13,13 +13,18 @@ export default function Card({ HeaderTitle, styleHeaderPage, content, styleConte
     return (
         <section className={` ${cardStyle ? cardStyle : ""} `}>
 
-            <div className={` left-border  ${styleHeaderPage ? styleHeaderPage : "card-title"} `} >
+            <div className={` ${styleHeaderPage ? styleHeaderPage : "card-title"} `} >
                 <div dangerouslySetInnerHTML={{ __html: HeaderTitle }} />
             </div> 
             <article className={` card-content ${styleContentPage ? styleContentPage : ""} `}>
                 <div dangerouslySetInnerHTML={{ __html: content }} />
-
             </article>
+            {action && 
+            
+            <div className="d-flex justify-content-center align-items-center">
+                  <Button href={action?.href} title={action?.title}/>  
+            </div>
+            }
         </section>
 
 

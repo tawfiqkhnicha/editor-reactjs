@@ -66,6 +66,7 @@ export default function Navbar({ items }: INavbar) {
 
   return (
 
+    
     <nav className="navbar navbar-expand-lg site-padding">
       <div className="navbar-container">
         <Link href="/" className="navbar-brand" >

@@ -3,7 +3,12 @@ export interface ICard {
     styleHeaderPage?:string  , 
     styleContentPage?: string  ,
     content: string,
-    cardStyle?: string  
+    cardStyle?: string,
+    action?: {
+        href? : string,
+        action?: ()=> void
+        title?: string
+    }
 
     
 
