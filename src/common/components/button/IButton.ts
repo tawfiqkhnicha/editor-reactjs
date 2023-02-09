@@ -6,4 +6,5 @@ export interface IButton{
     href?: any,
     action?: () => void,
     animated?: boolean
+    styleButton?:string,
 }
