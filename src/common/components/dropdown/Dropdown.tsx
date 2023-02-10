@@ -62,29 +62,124 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDr
      useOutsideAlerter(wrapperRef);
     
     return(
-        <li ref={wrapperRef} className="dropdown " onMouseEnter={()=>openDropdown()}  onClick={() =>handleClick()} >
-             {
-              style === "lang" ? (<a className={`text-decoration-none dropdown-toggle ${ breakpoint && breakpoint <= 1000 ? "mobile-nav-item-font text-reset " :  "navbar-items"}   `}  >
-                     <Img image={language.icon} alt={language.title} width={18} height={12} marginRight = {true}/> {language.title} 
-              </a>
-                    
-              ) : 
-              <a className={` dropdown-toggle text-decoration-none ${ breakpoint && breakpoint <= 1000 ? "mobile-nav-item-font text-reset " :  "navbar-items"}   `}  > 
-              { dropdownTitle} 
-              </a>
-            }
+
+        <>
+        {breakpoint && breakpoint > 1000 ? 
+          <li  ref={wrapperRef} className="nav-item dropdown menu-li nav-item  menu-li" >
+          {
+           style === "lang" ? (<a  className="nav-link  dropdown-toggle text-decoration-non d-flex align-items-center navbar-items " href="#" data-bs-toggle="dropdown" >
+                  <Img image={language.icon} alt={language.title} width={18} height={12} marginRight = {true}/> {language.title} 
+           </a>
+                 
+           ) : 
+           <a className={` nav-link dropdown-toggle text-decoration-none  d-flex align-items-center navbar-items `} href="#" data-bs-toggle="dropdown"  > 
+           { dropdownTitle} 
+           </a>
+         }
+  
+             <ul  className={`dropdown-menu`}   >
+                 {items.map((item: any, index: number) =>{
+                     return <li  key={index} >   
+                     <Link className="dropdown-item " href={item.href} onClick={()=> handleLanguage(item)}>  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
+                 })}
+             </ul>
+         
+     </li> : 
+      <li  ref={wrapperRef} className="nav-item dropdown menu-li" onMouseEnter={()=>openDropdown()}  onClick={() =>handleClick()} >
+      {
+       style === "lang" ? (<a className={`text-decoration-none dropdown-toggle d-flex align-items-center ${ breakpoint && breakpoint <= 1000 ? "mobile-nav-item-font text-reset " :  " "}   `}  >
+              <Img image={language.icon} alt={language.title} width={18} height={12} marginRight = {true}/> {language.title}  
+       </a>
+             
+       ) : 
+       <a className={` dropdown-toggle text-decoration-none ${ breakpoint && breakpoint <= 1000 ? "mobile-nav-item-font text-reset " :  "navbar-items"}   `}  > 
+       { dropdownTitle} 
+       </a>
+     }
+
+    { isOpen &&(
+         <ul  className={`dropDown-menu`}   onMouseLeave={()=> closeDropdown()}>
+             {items.map((item: any, index: number) =>{
+                 return <li className="menu-li" key={index} >   
+                 <Link className="dropdown-item navbar-items" href={item.href} onClick={()=> handleLanguage(item)}>  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
+             })}
+         </ul>
+     )}
+     
+ </li>
+    }
+      
+        </>
     
-           { isOpen &&(
-                <ul  className={`dropDown-menu`}   >
-                    {items.map((item: any, index: number) =>{
-                        return <li key={index} >   
-                        <Link className="dropdown-item navbar-items" href={item.href} onClick={()=> handleLanguage(item)}>  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
-                    })}
-                </ul>
-            )}
-            
-        </li>
+
+      
+  
+       
 
         
     )
 }
+
+   
+    
+{/* 
+
+  <li className="nav-item dropdown">
+        <a className="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me  </a>
+         <ul className="dropdown-menu">
+           <li><a className="dropdown-item" href="#"> Submenu item 1</a></li>
+           <li><a className="dropdown-item" href="#"> Submenu item 2 </a></li>
+           <li><a className="dropdown-item" href="#"> Submenu item 3 </a></li>
+         </ul>
+     </li>
+
+
+
+          <li  ref={wrapperRef} className="nav-item dropdown menu-li " onMouseEnter={()=>openDropdown()}  onClick={() =>handleClick()} >
+        {
+         style === "lang" ? (<a className={`text-decoration-none dropdown-toggle ${ breakpoint && breakpoint <= 1000 ? "mobile-nav-item-font text-reset " :  "navbar-items"}   `}  >
+                <Img image={language.icon} alt={language.title} width={18} height={12} marginRight = {true}/> {language.title} 
+         </a>
+               
+         ) : 
+         <a className={` dropdown-toggle text-decoration-none ${ breakpoint && breakpoint <= 1000 ? "mobile-nav-item-font text-reset " :  "navbar-items"}   `}  > 
+         { dropdownTitle} 
+         </a>
+       }
+
+      { isOpen &&(
+           <ul  className={`dropDown-menu`}   onMouseLeave={()=> closeDropdown()}>
+               {items.map((item: any, index: number) =>{
+                   return <li className="menu-li" key={index} >   
+                   <Link className="dropdown-item navbar-items" href={item.href} onClick={()=> handleLanguage(item)}>  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
+               })}
+           </ul>
+       )}
+       
+   </li>
+
+
+
+
+         <li  ref={wrapperRef} className="nav-item dropdown menu-li nav-item  menu-li" >
+        {
+         style === "lang" ? (<a  className="nav-link  dropdown-toggle text-decoration-non" href="#" data-bs-toggle="dropdown" >
+                <Img image={language.icon} alt={language.title} width={18} height={12} marginRight = {true}/> {language.title} 
+         </a>
+               
+         ) : 
+         <a className={` nav-link dropdown-toggle text-decoration-none `} href="#" data-bs-toggle="dropdown"  > 
+         { dropdownTitle} 
+         </a>
+       }
+
+      
+           <ul  className={`dropdown-menu mt-5`}   >
+               {items.map((item: any, index: number) =>{
+                   return <li  key={index} >   
+                   <Link className="dropdown-item " href={item.href} onClick={()=> handleLanguage(item)}>  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
+               })}
+           </ul>
+       
+   </li>
+*/}

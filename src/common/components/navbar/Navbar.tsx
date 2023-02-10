@@ -72,7 +72,6 @@ export default function Navbar({ items }: INavbar) {
         <Link href="/" className="navbar-brand" >
           <Img image="/menaps-logo.png" alt="Welcome | Menaps" width={148} height={30.15} />
         </Link>
-
         {
           screenWidth <= 1000 &&
           <button className="btn" onClick={handleMenu}>
@@ -83,7 +82,9 @@ export default function Navbar({ items }: INavbar) {
         <div className={`${screenWidth <= 1000 && isOpen  ? "mobile-nav-item-container d-flex " : screenWidth <= 1000 && !isOpen ? "mobile-nav-item-container d-none" : "navbar-items-container d-flex"}`} >
           {screenWidth <= 1000 &&
             <div className="mobile-nav-header">
+            <Link href="/">
               <Img image="/menaps-white-logo.png" alt="Welcome | Menaps" width={148} height={30.15} />
+              </Link>
             </div>
           }
          {screenWidth <= 1000 ? 
