@@ -22,20 +22,20 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDr
     }
   
     const handleClick = () =>{
-        if( breakpoint && breakpoint <= 1000){
+        if( breakpoint && breakpoint <= 990){
             setOpen(!isOpen);
         }
         
 
     }
      const closeDropdown = ()=> {
-        if( breakpoint && breakpoint > 1000){
+        if( breakpoint && breakpoint > 990){
             setOpen(false);
     }
      }
 
      const openDropdown=()=> {
-        if( breakpoint && breakpoint > 1000){
+        if( breakpoint && breakpoint > 990){
             setOpen(true);
     }
      }
@@ -44,8 +44,6 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDr
         useEffect(() => {
          
           function handleClickOutside(event: any) {
-          //  closeDropdown()
-          console.log("test")
 
             if (ref.current && !ref.current.contains(event.target)) {
             }
@@ -64,15 +62,15 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDr
     return(
 
         <>
-        {breakpoint && breakpoint > 1000 ? 
-          <li  ref={wrapperRef} className="nav-item dropdown menu-li nav-item  menu-li" >
+        {breakpoint && breakpoint > 990 ? 
+          <li   className="nav-item dropdown menu-li dropdown-a " >
           {
-           style === "lang" ? (<a  className="nav-link  dropdown-toggle text-decoration-non d-flex align-items-center navbar-items " href="#" data-bs-toggle="dropdown" >
+           style === "lang" ? (<a  className="nav-link  dropdown-toggle text-decoration-non d-flex align-items-center navbar-items   " href="#" data-bs-toggle="dropdown" >
                   <Img image={language.icon} alt={language.title} width={18} height={12} marginRight = {true}/> {language.title} 
            </a>
                  
            ) : 
-           <a className={` nav-link dropdown-toggle text-decoration-none  d-flex align-items-center navbar-items `} href="#" data-bs-toggle="dropdown"  > 
+           <a className={` nav-item nav-link dropdown-toggle text-decoration-none  d-flex align-items-center navbar-items `} href="#" data-bs-toggle="dropdown"  > 
            { dropdownTitle} 
            </a>
          }
@@ -85,15 +83,20 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDr
              </ul>
          
      </li> : 
-      <li  ref={wrapperRef} className="nav-item dropdown menu-li" onMouseEnter={()=>openDropdown()}  onClick={() =>handleClick()} >
+      <li   className=" dropdown menu-li" onClick={() =>handleClick()}   >
       {
-       style === "lang" ? (<a className={`text-decoration-none dropdown-toggle d-flex align-items-center ${ breakpoint && breakpoint <= 1000 ? "mobile-nav-item-font text-reset " :  " "}   `}  >
+       style === "lang" ? (<a className={`dropDown-toggle text-decoration-none  d-flex justify-content-between  mobile-nav-item-font text-reset  `}  >
+             <div className="d-flex align-items-center">
               <Img image={language.icon} alt={language.title} width={18} height={12} marginRight = {true}/> {language.title}  
+              </div> 
+              <i className={`bi ${isOpen ? "bi-chevron-right" : "bi-chevron-down"} `} style={{fontSize: 15}} ></i>
        </a>
              
        ) : 
-       <a className={` dropdown-toggle text-decoration-none ${ breakpoint && breakpoint <= 1000 ? "mobile-nav-item-font text-reset " :  "navbar-items"}   `}  > 
-       { dropdownTitle} 
+       <a className={` dropDown-toggle text-decoration-none d-flex justify-content-between  mobile-nav-item-font text-reset `}  > 
+                    <span>{ dropdownTitle} </span>
+                    <i className={`bi ${isOpen ? "bi-chevron-right" : "bi-chevron-down"} `} style={{fontSize: 15}} ></i>
+
        </a>
      }
 
@@ -137,12 +140,12 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDr
 
           <li  ref={wrapperRef} className="nav-item dropdown menu-li " onMouseEnter={()=>openDropdown()}  onClick={() =>handleClick()} >
         {
-         style === "lang" ? (<a className={`text-decoration-none dropdown-toggle ${ breakpoint && breakpoint <= 1000 ? "mobile-nav-item-font text-reset " :  "navbar-items"}   `}  >
+         style === "lang" ? (<a className={`text-decoration-none dropdown-toggle ${ breakpoint && breakpoint <= 990 ? "mobile-nav-item-font text-reset " :  "navbar-items"}   `}  >
                 <Img image={language.icon} alt={language.title} width={18} height={12} marginRight = {true}/> {language.title} 
          </a>
                
          ) : 
-         <a className={` dropdown-toggle text-decoration-none ${ breakpoint && breakpoint <= 1000 ? "mobile-nav-item-font text-reset " :  "navbar-items"}   `}  > 
+         <a className={` dropdown-toggle text-decoration-none ${ breakpoint && breakpoint <= 990 ? "mobile-nav-item-font text-reset " :  "navbar-items"}   `}  > 
          { dropdownTitle} 
          </a>
        }

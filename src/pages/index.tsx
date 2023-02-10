@@ -15,7 +15,7 @@ export default function Home() {
    
     <Section fullWidth={true}>
       <Carousel />
-      <Card cardStyle="site-padding mt-5" HeaderTitle="<h2>What makes us <br> different?</H2>" styleHeaderPage="left-border" content="<p>We combine our business expertise with our technological mastery and data in order to bring you sustainable and innovative solutions.</p>"/>
+      <Card cardStyle="mt-5 main-wrapper" HeaderTitle="<h2>What makes us <br> different?</H2>" styleHeaderPage="left-border" content="<p>We combine our business expertise with our technological mastery and data in order to bring you sustainable and innovative solutions.</p>"/>
       <Hotspot />
       <Section background={true} fullWidth={false}>
           <Grid>
@@ -77,7 +77,7 @@ export default function Home() {
       </Section>
 
      <Section background={true} fullWidth={false} className="position-relative height-l ">
-      <Card cardStyle="site-padding  card-absolute "  styleContentPage="text-white" HeaderTitle="<h2>What if we carried <br> your project? </H2>" styleHeaderPage="left-border text-white" content="<p>Do you need human or technological resources to mature your ideas?</p>"/>
+      <Card cardStyle="main-wrapper  card-absolute "  styleContentPage="text-white" HeaderTitle="<h2>What if we carried <br> your project? </H2>" styleHeaderPage="left-border text-white" content="<p>Do you need human or technological resources to mature your ideas?</p>"/>
         <Button styleButton="btn-absolute" variant="link" title="Let's innovate together" href="/imagine"/>
         <img className="position-absolute imagine-image"  src="/Bandeau-Imagine.png" />
       </Section>
