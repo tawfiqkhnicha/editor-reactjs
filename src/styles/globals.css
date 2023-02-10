@@ -430,6 +430,11 @@
     left: 45% !important;
 
   }
+
+  .site-padding {
+    padding-right: 10% !important;
+    padding-left: 10% !important;
+  }
 }
 
  .carousel-text{
@@ -909,10 +914,38 @@ ul.bullet-before li {
   width: 300px;
 }
 
+.imagemobile {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+}
+
+.menaps-group-text {
+  padding-left: 5%
+}
+
+.image-menaps-group {
+  height: 100%;
+  width: 300px;
+  border-left: 0.4rem solid #1EEDE2;
+  padding-left: 18px;
+}
+
+.image-star {
+  position: absolute;
+  right: 3%;
+  top: 36%;
+}
+
+.left-border {
+  border-left: 0.4rem solid #1EEDE2;
+  padding-left: 18px;
+}
+
 .content-image {
   position: absolute;
-  top: 80%;
-  left: 47%;
+  top: 93%;
+  left: 45%;
   transform: translate(-50%, -50%);
   width: 15px;
   z-index: 10;
@@ -930,6 +963,21 @@ ul.bullet-before li {
   .button-width {
     width: 75% !important;
   }
+
+  .hamdietmajd {
+    margin-top: 6% !important;
+    margin-left: 16% !important;
+    width: 63% !important;
+  }
+
+  .section2--ourdna_button {
+    font-size: 13px !important;
+    line-height: 1.2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500 !important;
+
+  }
 }
 
 .button-width {
@@ -940,8 +988,87 @@ ul.bullet-before li {
 }
  
 .text-content {
-  font-size: 13px;
+ 
   font-family: "Raleway", Sans-serif !important;
   font-weight: 500 !important;
   padding-left: 1.9rem !important;
+}
+
+.text-ourdna {
+  font-size: 16px;
+  font-family: "Raleway", Sans-serif !important;
+  font-weight: 500 !important;
+  padding-left: 1.9rem !important;
+}
+
+.section2-ourdna {
+  margin-top: 160px !important;
+  color: white;
+
+}
+
+.section2--ourdna_button {
+  height: auto !important;
+  font-family: "Raleway", Sans-serif !important;
+  font-weight: 600;
+
+}
+
+.centre {
+  display: block !important;
+  margin: 0 auto !important;
+
+}
+
+.hamdietmajd {
+  margin-top: 6%;
+  margin-left: 27%;
+  width: 63% !important;
+}
+
+.OurValuesheader>* {
+
+  font-family: "Raleway", Sans-serif !important;
+  font-weight: 800 !important;
+
+}
+
+.OurValuesheadertext {
+  font-size: 19px;
+  font-family: "Raleway", Sans-serif !important;
+  font-weight: 500 !important;
+  padding-left: 1.9rem !important;
+}
+
+.ourvaluesimage {
+width:50%;
+  margin-top: 100px !important;
+  margin: 0 auto !important;
+  display: block;
+}
+
+.sectionourvalues {
+
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+
+}
+.headercontetn {
+  font-size: 19px;
+  font-family: "Raleway", Sans-serif !important;
+  font-weight: 800 !important;
+ 
+
+}
+.contentourvalues {
+  font-size: 15px;
+  font-family: "Raleway", Sans-serif !important;
+  font-weight: 500 !important;
+ 
+
+}
+.content:hover {
+  background-color: white;
+  color: black;
+  border-top: 10px solid #1EEDE2;
 }
