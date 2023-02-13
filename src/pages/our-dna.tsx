@@ -23,7 +23,7 @@ export default function OurDna() {
             <img className="image-menaps-group  " src="Logo-Group.png" />
           </Widget>
           <Widget size={12} className="position-relative" >
-            <div className=" text-ourdna ">
+            <div className=" text-ourdna text-ourdna-mobile ">
               <div> Groupe de conseil international de nouvelle génération, à large spectre d’expertises intégrées et</div>
               <div> d’expériences métiers diversifiées,  intervenant de la réflexion stratégique à l’accompagnement opérationnel,</div>
               <div> avec une forte dimension d’innovation technologique et digitale, au service du « Business Empowerment » </div>
@@ -36,7 +36,7 @@ export default function OurDna() {
         </Grid>
       </Section >
 
-      <Section className="section2-ourdna " background={true} fullWidth={false}>
+      <Section className="section2-ourdna  " background={true} fullWidth={false}>
         <Grid>
 
 
