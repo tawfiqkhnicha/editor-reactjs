@@ -13,7 +13,8 @@ export default function Footer(){
 <footer className="text-start text-lg-start text-muted  mt-auto ">
 
   <Section fullWidth={false} background={true}>
-          <Grid className="p-5">
+    <Section className="main-wrapper">
+    <Grid className="pt-5 ">
           {FooterItems.map(item =>{
             return <Widget size={3}>
 
@@ -49,8 +50,10 @@ export default function Footer(){
         })}   
             
           </Grid>
+    </Section>
+          
   </Section>
-  <div className="copyright">
+  <div className="copyright ">
      <p className="copyright-text mt-2"> &copy; {new Date().getFullYear()} by Menaps - All Right Reserved </p>
   </div>
 </footer>

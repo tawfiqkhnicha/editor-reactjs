@@ -1,10 +1,11 @@
+import { IHotspot } from "./IHotspot";
 
-export default function Hotspot(){
+export default function Hotspot({className}: IHotspot){
 
 
     return(
         
-        <div className="hotspot d-flex justify-content-center  position-relative site-padding">
+        <div className={`position-relative ${className ? className : ""}`} >
             <img src="/strategic.png" className="hotspot-image"></img>
 
             <span className="highlight-spot center-y center-x  sectors" data-toggle="tooltip" data-placement="top" title="Aeronautics, Automotive, Banking..."></span>           

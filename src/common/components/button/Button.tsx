@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { IButton } from "./IButton";
 
-export default function Button({title, variant, href, action,styleButton}: IButton){
+export default function Button({title, href, action, animated, className}: IButton){
     return (
         <>
-          {variant === "button" ? <button className={` btn main-btn animated-button ${styleButton ? styleButton : ""}   `}>
-                {title}
-            </button> : <Link href={href} className={` btn main-btn animated-button ${styleButton ? styleButton : ""}   `}>  {title} </Link>}
+            <div className={`master-button ${className ? className : ""}`}>
+                <Link href={href} className={`text-decoration-none ${animated ? "animated-link" : ""}`}>  {title} 
+                {animated && <span className="hover-effect" ></span>}
+                </Link>
+            </div> 
         </>
    
     )

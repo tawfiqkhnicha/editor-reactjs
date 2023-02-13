@@ -76,10 +76,13 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDr
          }
   
              <ul  className={`dropdown-menu`}   >
-                 {items.map((item: any, index: number) =>{
+                <div className="subdropdown-menu">
+                {items.map((item: any, index: number) =>{
                      return <li  key={index} >   
                      <Link className="dropdown-item " href={item.href} onClick={()=> handleLanguage(item)}>  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
                  })}
+                </div>
+                
              </ul>
          
      </li> : 

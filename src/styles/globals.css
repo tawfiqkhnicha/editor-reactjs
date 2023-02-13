@@ -1,3 +1,21 @@
+
+
+.section-margin-6{
+  margin-top: 6% !important;
+}
+
+.section-margin-10{
+  margin-top: 10% !important;
+}
+
+.section-padding{
+  padding-top: 2% !important;
+}
+
+.section-padding-y{
+  padding-top: 1em;
+  padding-bottom: 4em;
+}
 .dropDown-menu {
   background-color: #fff;
   position: absolute;
@@ -9,7 +27,6 @@
 }
 
 .dropdown-item {
-
   display: flex !important;
   justify-content: start !important;
   align-items: center !important;
@@ -34,12 +51,12 @@
 }
 
 .navbar-items {
+  font-family: "Raleway", Sans-serif !important;
   font-size: 16px;
   color: #5e709d;
   font-weight: 400;
   letter-spacing: 0.2px;
   vertical-align: baseline;
-  font-family: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,13 +68,17 @@
 }
 
 .navbar {
-  margin-top: 20px !important;
+  margin: 0px !important;
+  padding-top: 20px !important;
   justify-content: center !important;
   position: sticky;
   top: 0%;
   background-color: white;
   width: 100%;
   z-index: 10;
+  background-color: #fff;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.07);
+  transition: all ease 0.4s;
 }
 
 .navbar-container {
@@ -91,7 +112,8 @@
 .navbar-items-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: end;
+  align-items: center !important;
   flex-wrap: nowrap;
   gap: 30px;
 }
@@ -115,6 +137,8 @@
   border-radius: 30px;
   font-family: "Raleway", Sans-serif !important;
   font-weight: 500 !important;
+  color: #1c1735 !important;
+
 
 }
 
@@ -134,12 +158,12 @@
   height: 1px !important;
   display: block !important;
   transition: all 0.3s ease !important;
-  bottom: 10%;
+  bottom: -10%;
   left: 0%;
 
 }
 
-.navbar-items-container>a:hover::after, .dropdown-a:hover::after {
+.navbar-items-container>.nav-items:hover::after, .dropdown-a:hover::after {
   width: 100% !important;
   height: 2px !important;
   background-color: #05f2f2 !important;
@@ -148,14 +172,14 @@
 
 
 
-.footer-link>a {
+.footer-link>.nav-items {
   position: relative !important;
   transition: all ease 0.3s !important;
   padding-bottom: 2px !important;
 
 }
 
-.footer-link>a::after {
+.footer-link>.nav-items::after {
 
   content: "" !important;
   position: absolute !important;
@@ -167,7 +191,7 @@
   left: 0%;
 }
 
-.footer-link>a:hover::after {
+.footer-link>.nav-items:hover::after {
   width: 100% !important;
   height: 2px !important;
   background-color: #05f2f2 !important;
@@ -295,8 +319,8 @@
 
 .highlight-spot {
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 100%;
   border: 3px solid #fff;
   cursor: pointer;
@@ -361,33 +385,33 @@
 }
 
 .sectors {
-  top: 40%;
-  left: 28%
+  top: 45%;
+  left: 13%
 }
 
 .businesses {
-  top: 59%;
-  left: 27.2%
+  top: 61%;
+  left: 12%
 }
 
 .data {
-  top: 73%;
-  left: 29.5%
+  top: 74%;
+  left: 16%
 }
 
 .technology {
   top: 87%;
-  left: 31.6%
+  left: 19%
 }
 
 .data-center {
-  top: 50%;
-  left: 47.4%
+  top: 51%;
+  left: 45.4%
 }
 
 .data-end {
-  top: 32.5%;
-  left: 69.5%
+  top: 36.5%;
+  left: 83%
 }
 
 .card-title {
@@ -437,6 +461,7 @@
 .icon {
   margin-right: 10px !important;
 }
+
 
 @media only screen and (max-width: 1280px) {
   .sliderstyle{
@@ -536,7 +561,7 @@
 }
 
 .height-l {
-  height: 800px !important;
+  min-height: 800px !important;
 }
 
 .btn-absolute {
@@ -549,7 +574,7 @@
 
   position: absolute;
   top: 15%;
-  left: 0%;
+  left: 20%;
 }
 
 .imagine-image {
@@ -566,30 +591,30 @@
 }
 
 .bulle-image {
-  width: 20%;
+  max-width: 100%;
   height: auto;
   position: absolute;
-  bottom: 25%;
+  top: 0%;
   left: 60%;
 
 }
 
 .contact-us-home {
   position: relative;
-  height: 600px;
+  min-height: 500px;
 }
 
 .contact-us-home-card {
   height: auto;
   position: absolute;
-  bottom: 50%;
-  left: 25%;
+  top: 20%;
+  left: 20%;
 }
 
 .contact-us-section-btn {
   position: absolute !important;
   bottom: 45%;
-  left: 30%;
+  left: 32%;
 }
 
 .hands-home {
@@ -660,6 +685,15 @@
     bottom: 0!important;
     width: 122% !important;
 }
+
+  .grid-gap{
+
+    gap: 60px !important;
+  }
+
+  .gap-0{
+    gap: 0px !important
+  }
   .sectionourvalues {
     background-color: white !important;
 
@@ -667,7 +701,7 @@
   }
 
   .contact-us-home {
-    height: 500px !important;
+    min-height: 500px !important;
   }
 
   .contact-us-home-card {
@@ -682,11 +716,11 @@
   }
 
   .bulle-image {
-    width: 60% !important;
+    width: 40% !important;
     height: auto;
     position: absolute;
-    bottom: 20% !important;
-    left: 20% !important;
+    top: 45% !important;
+    left: 30% !important;
 
   }
 
@@ -696,7 +730,7 @@
   }
 
   .carousel-item {
-    height: 391px !important;
+    min-height: 391px !important;
   }
 
   .carousel-text {
@@ -711,8 +745,8 @@
   }
 
   .card-absolute {
-    top: 20%;
-    left: 0%;
+    top: 15%;
+    left: 10%;
   }
 
   .talent-image {
@@ -723,12 +757,13 @@
 
   .btn-absolute {
     position: absolute !important;
-    right: 25%;
-    bottom: 10%;
+    right: 20%;
+    bottom: 5%;
   }
 
   .height-l {
-    height: 450px !important;
+    min-height: 500px !important;
+    padding: 10px !important;
   }
 
   .imagine-image {
@@ -766,6 +801,30 @@
 }
 
 @media only screen and (max-width: 900px) and (min-width: 600px) {
+
+ 
+
+  .card-absolute{
+    left: 5% !important
+  }
+
+  .btn-absolute{
+
+    top: 50%;
+    right: 100%;
+  }
+
+
+  .contact-us-home-card {
+    height: auto;
+    position: absolute;
+    left: 0%;
+  }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  
   .text-ourdna {}
 
 
@@ -783,7 +842,7 @@
 
   .contact-us-home {
     position: relative;
-    height: 400px;
+    min-height: 300px !important;
   }
 
   .contact-us-home-card {
@@ -793,7 +852,7 @@
   }
 
   .contact-us-section-btn {
-    bottom: 50%;
+    bottom: 10%;
     left: 20%;
   }
 
@@ -814,7 +873,7 @@
   }
 
   .height-l {
-    height: 500px !important;
+    min-height: 500px !important;
   }
 
 
@@ -838,7 +897,6 @@
     padding-left: 10px !important;
   }
 
-
 }
 
 @media only screen and (max-width: 992px) {
@@ -849,23 +907,23 @@
   }
 
   .sectors {
-    top: 40%;
-    left: 14.5%
+    top: 41%;
+    left: 12%
   }
 
   .businesses {
-    top: 59%;
-    left: 13%
+    top: 60%;
+    left: 12%
   }
 
   .data {
     top: 73%;
-    left: 16.5%
+    left: 15%
   }
 
   .technology {
     top: 87%;
-    left: 19.9%
+    left: 19%
   }
 
   .data-center {
@@ -1233,13 +1291,26 @@ ul.bullet-before li {
   .navbar .nav-item .dropdown-menu{ display: none; }
   .navbar .nav-item:hover .nav-link{   }
   .navbar .nav-item:hover .dropdown-menu{ display: block; }
-  .navbar .nav-item .dropdown-menu{ margin-top:40px; }
+  .navbar .nav-item .dropdown-menu{ margin-top:20px; }
 .dropdown-menu{
   min-width: 268px;
   width: auto;
-  background-color: #fff;
   left: 0;
+  background-color: transparent;
+  border: none;
+}
+.subdropdown-menu{
+  margin-top: 40px !important;
+  background-color: #fff;
+  font-size: 16px;
+  color: #5e709d;
+  display: block;
+  width: 268px !important;
+  transition: 0.5s;
+  transition-delay: 0s;
+  transition-delay: 0s;
   box-shadow: 0 30px 70px 0 rgba(41, 41, 43, 0.1)
+  
 }
   .navbar .nav-item .dropdown-menu {
     display: none;
@@ -1258,6 +1329,48 @@ ul.bullet-before li {
   .dropdown-menu {
     width: 200px;
   }
+.dropdown-item:hover {
+
+  background-color: transparent;
+}
+
+
+.subdropdown-menu li a{
+  position: relative;
+  z-index: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #5e709d;
+  padding: 11px 30px;
+  display: block;
+  transition: 0.5s;
+  transition-delay: 0s;
+  transition-delay: 0s;
+  line-height: 28px;
+}
+
+.subdropdown-menu li{
+  border-bottom: 1px solid #f8f9fa !important;
+}
+
+.subdropdown-menu li a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: #eff5fb ;
+  transition: width 0.5s cubic-bezier(0.35, 0.7, 0.35, 1) 0s;
+  z-index: -1;
+}
+
+.subdropdown-menu li:hover a::after {
+  width: 100% !important; 
+}
+
+
+
 }
 
 .textstyle>div>h1 {
@@ -1357,4 +1470,79 @@ ul.bullet-before li {
 .footprint   {
 padding-bottom:10rem;
   
+}
+
+.master-button{
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #05f2f2 !important;
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  border-radius: 30px;
+  font-family: "Raleway", Sans-serif !important;
+  font-weight: 500 !important;
+  color: #1c1735 !important;
+}
+
+.master-button a{
+  color: #1c1735 !important;
+  font-family: "Helvetica", Sans-serif;
+  font-weight: normal;
+  text-transform: none;
+  font-style: normal;
+}
+
+.master-button .hover-effect {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  background-color: #1c1735 !important;
+  z-index: -1;
+  border-radius: 100%;
+  left: 97.6167px;
+  top: 30.5px
+}
+
+.master-button:hover .animated-link {
+  color: #ffffff !important;
+}
+
+.master-button:hover .hover-effect{
+  width: calc(100% * 2.25);
+  padding-top: calc(100% * 2.25);
+}
+
+.btn-padding{
+  padding: 30px 40px 30px 40px;
+}
+
+.btn-padding-m{
+  padding: 25px 40px 25px 40px;
+}
+
+
+.btn-style{
+
+  background-color: #05F2F2;
+  border-radius: 19em 19em 19em 19em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-style a{
+
+  font-family: "Raleway", Sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  fill: #0C0560;
+  color: #0C0560;
 }

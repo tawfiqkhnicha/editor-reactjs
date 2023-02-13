@@ -38,14 +38,14 @@ function NavBarContent({ items, screenWidth }: any ) {
      {items.map((item: any, index: number) => {
       return (
         item.type === "dropdown" ? (
-          <Dropdown breakpoint={screenWidth} style={item.style} dropdownTitle={item.dropdownTitle} items={item.elements} />
+          <Dropdown  breakpoint={screenWidth} style={item.style} dropdownTitle={item.dropdownTitle} items={item.elements} />
         ) : item.type === "linkBtn" ? (
           screenWidth > 990 &&
           <Button title={item.title} href={item.href} variant="btnLink" animated={true} />
         ) : (
           screenWidth <= 990 ?      <div className="mobile-nav-item">
                         <Link className={`${screenWidth <= 990 ? "text-reset text-decoration-none mobile-nav-item-font" : "nav-link navbar-items"} `}href={item?.href}>{item?.title}</Link>
-                  </div>  :    <Link className={`${screenWidth <= 990 ? "text-reset text-decoration-none mobile-nav-item-font" : "nav-link navbar-items"} `}href={item?.href}>{item?.title}</Link>
+                  </div>  :    <Link className={`${screenWidth <= 990 ? "text-reset text-decoration-none mobile-nav-item-font" : "nav-link navbar-items nav-items"} `}href={item?.href}>{item?.title}</Link>
 
 
         
@@ -98,7 +98,7 @@ export default function Navbar({ items }: INavbar) {
   return (
 
     
-    <nav className="navbar navbar-expand-lg pt-5 ">
+    <nav className="navbar navbar-expand-lg  ">
       <div className="navbar-container main-wrapper">
         <Link href="/" className="navbar-brand" >
           <Img image="/menaps-logo.png" alt="Welcome | Menaps" width={148} height={30.15} />
