@@ -1,12 +1,56 @@
 
 
+
 .fleche-1-home{
-  position: absolute;
-  width: 230.75px;
-  height: 211.667px;
-  left: 42%; 
-  bottom: -144px;
+  width: 18%;
+  height: auto;
+  top: -20%;
+  right: 0%; 
+}
+.fleche-2-home{
+  width: 12%;
+  height: auto;
+  right: 20%;
+  bottom: -35%;
+}
+.fleche-3-home{
+  display: block;
+  width: 10%;
+  height: auto;
+  bottom: -40%;
+  left: 20%;
+}
+
+.fleche-4-home{
+ 
+  right: 50%;;
+
+}
+
+.fleche-5-home{
+  display: block;
+  right: 15%;
+  bottom: 20%;
+  transform: rotate(-30deg);
+  width: 20%;
+}
+
+.fleche-6-home{
+  width: 15%;
+  right: 35%;
+  bottom: 10%;
+  transform: rotate(360deg);
   
+}
+.w-90{
+  width: 90%;
+}
+
+.pb-6{
+  padding-bottom: 10%;
+}
+.margin-bottom-xxl{
+  margin-bottom: 10% !important;
 }
 .section-margin-6{
   margin-top: 6% !important;
@@ -637,6 +681,13 @@
 /* mobile*/
 @media only screen and (max-width: 600px) {
 
+  .btn-style a{
+    font-size: 14px !important;
+  }
+  .margin-bottom-xxl{
+
+    margin-bottom: 5% !important;
+  }
   .talent-image{
     max-width: 297.733px;
   }
@@ -844,6 +895,58 @@
     left: 81.5%
   }
 
+    .mt-mobile{
+      margin-top: 30% !important;
+    }
+
+
+  
+  .fleche-1-home{
+    width: 18%;
+    height: auto;
+    top: -30%;
+    right: 0%; 
+  }
+  .fleche-2-home{
+    width: 35%;
+    height: auto;
+    right: 20%;
+    bottom: -20%;
+  }
+  .fleche-3-home{
+    display: block;
+    transform: rotateY(180deg);
+
+
+    width: 20%;
+    height: auto;
+    bottom: -10%;
+    left: 75%;
+    
+  }
+  
+  .fleche-4-home{
+    width: 50%;
+
+  }
+  
+  .fleche-4-home-container{
+    justify-content: center !important;
+    margin-bottom: 10%;
+  }
+  .fleche-5-home{
+   display: none;
+  }
+  
+  .fleche-6-home{
+    width: 30%;
+    right: 8%;
+    bottom: 25%;
+    transform: rotate(-60deg);
+
+    
+  }
+
 }
 
 
@@ -851,6 +954,57 @@
 
 @media only screen and (max-width: 900px) and (min-width: 600px) {
 
+.mt-sm-6{
+  margin-top: 15%;
+}
+.mt-sm-7{
+  margin-top: 20%;
+}
+
+.w-90{
+  width: 100% ;
+}
+.fleche-1-home{
+  width: 18%;
+  height: auto;
+  top: -20%;
+  right: 0%; 
+}
+.fleche-2-home{
+  width: 18%;
+  height: auto;
+  right: 20%;
+  bottom: -20%;
+}
+.fleche-3-home{
+  display: none;
+  width: 10%;
+  height: auto;
+  bottom: -40%;
+  left: 20%;
+}
+
+.fleche-4-home{
+ 
+  right: 50%;;
+
+}
+
+.fleche-5-home{
+  display: block;
+  right: 15%;
+  bottom: 18%;
+  transform: rotate(-30deg);
+  width: 20%;
+}
+
+.fleche-6-home{
+  width: 20%;
+  right: 30%;
+  bottom: 18%;
+  transform: rotate(360deg);
+  
+}
 
   .bulle-image {
     width: 198.533px;
@@ -1506,6 +1660,7 @@ padding-bottom:10rem;
   font-weight: normal;
   text-transform: none;
   font-style: normal;
+  font-size: 18px;
 }
 
 .master-button .hover-effect {
@@ -1551,7 +1706,7 @@ padding-bottom:10rem;
 .btn-style a{
 
   font-family: "Raleway", Sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   fill: #0C0560;
   color: #0C0560;
