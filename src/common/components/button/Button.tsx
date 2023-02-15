@@ -14,8 +14,6 @@ export default function Button({title, href, action, animated, className}: IButt
              y = e.pageY - btn.current?.offsetTop;
 
              setCoordonate({x:x, y:y})
-
-             console.log(coordonate)
             
     }
     return (
