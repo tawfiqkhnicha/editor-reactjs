@@ -99,7 +99,7 @@ export default function Navbar({ items }: INavbar) {
 
     
     <nav className="navbar navbar-expand-lg  ">
-      <div className="navbar-container main-wrapper">
+      <div className=" main-wrapper navbar-container">
         <Link href="/" className="navbar-brand" >
           <Img image="/menaps-logo.png" alt="Welcome | Menaps" width={148} height={30.15} />
         </Link>

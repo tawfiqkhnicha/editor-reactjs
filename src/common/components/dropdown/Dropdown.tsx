@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { it } from "node:test"
 import {  useState, useRef, useEffect } from "react"
 import Img from "../image/Img"
 import { IDropdown } from "./IDropdown"
@@ -16,9 +17,7 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDr
 
 
     const handleLanguage  = (lang: {title: string, icon: string})=>{  
-        if(style === "lang"){
             setLanguage(()=> ({...language, title: lang.title, icon: lang.icon}))
-        }
     }
   
     const handleClick = () =>{
@@ -77,10 +76,15 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDr
   
              <ul  className={`dropdown-menu`}   >
                 <div className="subdropdown-menu">
-                {items.map((item: any, index: number) =>{
-                     return <li  key={index} >   
+
+                {style === 'lang' ? items.map((item: any, index: number) =>{
+                     return !item.isSelected && <li  key={index} >   
                      <Link className="dropdown-item " href={item.href} onClick={()=> handleLanguage(item)}>  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
-                 })}
+                 }) :items.map((item: any, index: number) =>{
+                    return  <li  key={index} >   
+                    <Link className="dropdown-item " href={item.href} >  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
+                }) }
+            
                 </div>
                 
              </ul>
@@ -105,10 +109,14 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDr
 
     { isOpen &&(
          <ul  className={`dropDown-menu`}   onMouseLeave={()=> closeDropdown()}>
-             {items.map((item: any, index: number) =>{
-                 return <li className="menu-li" key={index} >   
-                 <Link className="dropdown-item navbar-items" href={item.href} onClick={()=> handleLanguage(item)}>  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
-             })}
+
+                        {style === 'lang' ? items.map((item: any, index: number) =>{
+                            return !item.isSelected && <li  key={index} >   
+                            <Link className="dropdown-item navbar-items " href={item.href} onClick={()=> handleLanguage(item)}>  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
+                        }) :items.map((item: any, index: number) =>{
+                            return  <li  key={index} >   
+                            <Link className="dropdown-item navbar-items " href={item.href} >  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
+                        }) }
          </ul>
      )}
      

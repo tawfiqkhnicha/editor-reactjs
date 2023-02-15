@@ -73,12 +73,14 @@ export const Menu  = [
             {
                 title: "English",
                 href: "#",
-                icon: "/en.png"
+                icon: "/en.png",
+                isSelected: true
             },
             {
                 title: "Français",
                 href: "#",
-                icon: "/fr.png"
+                icon: "/fr.png",
+                isSelected: false
             },
         ],
     },
