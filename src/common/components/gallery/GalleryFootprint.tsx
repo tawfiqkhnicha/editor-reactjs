@@ -30,12 +30,14 @@ import { IGalleryFootprint } from "./IGalleryFootprint";
 
   return (
  
-     <div className={` ${padding ? "site-padding" : ""} ${style ? style : ""} `}>
+     <div className={` ${padding ? "site-padding  " : ""} ${style ? style : ""} `}>
       <Gallery
         images={data}
         onClick={handleClick}
-        
-        enableImageSelection={true}
+        margin={10}
+        rowHeight={280}
+        enableImageSelection={false}
+     
       />
       {!!currentImage && (
         /* @ts-ignore */

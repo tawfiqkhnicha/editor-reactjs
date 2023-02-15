@@ -37,7 +37,9 @@ export default function Home() {
 
   return (
 
-    <Section fullWidth={true}>
+    < >
+        <Carousel/> 
+
       <Section className="main-wrapper section-margin-6 section-padding-x position-relative">
 
          <img src="/Fleche-1-Home.png" className="fleche-1-home flech_width position-absolute" />
@@ -175,6 +177,6 @@ export default function Home() {
 
       </Section>
 
-    </Section>
+    </ >
   )
 }

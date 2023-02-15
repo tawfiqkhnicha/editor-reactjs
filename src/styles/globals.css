@@ -58,15 +58,15 @@
   margin-top: 6% !important;
 }
 
-.section-margin-10{
+.section-margin-10 {
   margin-top: 10% !important;
 }
 
-.section-padding{
+.section-padding {
   padding-top: 2% !important;
 }
 
-.section-padding-y{
+.section-padding-y {
   padding-top: 1em;
   padding-bottom: 4em;
 }
@@ -205,12 +205,14 @@
   margin-right: 10px !important;
 }
 
-.navbar-items-container>a, .dropdown-a {
+.navbar-items-container>a,
+.dropdown-a {
   position: relative !important;
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1) !important;
 }
 
-.navbar-items-container>a:after,  .dropdown-a::after {
+.navbar-items-container>a:after,
+.dropdown-a::after {
   content: "" !important;
   position: absolute !important;
   width: 0% !important;
@@ -222,7 +224,8 @@
 
 }
 
-.navbar-items-container>.nav-items:hover::after, .dropdown-a:hover::after {
+.navbar-items-container>.nav-items:hover::after,
+.dropdown-a:hover::after {
   width: 100% !important;
   height: 2px !important;
   background-color: #05f2f2 !important;
@@ -523,17 +526,19 @@
 
 
 @media only screen and (max-width: 1280px) {
-  .sliderstyle{
- 
-    padding-top: 8rem!important;
+  .sliderstyle {
+    background-color: #181236;
+    padding-top: 8rem !important;
   }
-  .Silhouette-image{
-    
+
+  .Silhouette-image {
+
     position: absolute !important;
     left: 10% !important;
-    bottom: 0 !important ;
+    bottom: 0 !important;
     width: 69% !important;
   }
+
   .content-image {
     top: 142% !important;
     left: 45% !important;
@@ -544,6 +549,7 @@
     padding-right: 10% !important;
     padding-left: 10% !important;
   }
+ 
 }
 
 .carousel-text {
@@ -696,77 +702,130 @@
   .hands-home {
     max-width: 242.233px;
   }
-  
-  .buttonSlider{ 
-    z-index: 9; 
+  .tunisie-map {
+    top: 37% !important;
+    left: 41.6% !important;
+
+  }
+  .ReactGridGallery_tile-viewport > img {width: 100% !important;margin-left: 0px !important;}
+
+
+  .ReactGridGallery_tile {
+      width: 100% !important;
+  }
+  .ReactGridGallery_tile-viewport {
+      width: 100% !important;
+  }
+  .maroc-map {
+    top: 43% !important;
+    left: 38.6% !important;
+  }
+
+  .portugal-map {
+    top: 23% !important;
+    left: 43.2% !important;
+  }
+
+  .france-map {
+    top: 31% !important;
+    left: 40.6% !important;
+  }
+
+  .india-map {
+    top: 47% !important;
+    left: 61.6% !important;
+  }
+
+  .highlight-spot-map {
+    position: absolute;
+    width: 9px !important;
+    height: 9px !important;
+    border-radius: 100%;
+
+    cursor: pointer;
+    background-color: #6fedef;
+
+  }
+
+  .letter-spacing {
+    letter-spacing: 1px !important;
+  }
+
+  .buttonSlider {
+    z-index: 9;
     font-family: Raleway;
     color: rgb(24, 18, 54);
     text-decoration: none;
     white-space: normal;
     width: 117px !important;
-    height: 34px !important; 
-    line-height: 31px!important; 
+    height: 34px !important;
+    line-height: 31px !important;
     letter-spacing: 0px !important;
     font-weight: 500 !important;
     font-size: 13px !important;
     padding-left: 11px;
     border-radius: 22px;
     padding-right: 11px;
-    backdrop-filter: none; 
+    backdrop-filter: none;
+    margin-left: 28% !important;
+    margin-top: 10% !important;
 
-    margin-top:10%   !important ;
-    
-   
-   
+
+
   }
+
   .footprint {
-    padding-left: 10%!important; 
+    padding-left: 10% !important;
     padding-bottom: 10rem;
     padding-top: 13% !important;
-}
+  }
+
   .slidertitle>div>h1 {
     font-family: "Raleway", Sans-serif !important;
     font-weight: 700 !important;
     font-size: 30px !important;
-    color:  white;
+    color: white;
     margin-bottom: 0 !important;
-   
+
   }
 
   .slidercontent>div>span {
     text-align: left !important;
     line-height: 22px !important;
-    letter-spacing: 0px !important; 
+    letter-spacing: 0px !important;
     font-size: 21px !important;
-    font-family: "Raleway", Sans-serif !important; 
-    color:  white; 
+    font-family: "Raleway", Sans-serif !important;
+    color: white;
     text-decoration: none;
-    white-space: normal; 
+    white-space: normal;
     transform-origin: 50% 50%;
     opacity: 1;
     transform: translate(0px, 0px);
     visibility: visible;
     font-weight: 500 !important;
   }
-  .sliderstyle{
- 
-    padding-top: 1rem!important;
+
+  .sliderstyle {
+    background-color: #181236;
+    padding-top: 1rem !important;
   }
+
   .Silhouette-image {
     position: absolute !important;
     left: -46% !important;
-    bottom: 0!important;
+    bottom: 0 !important;
     width: 122% !important;
-}
+  }
 
-  .grid-gap{
+  .grid-gap {
 
     gap: 60px !important;
   }
 
-  .gap-0{
+  .gap-0 {
     gap: 0px !important
   }
+
   .sectionourvalues {
     background-color: white !important;
 
@@ -1105,7 +1164,10 @@
     width: 100%;
 
   }
-
+  .highlight-spot-map {
+    width: 18px;
+    height: 18px;
+  }
   .dropDown-menu {
     position: static;
     width: 100%;
@@ -1160,7 +1222,7 @@
 
 
 }
- 
+
 .contentPage {
   background-color: white;
   padding-left: 10px;
@@ -1305,6 +1367,56 @@ ul.bullet-before li {
 }
 
 @media only screen and (max-width: 600px) {
+  .highlight-spot-map:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1, 1);
+    pointer-events: none;
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+
+    background-color: #6fedef;
+    opacity: 0.5;
+
+    transition: border-color 1s linear;
+    animation: icon-pulse-map 2s linear infinite;
+
+
+  }
+
+  @keyframes icon-pulse-map {
+
+    0% {
+      transform: translate(-50%, -50%) scale(1, 1);
+      opacity: 0;
+    }
+
+    20% {
+      transform: translate(-50%, -50%) scale(1.2, 1.2);
+      opacity: 0.2;
+    }
+
+    50% {
+      transform: translate(-50%, -50%) scale(1.5, 1.5);
+      opacity: 0.4;
+    }
+
+    100% {
+      transform: translate(-50%, -50%) scale(2, 2);
+      opacity: 0;
+    }
+  }
+
+  .world-map {
+    width: 100% !important;
+    margin: 0 auto;
+    display: block;
+  }
+
   .text-ourdna-mobile {
     border-left: 0.4rem solid #1EEDE2 !important;
     padding-left: 18px !important;
@@ -1435,7 +1547,7 @@ ul.bullet-before li {
   line-height: 1.2;
   padding: 0px 0px 0px 0px;
   font-size: 20px;
-  
+
 
 }
 
@@ -1451,34 +1563,45 @@ ul.bullet-before li {
   background-color: white;
   color: black;
   border-top: 10px solid #1EEDE2;
-  height:100%;
+  height: 100%;
 }
 
 @media all and (min-width: 992px) {
-  .navbar .nav-item .dropdown-menu{ display: none; }
-  .navbar .nav-item:hover .nav-link{   }
-  .navbar .nav-item:hover .dropdown-menu{ display: block; }
-  .navbar .nav-item .dropdown-menu{ margin-top:20px; }
-.dropdown-menu{
-  min-width: 268px;
-  width: auto;
-  left: 0;
-  background-color: transparent;
-  border: none;
-}
-.subdropdown-menu{
-  margin-top: 40px !important;
-  background-color: #fff;
-  font-size: 16px;
-  color: #5e709d;
-  display: block;
-  width: 268px !important;
-  transition: 0.5s;
-  transition-delay: 0s;
-  transition-delay: 0s;
-  box-shadow: 0 30px 70px 0 rgba(41, 41, 43, 0.1)
-  
-}
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .navbar .nav-item:hover .nav-link {}
+
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 20px;
+  }
+
+  .dropdown-menu {
+    min-width: 268px;
+    width: auto;
+    left: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  .subdropdown-menu {
+    margin-top: 40px !important;
+    background-color: #fff;
+    font-size: 16px;
+    color: #5e709d;
+    display: block;
+    width: 268px !important;
+    transition: 0.5s;
+    transition-delay: 0s;
+    transition-delay: 0s;
+    box-shadow: 0 30px 70px 0 rgba(41, 41, 43, 0.1)
+  }
+
   .navbar .nav-item .dropdown-menu {
     display: none;
   }
@@ -1496,45 +1619,46 @@ ul.bullet-before li {
   .dropdown-menu {
     width: 200px;
   }
-.dropdown-item:hover {
 
-  background-color: transparent;
-}
+  .dropdown-item:hover {
+
+    background-color: transparent;
+  }
 
 
-.subdropdown-menu li a{
-  position: relative;
-  z-index: 1;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: #5e709d;
-  padding: 11px 30px;
-  display: block;
-  transition: 0.5s;
-  transition-delay: 0s;
-  transition-delay: 0s;
-  line-height: 28px;
-}
+  .subdropdown-menu li a {
+    position: relative;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #5e709d;
+    padding: 11px 30px;
+    display: block;
+    transition: 0.5s;
+    transition-delay: 0s;
+    transition-delay: 0s;
+    line-height: 28px;
+  }
 
-.subdropdown-menu li{
-  border-bottom: 1px solid #f8f9fa !important;
-}
+  .subdropdown-menu li {
+    border-bottom: 1px solid #f8f9fa !important;
+  }
 
-.subdropdown-menu li a::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 0;
-  background-color: #eff5fb ;
-  transition: width 0.5s cubic-bezier(0.35, 0.7, 0.35, 1) 0s;
-  z-index: -1;
-}
+  .subdropdown-menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #eff5fb;
+    transition: width 0.5s cubic-bezier(0.35, 0.7, 0.35, 1) 0s;
+    z-index: -1;
+  }
 
-.subdropdown-menu li:hover a::after {
-  width: 100% !important; 
-}
+  .subdropdown-menu li:hover a::after {
+    width: 100% !important;
+  }
 
 
 
@@ -1558,35 +1682,37 @@ ul.bullet-before li {
   font-weight: bold;
 }
 
-.main-wrapper{
+.main-wrapper {
   width: 1170px;
   margin: 0 auto;
   max-width: 95%;
 
 }
+
 .content-ourvalues {
   width: 20%;
   margin: 10px;
-  padding-right: 1.25rem!important;
-  padding-left: 1.25rem!important;
-  
+  padding-right: 1.25rem !important;
+  padding-left: 1.25rem !important;
+
 }
+
 .slidertitle>div>h1 {
-  font-family: "Raleway", Sans-serif ;
-  font-weight: 500  ;
-  font-size: 50px  ;
-  color:  white;
- 
+  font-family: "Raleway", Sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: white;
+
 }
 
 .slidercontent>div>span {
-  font-family: "Raleway", Sans-serif  ;
-  font-weight: 500  ;
-  font-size: 30px  ;
-  color:  white;
+  font-family: "Raleway", Sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
   font-weight: bold;
 
- 
+
   text-decoration: none;
   white-space: normal;
 
@@ -1599,47 +1725,48 @@ ul.bullet-before li {
   transform: translate(0px, 0px);
   visibility: visible;
 }
-.Silhouette-image{
+
+.Silhouette-image {
   position: absolute;
-  left: 18%  ;
-  bottom: 0 ;
+  left: 18%;
+  bottom: 0;
   width: 53%;
 }
- 
- 
-.slider-container{
- 
- 
+
+
+.slider-container {}
+
+.sliderstyle {
+  background-color: #181236;
+  position: relative;
+  padding-top: 10rem;
 }
-.sliderstyle{
-  position:relative;
-  padding-top: 10rem ;
-}
-.buttonSlider{ 
-  margin:0 auto  ;
-  display: block !important;  
-  width: 45%;
+
+.buttonSlider {
+  margin-left: 13%;
+  display: block !important;
+  width: 26%;
   height: auto;
   line-height: 58px;
   font-size: 17px;
   border-radius: 22px;
- 
+
   border-width: 0px;
 }
- 
 
-.slidercontent  {
+
+.slidercontent {
   font-family: "Raleway", Sans-serif !important;
-  margin-bottom: 1.5rem!important;
-  
+  margin-bottom: 1.5rem !important;
+
 }
 
-.footprint   {
-padding-bottom:10rem;
-  
+.footprint {
+  padding-bottom: 10rem;
+
 }
 
-.master-button{
+.master-button {
   font-weight: 500;
   position: relative;
   overflow: hidden;
@@ -1656,7 +1783,7 @@ padding-bottom:10rem;
   color: #1c1735 !important;
 }
 
-.master-button a{
+.master-button a {
   color: #1c1735 !important;
   font-family: "Helvetica", Sans-serif;
   font-weight: normal;
@@ -1675,28 +1802,28 @@ padding-bottom:10rem;
   background-color: #1c1735 !important;
   z-index: -1;
   border-radius: 100%;
- 
+
 }
 
 .master-button:hover .animated-link {
   color: #ffffff !important;
 }
 
-.master-button:hover .hover-effect{
+.master-button:hover .hover-effect {
   width: calc(100% * 2.25);
   padding-top: calc(100% * 2.25);
 }
 
-.btn-padding{
+.btn-padding {
   padding: 30px 40px 30px 40px;
 }
 
-.btn-padding-m{
+.btn-padding-m {
   padding: 25px 40px 25px 40px;
 }
 
 
-.btn-style{
+.btn-style {
 
   background-color: #05F2F2;
   border-radius: 19em 19em 19em 19em;
@@ -1705,7 +1832,7 @@ padding-bottom:10rem;
   align-items: center;
 }
 
-.btn-style a{
+.btn-style a {
 
   font-family: "Raleway", Sans-serif;
   font-size: 18px;
@@ -1717,4 +1844,136 @@ padding-bottom:10rem;
   min-height: 450px ;
 
 } 
+
+.letter-spacing {
+  letter-spacing: 2px !important;
+}
+
+
+.tunisie-map {
+  top: 36%;
+  left: 45.6%;
+
+}
+
+.maroc-map {
+  top: 43%;
+  left: 42.6%;
+}
+
+.portugal-map {
+  top: 23%;
+  left: 45.2%;
+}
+
+.france-map {
+  top: 31%;
+  left: 43.6%;
+}
+
+.india-map {
+  top: 47%;
+  left: 58.6%;
+}
+
+
+.world-map {
+  width: 59.5%;
+  margin: 0 auto;
+  display: block;
+}
+
+.highlight-spot-map {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+
+  cursor: pointer;
+  background-color: #6fedef;
+
+}
+
+.highlight-spot-map:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1, 1);
+  pointer-events: none;
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+
+  background-color: #6fedef;
+  opacity: 0.5;
+
+  transition: border-color 1s linear;
+  animation: icon-pulse-map 2s linear infinite;
+
+
+}
+
+@keyframes icon-pulse-map {
+
+  0% {
+    transform: translate(-50%, -50%) scale(1, 1);
+    opacity: 0;
+  }
+
+  20% {
+    transform: translate(-50%, -50%) scale(1.2, 1.2);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.5, 1.5);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(2, 2);
+    opacity: 0;
+  }
+}
+
+.style-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* for div */
+  align-items: center;
+  /* for text */
+
+}
+
+.ReactGridGallery_custom-overlay{
+  transition: all .5s ease-in-out; 
+  background: #181236b0 !important; 
+}
+.style-element1 {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  width: 50%;
+  margin: 0px auto;
+  border-bottom: 3px solid rgb(5 242 242);
+  
+  overflow: hidden;
+  font-family: "Raleway", Helvetica, sans-serif;
+
+}
+
+.style-element2 {
+ 
+  color: white;
+  font-weight: 500;
+  font-family: "Raleway", Helvetica, sans-serif;
+}
 
