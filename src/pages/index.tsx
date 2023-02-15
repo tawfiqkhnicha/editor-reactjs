@@ -49,15 +49,16 @@ export default function Home() {
         <Hotspot className="section-padding mt-lg-5" />
       </Section>
 
-      <Section background={true} fullWidth={false} className="section-padding-y position-relative">
+      <Section background={true} fullWidth={false} className="section-padding-y position-relative ">
          <img src="/Fleche-2-Home.png" className="fleche-2-home flech_width position-absolute" />
-        <Section className="main-wrapper  ">
+        <Section className={screenWidth > 900 ? "w-100 m-auto" : "main-wrapper"}>
           <Grid>
-            <Widget size={screenWidth > 600 && screenWidth <= 900 ? 6 : 4} className={`order-xl-1 order-lg-1 order-md-1 order-2 order-sm-2  d-flex align-items-center ${screenWidth > 900 ? "justify-content-start" : "justify-content-center"}`}>
+            <Widget size={screenWidth > 600 && screenWidth <= 900 ? 6 : 6} className={`order-xl-1 order-lg-1 order-md-1 order-2 order-sm-2  d-flex align-items-center ${screenWidth > 900 ? "justify-content-center" : "justify-content-center"}`}>
               <Button className="btn-padding btn-style" variant="link" title=" Discover them" href="/our-values" />
             </Widget>
-            <Widget size={screenWidth > 600 && screenWidth <= 900 ? 6 : 8} className={`order-xl-2 order-lg-2 order-md-2 order-1 order-sm-1 d-flex align-items-center justify-content-end mt-5`}>
-              <Card styleHeaderPage="text-white left-border" styleContentPage="text-white" HeaderTitle="<h2>Our values of excellence and <br> respect </H2>" content="<p>guide our actions and the way we work with our clients, partners and <br> collaborators. Our values allow us to surpass ourselves on a daily basis. </p>" />
+            <Widget size={screenWidth > 600 && screenWidth <= 900 ? 6 : 6} className={`order-xl-2 order-lg-2 order-md-2 order-1 order-sm-1 d-flex align-items-center justify-content-start mt-5`}>
+              <Card cardStyle={`${screenWidth > 900 ? "w-80" : ""}`} styleHeaderPage="text-white left-border" styleContentPage="text-white" HeaderTitle={HomePageData['section_2'].title}
+               content={HomePageData['section_2'].content} />
             </Widget>
           </Grid>
         </Section>
@@ -68,10 +69,14 @@ export default function Home() {
         <img src="/Fleche-3-Home.png" className="fleche-3-home position-absolute" />
         <Grid>
           <Widget size={6} className={` d-flex ${screenWidth <= 600 ? "justify-content-center " : "justify-content-start " } align-items-start mt-mobile`}>
-            <img src="/hands.png" className="hands-home" />
+            <img src={HomePageData['section_3'].image} className="hands-home" />
           </Widget>
-          <Widget size={6} className=" d-flex align-items-start justify-content-start mt-5 ">
-            <Card styleHeaderPage="left-border" HeaderTitle="<h2>Make us your  privileged ally </H2>" content="<p>As each company is unique, and each project has its own unique set of challenges and opportunities, we are ready to intervene at any stage of the construction process by providing our team of business experts</p>" />
+          <Widget size={6} className=" d-flex align-items-start justify-content-end mt-5 ">
+            <Card
+            cardStyle="w-100" 
+            styleHeaderPage="left-border" 
+            HeaderTitle={HomePageData['section_3'].title}
+            content={HomePageData['section_3'].content} />
           </Widget>
         </Grid>
       </Section>
@@ -93,7 +98,9 @@ export default function Home() {
 
       <Section background={true} fullWidth={false} className="section-padding-y section-padding-x  ">
         <Section className="main-wrapper section-padding-x section-padding-y ">
-          <Card styleHeaderPage="left-border text-white"  styleContentPage="text-white" HeaderTitle="<h2>Faites-nous <br> confiance</h2>" content="Nous vous proposons un accompagnement sur-mesure <br> et possédons une expertise poussée dans l’industrie." />
+          <Card styleHeaderPage="left-border text-white"  styleContentPage="text-white"
+          HeaderTitle={HomePageData['section_4'].title} 
+          content={HomePageData['section_4'].content} />
            <div className=" fleche-4-home-container d-flex justify-content-end w-90 mb-lg-5">
               <img src="/Fleche-4-Home.png" className="fleche-4-home" />
            </div> 
@@ -114,10 +121,12 @@ export default function Home() {
         <img src="/Fleche-5-Home.png" className="fleche-5-home position-absolute" />
         <Grid className="gap-2 ">
           <Widget size={6} className="d-flex align-items-start justify-content-center">
-            <img className="talent-image" src="/Galerie-talents.png" />
+            <img className="talent-image" src={HomePageData['section_5'].image}/>
           </Widget>
           <Widget size={4} className=" d-flex align-items-start justify-content-start mt-5 ">
-            <Card styleHeaderPage="left-border" HeaderTitle="<h2>Nos talents sont <br>à votre service </H2>" content="<p>Au coeur des technologies, notre équipe <br> conçoit, développe et améliore chacun <br> de vos outils.</p>" />
+            <Card styleHeaderPage="left-border"
+             HeaderTitle={HomePageData['section_5'].title}
+             content={HomePageData['section_5'].content} />
           </Widget>
           <Widget size={12} className=" d-flex align-items-center justify-content-center mt-lg-5 mt-sm-6">
             <Button className="btn-padding btn-style" title="Faisons connaissance" href="/our-values" />
@@ -128,7 +137,9 @@ export default function Home() {
       <Section background={true} fullWidth={true} className=" section-padding-y ">
 
         <Section className="main-wrapper section-padding-x">
-          <Card styleContentPage="text-white" HeaderTitle="<h2>What if we carried <br> your project? </H2>" styleHeaderPage="left-border text-white" content="<p>Do you need human or technological resources to mature your ideas?</p>" />
+          <Card styleContentPage="text-white "
+           HeaderTitle={HomePageData['section_6'].title} styleHeaderPage="left-border text-white" 
+           content={HomePageData['section_6'].content}/>
         </Section>
 
         <Section className="position-relative  height-l">
@@ -146,13 +157,15 @@ export default function Home() {
         <Grid>
           <Widget size={5} className=" d-flex flex-column justify-content-start mt-5">
 
-            <Card cardStyle="mt-sm-7" styleHeaderPage="left-border" HeaderTitle="<h2>Contactez-nous </H2>" content="<p>afin de discuter plus en détails de vos enjeux.</p>" />
+            <Card cardStyle="mt-sm-7" styleHeaderPage="left-border"
+             HeaderTitle={HomePageData['section_7'].title}
+             content={HomePageData['section_7'].content} />
             {screenWidth > 600 && <div className="d-flex justify-content-end">
               <Button className="btn-padding btn-style card-btn" variant="link" title="Parlons-en" href="/contact" />
             </div>}
           </Widget>
           <Widget size={6} className={`d-flex align-items-center   ${screenWidth > 600 ? "justify-content-end" : "flex-column justify-content-center"} justify-content-end`}>
-            <img src="/bulle.png" className="bulle-image " />
+            <img src={HomePageData['section_7'].image} className="bulle-image " />
             {screenWidth <= 600 &&
               
                <Button className="btn-padding btn-style card-btn mt-5" variant="link" title="Parlons-en" href="/contact" />
