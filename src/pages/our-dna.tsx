@@ -8,12 +8,13 @@ import Widget from '@/common/components/widget/Widget'
 import Grid from '@/common/components/grid/Grid'
 import GalleryFootprint from '@/common/components/gallery/GalleryFootprint'
 import 'animate.css';
+import Button2 from '@/common/components/button2/Button2'
  
 export default function OurDna() {
   let data = ["Relying on high value-added consulting and a wide range of integrated expertise in diversified sectors, MENAPS acts from strategic vision to operational implementation by combining innovation and new technologies, specifically digital.", "Added value and performance oriented, MENAPS offer is led by expert consultants with recognized experience, in a human-sized organization, remaining very attached to the vivacity and inventiveness of the initial start-up spirit, well adapted to the requirements of the current era.", "MENAPS group is also characterized by a strong ambition to democratize its high value-added services to the greatest number of companies. MENAPS is also committed to social, societal and environmental commitment.", "MENAPS group is driven by a dynamic of continuous development, based on a diversification of the consulting areas and an international scope in constant growth, as its network is deployed."]
   return (
     <>
-      <Section className="my-lg-5" background={false} fullWidth={false}>
+      <Section className="my-lg-5 main-wrapper" background={false} fullWidth={false}>
         <Grid>
 
           <Widget size={12} className=" d-sm-block d-md-none" >
@@ -35,8 +36,8 @@ export default function OurDna() {
 
         </Grid>
       </Section >
-
-      <Section className="section2-ourdna  " background={true} fullWidth={false}>
+      <Section className="section2-ourdna   " background={true} fullWidth={false}>
+      <Section className="section2-ourdna main-wrapper " background={true} fullWidth={false}>
         <Grid>
 
 
@@ -51,10 +52,11 @@ export default function OurDna() {
 
         </Grid>
       </Section >
+      </Section >
 
 
 
-      <Section className="my-5" background={false} fullWidth={false}>
+      <Section className="my-5 main-wrapper" background={false} fullWidth={false}>
         <Grid>
 
           <Widget size={6} className="  " >
@@ -64,7 +66,7 @@ export default function OurDna() {
                   content={"<p> Do not hesitate to contact our business referent</p>"} />
               </div>
               <div className="col-12  d-md-block d-none "  >
-              <Button title="Contact Hamdi & Majd" href=" " variant="btnLink"  styleButton="w-50 py-3  centre section2--ourdna_button" animated={true} />
+              <Button2 title="Contact Hamdi & Majd" href=" " variant="btnLink"  styleButton="w-50 py-3  centre section2--ourdna_button" animated={true} />
               </div>
             </div>
           </Widget>
@@ -73,7 +75,7 @@ export default function OurDna() {
 
           </Widget>
           <Widget size={12} className="d-sm-block d-md-none py-5  " >
-          <Button title="Contact Hamdi & Majd" href=" " variant="btnLink"  styleButton="w-50  centre section2--ourdna_button " animated={true} />
+          <Button2 title="Contact Hamdi & Majd" href=" " variant="btnLink"  styleButton="w-50  centre section2--ourdna_button " animated={true} />
 
           </Widget>
 
