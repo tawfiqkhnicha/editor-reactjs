@@ -62,7 +62,7 @@ export default function OurDna() {
           <Widget size={6} className="  " >
             <div className="row"  >
               <div className="col-12"  >
-                <Card HeaderTitle="<h1>Interested ?</h1>" styleHeaderPage="HeaderPage " styleContentPage="text-ourdna  "
+                <Card HeaderTitle="<h1>Interested ?</h1>" styleHeaderPage="HeaderPage left-border" styleContentPage="text-ourdna  "
                   content={"<p> Do not hesitate to contact our business referent</p>"} />
               </div>
               <div className="col-12  d-md-block d-none "  >

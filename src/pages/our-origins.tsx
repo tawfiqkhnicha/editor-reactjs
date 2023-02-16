@@ -15,7 +15,7 @@ export default function OuerOrigins() {
 
       
       <Section className="main-wrapper" background={false} fullWidth={false}>
-        <Card HeaderTitle="<h2>La génèse</h2>" styleHeaderPage="  HeaderPage left-border " styleContentPage="text-content"
+        <Card HeaderTitle="<h1>La génèse</h1>" styleHeaderPage="  HeaderPage left-border " styleContentPage="text-content"
           content={"<p>de notre histoire</br> MENAPS est né de la volonté de proposer un conseil intégré allant de la vision stratégique à la concrétisation opérationnelle allié à une forte dimension digitale,</p>"} />
       </Section>
       <Section background={false} fullWidth={true}>
@@ -24,7 +24,7 @@ export default function OuerOrigins() {
       <Section className=" "  background={true} fullWidth={false}> 
       <Section className="my-5 main-wrapper " background={true} fullWidth={false}>
         <Grid>
-          <Card styleHeaderPage="text-white left-border my-5" styleContentPage="text-white text-content " HeaderTitle="<h2>Trouvons ensemble</H2>" content="<p>les projets de demain </p>" />
+          <Card cardStyle="my-5" styleHeaderPage="text-white left-border " styleContentPage="text-white text-content " HeaderTitle="<h1>Trouvons ensemble</h1>" content="<p>les projets de demain </p>" />
           <Button2 styleButton="  button-width my-3" variant="link" title=" Discover them" href="/our-values" />
 
         </Grid>

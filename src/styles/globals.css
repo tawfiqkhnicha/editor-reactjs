@@ -1,5 +1,5 @@
 
-
+@import "\globals2.css";
 .w-80{
   width: 80%;
 }
@@ -706,7 +706,11 @@
 
   }
   .copyright{
-    padding: 30px 0 27px;
+    padding: 30px 0 27px;}
+  .section2-ourdna {
+    margin-top: 0px !important;
+     ;
+  
   }
   .btn-style a{
     font-size: 14px !important;
@@ -847,7 +851,7 @@
 
   .sectionourvalues {
     background-color: white !important;
-
+    margin-top: 0px !important;
 
   }
 
@@ -1438,7 +1442,7 @@ ul.bullet-before li {
   }
 
   .world-map {
-    width: 100% !important;
+    width:83.5% !important;
     margin: 0 auto;
     display: block;
   }
@@ -1460,6 +1464,7 @@ ul.bullet-before li {
   }
 
   .content-ourvalues {
+    padding:20px;
     background-color: #181236;
     margin: 20px;
 
@@ -1496,7 +1501,8 @@ ul.bullet-before li {
   margin: 0 auto;
   height: auto !important;
   padding: 10px;
-  width: 25%;
+  width: 19%;
+  margin-bottom: 60px !important;
 }
 
 .text-content {
@@ -1561,7 +1567,7 @@ ul.bullet-before li {
 
 .sectionourvalues {
   background-color: #181236;
-  margin-top: 100px !important;
+  margin-top: 100px  ;
   margin-bottom: 100px !important;
 
 
@@ -1586,10 +1592,11 @@ ul.bullet-before li {
 }
 
 .content:hover {
-  background-color: white;
   color: black;
+  background-color: white; 
   border-top: 10px solid #1EEDE2;
   height: 100%;
+  transition: color 0.3s ease-in;
 }
 
 @media all and (min-width: 992px) {
@@ -1702,10 +1709,11 @@ ul.bullet-before li {
 
 .HeaderPage>div>h1 {
   font-family: "Raleway", Sans-serif !important;
-  font-weight: 700 !important;
-  font-size: 42px !important;
+  font-weight: 700  ;
+  font-size: 42px ;
   color: #181236;
   font-weight: bold;
+
 }
 
 .main-wrapper {
@@ -1716,7 +1724,7 @@ ul.bullet-before li {
 }
 
 .content-ourvalues {
-  width: 20%;
+ 
   margin: 10px;
   padding-right: 1.25rem !important;
   padding-left: 1.25rem !important;
@@ -1765,7 +1773,7 @@ ul.bullet-before li {
 .sliderstyle {
   background-color: #181236;
   position: relative;
-  padding-top: 10rem;
+  padding-top: f10rem;
 }
 
 .buttonSlider {
