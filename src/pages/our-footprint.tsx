@@ -23,7 +23,7 @@ export default function OurFootprint() {
         <Hotspot2 className="section-padding  mt-lg-5" />
       </Section> 
       <Section2 className=" gallerywallaper "  background={true} fullWidth={false}> 
-      <div className="secltion-expbg  d-none  d-md-block"><img src="/carre-bg2.png" /></div>
+      <div className="secltion-expbg2  d-none  d-md-block"><img src="/carre-bg2.png" /></div>
       <Card  cardStyle="main-wrapper mainindex text-white my-5" styleHeaderPage="text-white left-border " styleContentPage="text-white text-content " HeaderTitle="<h1>Nos locaux</h1>" content="<p>sont pensés pour le bien-etre de nos salariés .</p>" />
       <GalleryFootprint padding={true} data={[
         {
