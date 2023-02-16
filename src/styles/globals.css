@@ -2073,3 +2073,7 @@ ul.bullet-before li {
   right: 15%;
 
 }
+
+.pointer{
+  cursor: pointer;
+}
