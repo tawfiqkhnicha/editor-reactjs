@@ -4,7 +4,7 @@ import Card from '@/common/components/card/Card'
 import ScrollComponent from '@/common/components/scrollComponent/ScrollComponent'
 import ContentOurOrigins from '@/common/components/contentOurOrigins/ContentOurOrigins'
 import Button from '@/common/components/button/Button'
-import Section from '@/common/components/Section/Section'
+import Section2 from '@/common/components/Section2/Section2'
 import Widget from '@/common/components/widget/Widget'
 import Grid from '@/common/components/grid/Grid'
 import GalleryFootprint from '@/common/components/gallery/GalleryFootprint'
@@ -18,18 +18,18 @@ export default function OurValues() {
 
   return (
     <>
-      <Section className="main-wrapper" background={false} fullWidth={false}>
+      <Section2 className="mt-5 main-wrapper" background={false} fullWidth={false}>
         <Card styleHeaderPage="HeaderPage left-border " HeaderTitle="<h1>Our founding values</h1>" styleContentPage="OurValuesheadertext   "
           content={"<p>are expressed in our daily work.</br> All of our employees share the same vision of the company and together they bring this common foundation to life.</p>"} />
-      </Section>
-      <Section className=" " background={false} fullWidth={true}>
+      </Section2>
+      <Section2 className=" ourvaluesimagesection" background={false} fullWidth={true}>
         <img className="ourvaluesimage  " src="VALEURS-UK.png" />
-      </Section>
+      </Section2>
 
       
-      <Section   background={true} fullWidth={false}>
-        <Section className="sectionourvalues section2-ourdna py-5  main-wrapper" background={false} fullWidth={false}>
-          <div className="d-flex flex-wrap  flex-row mx-1">
+      <Section2 className="sectionourvalues "  background={false} fullWidth={false}>
+        <Section2 className="  section2-ourdna py-5  main-wrapper" background={false} fullWidth={false}>
+          <div className="d-flex  flex-wrap-our-values     mx-1">
 
             {data.map((item, i: number) => (
               <div className="content-ourvalues content  " >
@@ -39,27 +39,24 @@ export default function OurValues() {
               </div>
 
             ))}
-
-
+ 
             {/* {data.map((item , i: number) => (
             <Widgedivt size={2} className="content-ourvalues content" >
               <p className="headercontetn  " key={i} dangerouslySetInnerHTML={{ __html: item.title }} />
               <p className="contentourvalues my-5" key={i} dangerouslySetInnerHTML={{ __html: item.content }} />
 
-            </Widget>
-
-          ))} */}
-
+            </Widget> 
+          ))} */} 
           </div>
-        </Section>
-      </Section>
-      <Section className="my-5 main-wrapper" background={false} fullWidth={false}>
+        </Section2>
+      </Section2>
+      <Section2 className="my-5 main-wrapper" background={false} fullWidth={false}>
         <Grid>
           <Card styleHeaderPage=" textstyle left-border " styleContentPage=" OurValuesheadertext   " HeaderTitle="<h1>Our origins?</h1>" content="<p> Discover here our genesis  .</p>" />
           <Button2 styleButton="  button-width" variant="link" title="The origin" href="/The origin" />
 
         </Grid>
-      </Section>
+      </Section2>
     </>
   )
 }
