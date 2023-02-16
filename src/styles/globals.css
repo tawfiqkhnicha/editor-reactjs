@@ -234,14 +234,14 @@
 
 
 
-.footer-link>.nav-items {
+.footer-link>.footer-items {
   position: relative !important;
   transition: all ease 0.3s !important;
   padding-bottom: 2px !important;
 
 }
 
-.footer-link>.nav-items::after {
+.footer-link>.footer-items::after {
 
   content: "" !important;
   position: absolute !important;
@@ -253,7 +253,7 @@
   left: 0%;
 }
 
-.footer-link>.nav-items:hover::after {
+.footer-link>.footer-items:hover::after {
   width: 100% !important;
   height: 2px !important;
   background-color: #05f2f2 !important;

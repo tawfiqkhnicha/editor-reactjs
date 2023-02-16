@@ -25,7 +25,7 @@ export default function Footer(){
                 </div>
                 {item.items.map(ele =>{
                     
-                    return  <a href={ ele.href} target='_blank' className="widget-item-font text-reset text-decoration-none" > <i className={ele.icon}></i></a>
+                    return  <a href={ ele.href} target='_blank' className="widget-item-font text-reset text-decoration-none " > <i className={ele.icon}></i></a>
 
                 })}
              </>
@@ -38,7 +38,7 @@ export default function Footer(){
                 return <>
                 {item.type === "contact" ? <p className="widget-item-font">
                       <i className={`${ele.icon} marginRight`}></i> <span> {ele.title} </span></p>
-                    : <p className="footer-link"> <Link href={ele.href} className="text-reset text-decoration-none widget-item-font"> {ele.title}</Link> </p>
+                    : <p className="footer-link"> <Link href={ele.href} className="text-reset text-decoration-none widget-item-font footer-items"> {ele.title}</Link> </p>
 
                 }
                 </> 
