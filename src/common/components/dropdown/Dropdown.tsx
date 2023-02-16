@@ -6,7 +6,7 @@ import { IDropdown } from "./IDropdown"
 
 
 
-export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDropdown){
+export default function Dropdown ({breakpoint, style, dropdownTitle, items, closeMenu}: IDropdown){
 
     const [isOpen, setOpen] = useState(false)
     const [language, setLanguage] = useState({
@@ -18,6 +18,9 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDr
 
     const handleLanguage  = (lang: {title: string, icon: string})=>{  
             setLanguage(()=> ({...language, title: lang.title, icon: lang.icon}))
+            if(breakpoint && breakpoint <=990){
+                closeMenu
+            }
     }
   
     const handleClick = () =>{
@@ -108,14 +111,14 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items}: IDr
      }
 
     { isOpen &&(
-         <ul  className={`dropDown-menu`}   onMouseLeave={()=> closeDropdown()}>
+         <ul  className={`dropDown-menu`}   >
 
                         {style === 'lang' ? items.map((item: any, index: number) =>{
                             return !item.isSelected && <li  key={index} >   
-                            <Link className="dropdown-item navbar-items " href={item.href} onClick={()=> handleLanguage(item)}>  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
+                            <Link   className="dropdown-item navbar-items " href={item.href} onClick={()=> handleLanguage(item)}>  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
                         }) :items.map((item: any, index: number) =>{
                             return  <li  key={index} >   
-                            <Link className="dropdown-item navbar-items " href={item.href} >  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
+                            <Link onClick={closeMenu} className="dropdown-item navbar-items " href={item.href} >  {style === "lang" && <Img image={item.icon} alt={item.title} width={18} height={12} marginRight = {true}/>} {item.title}</Link></li>
                         }) }
          </ul>
      )}

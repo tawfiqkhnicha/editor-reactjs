@@ -689,7 +689,22 @@
 /* mobile*/
 @media only screen and (max-width: 600px) {
 
- 
+  .description{
+    font-size: 28px !important;
+    line-height: 36px !important;
+  }
+
+  .fleche-nos-metiers-2{
+    width: 20% !important;
+    top: -65% !important;
+  }
+  .fleche-nos-metiers{
+    width: 30% !important;
+    right: 12% !important;
+
+
+
+  }
   .copyright{
     padding: 30px 0 27px;
   }
@@ -1019,6 +1034,10 @@
 
 @media only screen and (max-width: 900px) and (min-width: 600px) {
 
+  .fleche-nos-metiers-2{
+    top: -50% !important;
+    right: 15%;
+  }
 .margin-bottom-xxl{
   margin-bottom: 0% !important;
 }
@@ -1692,7 +1711,7 @@ ul.bullet-before li {
 .main-wrapper {
   width: 1170px;
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 90%;
 
 }
 
@@ -2002,7 +2021,6 @@ ul.bullet-before li {
   z-index: 9999;
   border-radius: 10px;
   cursor: pointer;
- 
 }
 
 .bi-chevron-up {
@@ -2011,4 +2029,39 @@ ul.bullet-before li {
   height: 100% !important;
   color: #4732d7 !important;
   font-size: 16px !important;
+}
+
+.description{
+  font-family: "Raleway", Sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.globale-primary-color{
+  color: #181236
+}
+
+
+
+.relative-div{
+  position: relative;
+  height: 20px;
+  margin-bottom: 10%;
+  margin-top: 0%;
+}
+
+.fleche-nos-metiers{
+  
+  position: absolute;
+  right: 10%; 
+  top: -100% !important;
+}
+
+.fleche-nos-metiers-2{
+  width: 18%;
+  position: absolute;
+  top: -75%;
+  right: 15%;
+
 }

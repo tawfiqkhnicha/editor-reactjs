@@ -160,7 +160,7 @@ export default function Home() {
 
       </Section>
 
-      <Section className="main-wrapper section-padding-x position-relative pb-6" background={false} fullWidth={false}>
+      <Section className="main-wrapper section-padding-x position-relative pb-6 " background={false} fullWidth={false}>
       <img src="/Fleche-5-Home.png" className="fleche-6-home position-absolute" />
         <Grid>
           <Widget size={5} className=" d-flex flex-column justify-content-start mt-5">

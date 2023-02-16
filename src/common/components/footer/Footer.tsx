@@ -6,6 +6,10 @@ import Section from "../Section/Section";
 import Grid from "../grid/Grid";
 
 export default function Footer(){
+
+    const scrollTop = function(){
+        window.scrollTo(0, 0)
+    } 
     return (
 
 
@@ -54,7 +58,7 @@ export default function Footer(){
           
   </Section>
   <div className="copyright  ">
-     <Link href='/' className="scroll-top"> <i className="bi bi-chevron-up"></i> </Link>   
+     <a  className="scroll-top" onClick={()=> scrollTop()}> <i className="bi bi-chevron-up"></i> </a>   
      <p className="copyright-text mt-2"> &copy; {new Date().getFullYear()} by Menaps - All Right Reserved </p>
   </div>
 </footer>
