@@ -1,6 +1,7 @@
 export interface IGrid {
     children?: React.ReactNode,
-    className?: string
+    className?: string,
+    backgroundColor?: boolean
 
   
 

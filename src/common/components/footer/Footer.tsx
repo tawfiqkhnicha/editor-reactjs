@@ -6,6 +6,10 @@ import Section from "../Section/Section";
 import Grid from "../grid/Grid";
 
 export default function Footer(){
+
+    const scrollTop = function(){
+        window.scrollTo(0, 0)
+    } 
     return (
 
 
@@ -25,7 +29,7 @@ export default function Footer(){
                 </div>
                 {item.items.map(ele =>{
                     
-                    return  <a href={ ele.href} target='_blank' className="widget-item-font text-reset text-decoration-none" > <i className={ele.icon}></i></a>
+                    return  <a href={ ele.href} target='_blank' className="widget-item-font text-reset text-decoration-none " > <i className={ele.icon}></i></a>
 
                 })}
              </>
@@ -38,7 +42,7 @@ export default function Footer(){
                 return <>
                 {item.type === "contact" ? <p className="widget-item-font">
                       <i className={`${ele.icon} marginRight`}></i> <span> {ele.title} </span></p>
-                    : <p className="footer-link"> <Link href={ele.href} className="text-reset text-decoration-none widget-item-font"> {ele.title}</Link> </p>
+                    : <p className="footer-link"> <Link href={ele.href} className="text-reset text-decoration-none widget-item-font footer-items"> {ele.title}</Link> </p>
 
                 }
                 </> 
@@ -53,7 +57,8 @@ export default function Footer(){
     </Section>
           
   </Section>
-  <div className="copyright ">
+  <div className="copyright  ">
+     <a  className="scroll-top" onClick={()=> scrollTop()}> <i className="bi bi-chevron-up"></i> </a>   
      <p className="copyright-text mt-2"> &copy; {new Date().getFullYear()} by Menaps - All Right Reserved </p>
   </div>
 </footer>

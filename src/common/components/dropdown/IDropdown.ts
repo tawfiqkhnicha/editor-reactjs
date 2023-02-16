@@ -2,6 +2,7 @@ export interface IDropdown {
     breakpoint?: number
     style?: string,
     dropdownTitle: string,
-    items: []
+    items: [],
+    closeMenu?: ()=> void
 
 }

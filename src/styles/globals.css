@@ -4,10 +4,10 @@
   width: 80%;
 }
 .fleche-1-home{
-  width: 18%;
+  width: 14%;
   height: auto;
-  top: -20%;
-  right: 0%; 
+  top: -40%;
+  right: 5%; 
 }
 .fleche-2-home{
   width: 12%;
@@ -234,14 +234,14 @@
 
 
 
-.footer-link>.nav-items {
+.footer-link>.footer-items {
   position: relative !important;
   transition: all ease 0.3s !important;
   padding-bottom: 2px !important;
 
 }
 
-.footer-link>.nav-items::after {
+.footer-link>.footer-items::after {
 
   content: "" !important;
   position: absolute !important;
@@ -253,7 +253,7 @@
   left: 0%;
 }
 
-.footer-link>.nav-items:hover::after {
+.footer-link>.footer-items:hover::after {
   width: 100% !important;
   height: 2px !important;
   background-color: #05f2f2 !important;
@@ -272,6 +272,7 @@
 }
 
 .copyright {
+  position: relative;
   background-color: #121332;
   border-top: 1px solid #232649;
   display: flex;
@@ -688,7 +689,25 @@
 /* mobile*/
 @media only screen and (max-width: 600px) {
 
- 
+  .description{
+    font-size: 28px !important;
+    line-height: 36px !important;
+  }
+
+  .fleche-nos-metiers-2{
+    width: 20% !important;
+    top: -65% !important;
+  }
+  .fleche-nos-metiers{
+    width: 30% !important;
+    right: 12% !important;
+
+
+
+  }
+  .copyright{
+    padding: 30px 0 27px;
+  }
   .btn-style a{
     font-size: 14px !important;
   }
@@ -963,10 +982,10 @@
 
   
   .fleche-1-home{
-    width: 18%;
+    width: 40% ;
     height: auto;
-    top: -30%;
-    right: 0%; 
+    top: -40%;
+    right: 5%; 
   }
   .fleche-2-home{
     width: 35%;
@@ -1015,6 +1034,16 @@
 
 @media only screen and (max-width: 900px) and (min-width: 600px) {
 
+  .fleche-nos-metiers-2{
+    top: -50% !important;
+    right: 15%;
+  }
+.margin-bottom-xxl{
+  margin-bottom: 0% !important;
+}
+.section-margin-15{
+  margin-top: 15% !important;
+}
 .mt-sm-6{
   margin-top: 15%;
 }
@@ -1026,10 +1055,7 @@
   width: 100% ;
 }
 .fleche-1-home{
-  width: 18%;
-  height: auto;
-  top: -20%;
-  right: 0%; 
+  display: none; 
 }
 .fleche-2-home{
   width: 18%;
@@ -1685,7 +1711,7 @@ ul.bullet-before li {
 .main-wrapper {
   width: 1170px;
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 90%;
 
 }
 
@@ -1977,3 +2003,65 @@ ul.bullet-before li {
   font-family: "Raleway", Helvetica, sans-serif;
 }
 
+.mobile-margin{
+  margin-top: 32% !important;
+}
+
+.scroll-top {
+  position: absolute;
+  background-color: #05f2f2 !important;
+  right: 40px;
+  top: -35%;
+  display: block;
+  line-height: 48px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  z-index: 9999;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bi-chevron-up {
+ 
+  width: 100% !important;
+  height: 100% !important;
+  color: #4732d7 !important;
+  font-size: 16px !important;
+}
+
+.description{
+  font-family: "Raleway", Sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.globale-primary-color{
+  color: #181236
+}
+
+
+
+.relative-div{
+  position: relative;
+  height: 20px;
+  margin-bottom: 10%;
+  margin-top: 0%;
+}
+
+.fleche-nos-metiers{
+  
+  position: absolute;
+  right: 10%; 
+  top: -100% !important;
+}
+
+.fleche-nos-metiers-2{
+  width: 18%;
+  position: absolute;
+  top: -75%;
+  right: 15%;
+
+}

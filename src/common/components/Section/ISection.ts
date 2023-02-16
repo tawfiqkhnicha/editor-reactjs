@@ -4,5 +4,6 @@ export interface  ISection {
     background?: boolean,
     fullWidth?: boolean,
     className?: string
+    disableMargin?: boolean
 
 }

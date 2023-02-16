@@ -32,19 +32,19 @@ function useOutsideAlerter(mobileContainer : any, screenWidth : number, menuStat
 
 
 
-function NavBarContent({ items, screenWidth }: any ) {
+function NavBarContent({ items, screenWidth, closeMenu }: any ) {
   return (
     <>
      {items.map((item: any, index: number) => {
       return (
         item.type === "dropdown" ? (
-          <Dropdown  breakpoint={screenWidth} style={item.style} dropdownTitle={item.dropdownTitle} items={item.elements} />
+          <Dropdown closeMenu={closeMenu} breakpoint={screenWidth} style={item.style} dropdownTitle={item.dropdownTitle} items={item.elements} />
         ) : item.type === "linkBtn" ? (
           screenWidth > 990 &&
           <Button title={item.title} href={item.href} variant="btnLink" animated={true} />
         ) : (
           screenWidth <= 990 ?      <div className="mobile-nav-item">
-                        <Link className={`${screenWidth <= 990 ? "text-reset text-decoration-none mobile-nav-item-font" : "nav-link navbar-items"} `}href={item?.href}>{item?.title}</Link>
+                        <Link onClick={closeMenu} className={`${screenWidth <= 990 ? "text-reset text-decoration-none mobile-nav-item-font" : "nav-link navbar-items"} `}href={item?.href}>{item?.title}</Link>
                   </div>  :    <Link className={`${screenWidth <= 990 ? "text-reset text-decoration-none mobile-nav-item-font" : "nav-link navbar-items nav-items"} `}href={item?.href}>{item?.title}</Link>
 
 
@@ -120,7 +120,7 @@ export default function Navbar({ items }: INavbar) {
           }
          {screenWidth <= 990 ? 
           <div className={ "mobile-nav-content dropdown-item-border"}> 
-           <NavBarContent items={items} screenWidth= {screenWidth}/>
+           <NavBarContent closeMenu={()=> setToggleMenu(false)} items={items} screenWidth= {screenWidth}/>
           </div> :  <NavBarContent items={items} screenWidth= {screenWidth}/>
 
         } 

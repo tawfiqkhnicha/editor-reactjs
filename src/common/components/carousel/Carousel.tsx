@@ -7,7 +7,7 @@ import Widget from "../widget/Widget"
 export default function Carousel(){
     return (<>
 
-<div className=" sliderstyle  "  >
+<div className=" sliderstyle"  >
       <img className="Silhouette-image" src="/Silhouette-Home.png" alt="First slide" />
         <Grid className="slider-container">
          
