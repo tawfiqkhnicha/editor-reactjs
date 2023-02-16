@@ -53,7 +53,8 @@ export default function Footer(){
     </Section>
           
   </Section>
-  <div className="copyright ">
+  <div className="copyright  ">
+     <Link href='/' className="scroll-top"> <i className="bi bi-chevron-up"></i> </Link>   
      <p className="copyright-text mt-2"> &copy; {new Date().getFullYear()} by Menaps - All Right Reserved </p>
   </div>
 </footer>
