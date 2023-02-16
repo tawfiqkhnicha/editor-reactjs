@@ -65,14 +65,14 @@ export default function Dropdown ({breakpoint, style, dropdownTitle, items, clos
 
         <>
         {breakpoint && breakpoint > 990 ? 
-          <li   className="nav-item dropdown menu-li dropdown-a " >
+          <li   className="nav-item dropdown menu-li dropdown-a pointer " >
           {
-           style === "lang" ? (<a  className="nav-link  dropdown-toggle text-decoration-non d-flex align-items-center navbar-items   " href="#" data-bs-toggle="dropdown" >
+           style === "lang" ? (<a  className="nav-link  dropdown-toggle text-decoration-non d-flex align-items-center navbar-items pe-none"  data-bs-toggle="dropdown" >
                   <Img image={language.icon} alt={language.title} width={18} height={12} marginRight = {true}/> {language.title} 
            </a>
                  
            ) : 
-           <a className={` nav-item nav-link dropdown-toggle text-decoration-none  d-flex align-items-center navbar-items `} href="#" data-bs-toggle="dropdown"  > 
+           <a className={` nav-item nav-link dropdown-toggle text-decoration-none  d-flex align-items-center navbar-items pe-none  `}  data-bs-toggle="dropdown"  > 
            { dropdownTitle} 
            </a>
          }
