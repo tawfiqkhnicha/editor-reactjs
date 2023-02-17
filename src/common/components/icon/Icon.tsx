@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { IIcon } from "./IIcon";
 
-export default function Icon({icon, text, textColor, desktopHeight, desktopWidth, mobileHeight, mobileWidth}: IIcon){
+export default function Icon({icon, text, textColor, desktopHeight, desktopWidth, mobileHeight, mobileWidth, className, deletedText}: IIcon){
 
     const [screenWidth, setScreenWidth] = useState(0)
 
@@ -22,11 +22,12 @@ export default function Icon({icon, text, textColor, desktopHeight, desktopWidth
       },)
     return (
        
-        <div className="d-flex align-items-center  w-auto ">
+        <div className={`d-flex align-items-center  w-auto ${className ? className : ""}` }>
            {icon &&  
             <img className="icon" src={icon} width={ screenWidth > 600 ? desktopWidth : mobileWidth} height={ screenWidth > 600 ? desktopHeight : mobileHeight}/> }
            {text && 
-            <p className={`text-start card-content  m-0 ${textColor ? textColor : ""}`}>{text}</p> 
+            <p className={`text-start card-content  m-0 ${textColor ? textColor : ""}`}>
+              { deletedText ? <del>{text}</del>: text}</p> 
             }
         </div>
     )

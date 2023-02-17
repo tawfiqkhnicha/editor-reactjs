@@ -2193,3 +2193,46 @@ width: 107%;
   .ReactGridGallery_tile-viewport img{
     animation: fadeIn 2s;
   }
+.sub-description{
+  font-family: "Raleway", Sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 24px;
+  max-width: 480px;
+  color: #181236;
+  text-align: center !important;
+}
+.main-description{
+  font-family: "Raleway", Sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #181236;
+}
+.w-20{
+  width: 20%;
+}
+.what-you-will-find{
+  color:#05F2F2;
+  font-family: "Raleway", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.del{
+ opacity: .5; 
+}
+
+.wont-find-container{
+  position: relative !important;
+}
+.wont-find-container::after{
+  content: "";
+  position: absolute !important;
+  height: 100% !important;
+  width: 10px !important;
+  background-color: #05F2F2 !important;
+  top: 0%;
+  left: 0%;
+}
