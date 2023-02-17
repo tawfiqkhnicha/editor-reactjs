@@ -26,7 +26,7 @@ export default function Icon({icon, text, textColor, desktopHeight, desktopWidth
            {icon &&  
             <img className="icon" src={icon} width={ screenWidth > 600 ? desktopWidth : mobileWidth} height={ screenWidth > 600 ? desktopHeight : mobileHeight}/> }
            {text && 
-            <p className={`text-start card-content  m-0 ${textColor ? textColor : ""}`}>
+            <p className={`text-start icon-text-font  m-0 ${textColor ? textColor : ""}`}>
               { deletedText ? <del>{text}</del>: text}</p> 
             }
         </div>

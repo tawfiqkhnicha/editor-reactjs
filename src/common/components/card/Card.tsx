@@ -1,8 +1,9 @@
 import { useState } from "react"
+import CardHeader from "react-bootstrap/esm/CardHeader"
 import Button from "../button/Button"
 import { ICard } from "./ICard"
 
-export default function Card({ HeaderTitle, styleHeaderPage, content, styleContentPage, cardStyle, action }: ICard) {
+export default function Card({ HeaderTitle, styleHeaderPage, content, styleContentPage, cardStyle, bottomTitle }: ICard) {
 
     const [isOpen, setOpen] = useState(false)
 
@@ -13,16 +14,15 @@ export default function Card({ HeaderTitle, styleHeaderPage, content, styleConte
     return (
         <section className={` ${cardStyle ? cardStyle : ""} `}>
 
-            <div className={` ${styleHeaderPage ? styleHeaderPage : "card-title HeaderPage"} `} >
+            {HeaderTitle && <div className={` ${styleHeaderPage ? styleHeaderPage : "card-title HeaderPage"} `} >
                 <div dangerouslySetInnerHTML={{ __html: HeaderTitle }} />
-            </div> 
+            </div>
+            }
             <article className={` card-content ${styleContentPage ? styleContentPage : ""} `}>
                 <div dangerouslySetInnerHTML={{ __html: content }} />
             </article>
-            {action && 
-            
-            <div className="d-flex justify-content-center align-items-center">
-                  <Button href={action?.href} title={action?.title}/>  
+            {bottomTitle && <div className={` ${styleHeaderPage ? styleHeaderPage : "card-title HeaderPage"} `} >
+                <div dangerouslySetInnerHTML={{ __html: bottomTitle }} />
             </div>
             }
         </section>
