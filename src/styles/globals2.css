@@ -3,6 +3,15 @@
 
 @media only screen and (max-width: 600px) {
 
+  .fleche-blog{
+    width: 12% !important;
+    height: auto !important;
+    right: 33% !important;
+    bottom: 51% !important;
+  }
+  .cardClass {
+    margin: 10% 0;
+  }
 
   .flex-wrap-our-values {
     margin-top: 20px !important;
@@ -20,7 +29,7 @@
     padding-left: 10px !important;
     margin-top: 0px;
     margin-bottom: 0px;
-   
+
 
   }
 
@@ -50,50 +59,25 @@
   padding-bottom: 10%;
   margin-top: 10%;
   margin-bottom: 10%;
- 
+
 
 }
-.blogHeader{
+
+.blogHeader {
   height: 100%;
   width: 100%;
   position: relative;
   background-repeat: no-repeat;
-  background-image: url('../../public/digital-solution.png');  
-  background-position-x:  100%;
-  background-position-y:  100%;
-  
+  background-image: url('../../public/digital-solution.png');
+  background-position-x: 100%;
+  background-position-y: 100%;
+
   background-size: cover;
   background-position: center center;
   height: 35vh;
 }
-/* .blogHeader {
-  position: relative; 
-  height: 60vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.blogHeader::before {    
-    content: "";
-    background-image: url('../../public/digital-solution.png');  
-    background-size: cover;
-    z-index: -1;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-position-x:  100%;
-    background-position-y:  100%;
-    position: absolute;
-    /* background-color: #181236; */
-    /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px; */
-    /* opacity: 0.75; */
-/* } */ 
-.category >li >a{
+.category>li>a {
   color: #181236b0;
   font-family: "Raleway", Sans-serif;
   font-weight: normal;
@@ -102,60 +86,124 @@
   text-decoration: none;
 
 }
-.xxxxxxxxxx{
-  background-color: #181236;
-    opacity: 0.65;
-    height: 100%;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+.category>li::marker {
+ 
+  color: #5E626C; /* Change the color of the marker to red */
+ 
+}
+.category>li>a:hover {
+ 
+  color: black; /* Change the color of the marker to red */
+ 
 }
 
-.categoryTitle{
+.categoryTitle {
   font-family: "Raleway", Sans-serif;
   font-weight: bold;
   font-size: 18px;
   color: #5e626c;
   margin: 10% 0%;
 }
-.categoryContent{
+
+.categoryContent {
+  margin: 25px 0 !important;
   font-family: "Raleway", Sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
   line-height: 1.5em;
   font-size: 14px;
   color: #777;
-  
+ 
+
 
 }
 
 
 
-.secltion-expbg2{
+.secltion-expbg2 {
   position: absolute;
   z-index: 0;
   margin: 4% 0 0 17%;
 }
-.secltion-expbg2 img{
-width: 110%;
+
+.secltion-expbg2 img {
+  width: 110%;
 }
-.mainindex{
+
+.mainindex {
   z-index: 3;
 }
-.blogHone{
- 
-    color: #FFFFFF;
-    font-family: "Raleway", Sans-serif;
-    font-weight: 600;
-    top: 40% !important;
-    font-size: 48px;
-    position: relative;
+
+.blogHone {
+
+  color: #FFFFFF;
+  font-family: "Raleway", Sans-serif;
+  font-weight: 600;
+  top: 40% !important;
+  font-size: 48px;
+  position: relative;
 }
-.blogtitle{
+
+.blogtitle {
   z-index: 1;
   width: 100%;
-    text-align: center;
-    padding: 20px;
-    background-color: #18123694;
-    /* opacity: 0.65; */
-    height: 100%;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  text-align: center;
+  padding: 20px;
+  background-color: #18123694;
+  /* opacity: 0.65; */
+  height: 100%;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
+
+.readmore {
+  font-size: 12px;
+  font-weight: 500;
+  color: #D79B54;
+  font-family: "Raleway", Sans-serif;
+  font-weight: normal;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.cardClass {}
+
+.cardstyle {
+  position: relative;
+}
+
+.textstyleblog {
+  font-weight: 500;
+  font-family: "Raleway", Sans-serif;
+  font-size: 12px;
+  color: white;
+  border-radius: 14%;
+  position: absolute;
+  right: 5%;
+  top: 4%; 
+  background-color: #D79B54;
+  padding: 1% 4%;
+}
+.addressvalues {
+  background-color: white; 
+  margin-top: 10% !important;
+  margin-bottom: 16% !important;
+
+
+}
+
+.content-location {
+  background-color: #fff;
+  margin: 15px;
+
+  padding: 0% 1% 0% 1%;
+}
+
+ 
+  .fleche-blog{
+    width: 12%;
+    height: auto;
+    right: 33%;
+    bottom: 51%;
+  }
+ 

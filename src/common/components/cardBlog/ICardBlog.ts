@@ -3,7 +3,7 @@ export interface ICardBlog {
     Cardtitle: string  , 
     content: string  , 
     href: string  ,  
- 
+    tag: string  ,  
     
 
 }

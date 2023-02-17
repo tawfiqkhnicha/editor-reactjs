@@ -40,13 +40,7 @@ export default function OurValues() {
 
             ))}
  
-            {/* {data.map((item , i: number) => (
-            <Widgedivt size={2} className="content-ourvalues content" >
-              <p className="headercontetn  " key={i} dangerouslySetInnerHTML={{ __html: item.title }} />
-              <p className="contentourvalues my-5" key={i} dangerouslySetInnerHTML={{ __html: item.content }} />
-
-            </Widget> 
-          ))} */} 
+            
           </div>
         </Section2>
       </Section2>
