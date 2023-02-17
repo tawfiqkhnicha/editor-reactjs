@@ -47,7 +47,7 @@ export default function Home() {
         <Card
           styleContentPage="OurValuesheadertext"
           HeaderTitle={HomePageData['section_1'].title}
-          styleHeaderPage="left-border"
+          styleHeaderPage="left-border HeaderPage"
           content={HomePageData['section_1'].content} />
         <Hotspot className="section-padding mt-lg-5" />
       </Section>
@@ -62,7 +62,7 @@ export default function Home() {
             <Widget size={screenWidth > 600 && screenWidth <= 900 ? 6 : 6} className={`order-xl-2 order-lg-2 order-md-2 order-1 order-sm-1 d-flex align-items-center justify-content-start mt-5`}>
               <Card 
               
-              cardStyle={`${screenWidth > 900 ? "w-80" : ""}`} styleHeaderPage="text-white left-border" styleContentPage="text-white OurValuesheadertext" HeaderTitle={HomePageData['section_2'].title}
+              cardStyle={`${screenWidth > 900 ? "w-80" : ""}`} styleHeaderPage="text-white left-border HeaderPage" styleContentPage="text-white OurValuesheadertext" HeaderTitle={HomePageData['section_2'].title}
                content={HomePageData['section_2'].content} />
             </Widget>
           </Grid>
@@ -80,7 +80,7 @@ export default function Home() {
             <Card
             styleContentPage="OurValuesheadertext"
             cardStyle="w-100" 
-            styleHeaderPage="left-border" 
+            styleHeaderPage="left-border " 
             HeaderTitle={HomePageData['section_3'].title}
             content={HomePageData['section_3'].content} />
           </Widget>
@@ -105,7 +105,7 @@ export default function Home() {
       <Section background={true} fullWidth={false} className="section-padding-y section-padding-x  ">
         <Section className="main-wrapper section-padding-x section-padding-y ">
           <Card
-           styleHeaderPage="left-border text-white"  styleContentPage="text-white OurValuesheadertext"
+           styleHeaderPage="left-border text-white HeaderPage"  styleContentPage="text-white OurValuesheadertext"
           HeaderTitle={HomePageData['section_4'].title} 
           content={HomePageData['section_4'].content} />
            <div className=" fleche-4-home-container d-flex justify-content-end w-90 mb-lg-5">
@@ -131,7 +131,7 @@ export default function Home() {
             <img className="talent-image" src={HomePageData['section_5'].image}/>
           </Widget>
           <Widget size={4} className=" d-flex align-items-start justify-content-start mt-5 ">
-            <Card styleHeaderPage="left-border"
+            <Card styleHeaderPage="left-border HeaderPage"
              styleContentPage="OurValuesheadertext"
              HeaderTitle={HomePageData['section_5'].title}
              content={HomePageData['section_5'].content} />
@@ -146,7 +146,7 @@ export default function Home() {
 
         <Section className="main-wrapper section-padding-x">
           <Card styleContentPage="text-white OurValuesheadertext"
-           HeaderTitle={HomePageData['section_6'].title} styleHeaderPage="left-border text-white" 
+           HeaderTitle={HomePageData['section_6'].title} styleHeaderPage="left-border text-white HeaderPage" 
            content={HomePageData['section_6'].content}/>
         </Section>
 
@@ -165,7 +165,7 @@ export default function Home() {
         <Grid>
           <Widget size={5} className=" d-flex flex-column justify-content-start mt-5">
 
-            <Card cardStyle="mt-sm-7" styleHeaderPage="left-border"
+            <Card cardStyle="mt-sm-7" styleHeaderPage="left-border HeaderPage"
              styleContentPage="OurValuesheadertext"
              HeaderTitle={HomePageData['section_7'].title}
              content={HomePageData['section_7'].content} />

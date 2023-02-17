@@ -13,7 +13,7 @@ export default function Card({ HeaderTitle, styleHeaderPage, content, styleConte
     return (
         <section className={` ${cardStyle ? cardStyle : ""} `}>
 
-            <div className={` ${styleHeaderPage ? styleHeaderPage : "card-title"} `} >
+            <div className={` ${styleHeaderPage ? styleHeaderPage : "card-title HeaderPage"} `} >
                 <div dangerouslySetInnerHTML={{ __html: HeaderTitle }} />
             </div> 
             <article className={` card-content ${styleContentPage ? styleContentPage : ""} `}>

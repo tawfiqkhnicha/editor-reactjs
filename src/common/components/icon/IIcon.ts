@@ -6,5 +6,8 @@ export interface IIcon{
     desktopHeight?: number,
     desktopWidth?: number,
     mobileHeight?: number,
-    mobileWidth?: number
+    mobileWidth?: number,
+    className?: string,
+    deletedText?: boolean
+
 }
