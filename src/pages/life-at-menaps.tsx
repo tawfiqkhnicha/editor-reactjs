@@ -74,7 +74,9 @@ export default function LifeAtMenaps() {
           </Section>
         </Section>  
         <Section className="main-wrapper section-margin-6 section-padding-x">
-
+        </Section>
+        <Section background>
+                
         </Section>
      </> 
     )
