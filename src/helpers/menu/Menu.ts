@@ -60,7 +60,7 @@ export const Menu  = [
                 title: "Recruiting",
             },
             {
-                href: "/unsolicited-aplication",
+                href: "/unsolicited-application",
                 title: "Unsolicited application",
             }
         ],
