@@ -3,7 +3,8 @@ export interface IWidget{
     children?: React.ReactNode,
     size?: number
     className?: string
-    backgroundColor?: boolean
+    backgroundColor?: boolean,
+    mobile?: boolean
 
     
 }
