@@ -1525,7 +1525,7 @@ ul.bullet-before li {
 .meta {
   margin-right: 5px;
   position: sticky;
-  top: 10px;
+  top: 110px;
   align-self: flex-start;
 }
 
