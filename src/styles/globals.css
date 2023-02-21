@@ -87,7 +87,7 @@
   padding-right: 20px;
 }
 
-input::placeholder {
+textarea::placeholder, input::placeholder {
   color: #000 !important;
   font-family: "Fira Sans", Sans-serif !important;
   opacity: 1;
@@ -2013,6 +2013,8 @@ ul.bullet-before li {
   color: #1c1735 !important;
 }
 
+
+
 .master-button a {
   color: #1c1735 !important;
   font-family: "Helvetica", Sans-serif;
@@ -2020,6 +2022,8 @@ ul.bullet-before li {
   text-transform: none;
   font-style: normal;
   font-size: 18px;
+ 
+  
 }
 
 .master-button .hover-effect {

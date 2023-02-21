@@ -118,7 +118,7 @@ export default function Recruiting() {
                 </strong>
               </p>
              <img src="/Fleche-1-1.png" width={100} />
-              <Button href="/unsolicited-application" title="Apply here" className="mt-4" />
+              <Button href="/unsolicited-application" title="Apply here" className="mt-4 btn-padding-m btn-style" />
             </Widget>}
 
             <Widget size={4} className="d-flex flex-column justify-content-end align-items-center" >
@@ -133,7 +133,7 @@ export default function Recruiting() {
                 We are looking for the rare pearl.
                 Do not hesitate to consult our job offers!
               </p>
-              <Button href="/unsolicited-application" title="Apply here" className="mt-4 mb-4" />
+              <Button href="/unsolicited-application" title="Consult our offers" className="my-4  btn-padding-m  btn-style" />
 
             </Widget>
           </Grid>

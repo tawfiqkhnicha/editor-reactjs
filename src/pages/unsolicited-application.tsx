@@ -56,10 +56,10 @@ export default function UnsolicitedApplication() {
             <Widget size={12}>
               <Grid>
                 <Widget size={6} mobile className="mt-5">
-                  <Input type="text" placeholder="Phone*" />
+                  <Input type="text" placeholder="First Name*" />
                 </Widget>
                 <Widget size={6} mobile className="mt-5">
-                  <Input type="text" placeholder="Email*" />
+                  <Input type="text" placeholder="Name*" />
                 </Widget>
               </Grid>
               <Grid className="mt-4">
@@ -87,7 +87,7 @@ export default function UnsolicitedApplication() {
             </Widget>
             <Widget size={12} className="d-flex  mt-5">
               <div className="d-flex justify-content-start align-items-center">
-                <Button className="btn-padding btn-style" title="Send" href="/our-values" />
+                <Button className="btn-padding-m  btn-style" title="Send" href="/our-values" />
               </div>
             </Widget>
           </Grid>
