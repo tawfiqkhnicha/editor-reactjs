@@ -42,7 +42,7 @@ export default function OurDna() {
 
 
           {data.map((item: string, i: number) => (
-            <Widget size={12} className="" >
+            <Widget key={i} size={12} className="" >
               <div className="text-ourdna my-5" key={i} dangerouslySetInnerHTML={{ __html: item }} />
 
             </Widget>

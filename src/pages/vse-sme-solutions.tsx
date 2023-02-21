@@ -25,8 +25,8 @@ export default function VSESMESolutions() {
           <img src="/Fleche-exp-1.png" className="fleche-vse-sme-solutions position-absolute" />
 
           <Grid className="gap-5 grid-gap ">
-            {domaines.map(item => {
-              return <Widget size={3} className=" d-flex align-items-center justify-content-start mb-lg-4 mt-lg-4  mb-sm-4 mt-sm-4">
+            {domaines.map((item, index) => {
+              return <Widget key={index} size={3} className=" d-flex align-items-center justify-content-start mb-lg-4 mt-lg-4  mb-sm-4 mt-sm-4">
                 <Icon text={item.text} textColor="text-white" icon={item.icon} />
               </Widget>
             })}
@@ -39,8 +39,8 @@ export default function VSESMESolutions() {
       <Section2 background={false} fullWidth={false} className=" main-wrapper  ensavoirplus   ">
         <h1 className="Nosdomaines ">En savoir +</h1>
         <Grid className="  ">
-          {solutions.map(item => {
-            return <Widget size={4} className="   d-flex align-items-center justify-content-start mb-lg-4 mt-lg-4  mb-sm-4 mt-sm-4">
+          {solutions.map((item, index) => {
+            return <Widget key={index} size={4} className="   d-flex align-items-center justify-content-start mb-lg-4 mt-lg-4  mb-sm-4 mt-sm-4">
              <CardSolutions title={item.title}  text={item.text} icon={item.icon} /> 
             </Widget>
           })}

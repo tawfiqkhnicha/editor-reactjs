@@ -35,8 +35,8 @@ export default function OurExpertise() {
       <Section className="main-wrapper selectcarr" background={false} fullWidth={false}>
         <div className="secltion-expbg  d-none  d-md-block"><img src="/carre-bg.png" /></div>
         <Grid className="">
-              {exp.map(item => {
-                return <Widget size={4} className="expStyle">
+              {exp.map((item, index) => {
+                return <Widget key={index} size={4} className="expStyle">
                   <div className="exp_content">
                         <div className="item_content ">
                               <div className="title">{item.Sous_title}</div>

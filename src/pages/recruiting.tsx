@@ -124,7 +124,7 @@ export default function Recruiting() {
             <Widget size={4} className="d-flex flex-column justify-content-end align-items-center" >
               <Grid>
                 {services.map((item: any, index: number) => {
-                  return <Widget mobile={screenWidth <= 600 ? true : false} size={screenWidth <= 600 ? 6 : 4} className="d-flex justify-content-center mt-4">
+                  return <Widget key={index} mobile={screenWidth <= 600 ? true : false} size={screenWidth <= 600 ? 6 : 4} className="d-flex justify-content-center mt-4">
                     <img src={item.icon} />
                   </Widget>
                 })}
@@ -172,7 +172,7 @@ export default function Recruiting() {
               <img src="/Ampoule-Recrutement_1.png" width={300} />
             </Widget>
             {stepsArray.map((item: any, index: number) => {
-              return <Widget className="d-flex justify-content-start">
+              return <Widget key={index} className="d-flex justify-content-start">
                 <Card
                   HeaderTitle={item.title}
                   content={item.content}

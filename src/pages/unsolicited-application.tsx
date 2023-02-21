@@ -104,7 +104,7 @@ export default function UnsolicitedApplication() {
         />
          <Grid className="mb-lg-5">
           {UnsolicitedApplicationPage['section_3'].map((item: any, index: number)=>{
-              return <Widget size={12}>
+              return <Widget key={index} size={12}>
                 <Icon className={`mt-2 ${screenWidth <=600 ? "flex-column center-text": ""}`} textColor={`${screenWidth <= 600 ? "center-text": ""}`} icon={item.step} text={item.descreption}/>
               </Widget> 
           })}

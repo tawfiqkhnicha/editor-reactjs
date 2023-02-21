@@ -10,11 +10,13 @@ export default function Button({title, href, action, animated, className}: IButt
     const [coordonate, setCoordonate] = useState({x: 0, y:0})
 
     const handleMouseOver = (e: any) =>{
-             x = e.pageX - btn.current?.offsetLeft;
-             y = e.pageY - btn.current?.offsetTop;
-
-             setCoordonate({x:x, y:y})
-            
+            if(btn.current){
+                x = e.pageX - btn.current['offsetLeft'];
+                y = e.pageY - btn.current['offsetTop'];
+   
+                setCoordonate({x:x, y:y})
+            }
+           
     }
     return (
         <>

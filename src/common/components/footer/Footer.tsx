@@ -19,17 +19,17 @@ export default function Footer(){
   <Section fullWidth={false} background={true}>
     <Section className="main-wrapper">
     <Grid className="pt-5 ">
-          {FooterItems.map(item =>{
-            return <Widget size={3}>
+          {FooterItems.map((item, index) =>{
+            return <Widget key={index} size={3}>
 
 {             item.type === "social" ? 
               <>
                 <div className="mb-4">
                     <Img image="/menaps-white-logo.png" alt="Welcome | Menaps" width={148} height={30.15} />
                 </div>
-                {item.items.map(ele =>{
+                {item.items.map((ele, index) =>{
                     
-                    return  <a href={ ele.href} target='_blank' className="widget-item-font text-reset text-decoration-none " > <i className={ele.icon}></i></a>
+                    return  <a href={ ele.href} key={index} target='_blank'  rel="noreferrer" className="widget-item-font text-reset text-decoration-none " > <i className={ele.icon}></i></a>
 
                 })}
              </>
