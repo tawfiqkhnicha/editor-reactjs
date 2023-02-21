@@ -1,5 +1,9 @@
 @import "\globals2.css";
 
+.retation-60{
+  transform: rotate(60deg);
+}
+
 .ampoule-image-1{
  position: absolute;
  width: 65%;

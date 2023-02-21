@@ -61,7 +61,7 @@ export default function Recruiting() {
   const [content, setContent] = useState(steps["step_1"])
   return (
     <>
-      <Section className="main-wrapper section-margin-6 section-padding-x">
+      <Section className="main-wrapper section-margin-6 section-padding-x ">
         <Card
           HeaderTitle="<h1>We hire</h1>"
           content="alents.
@@ -82,11 +82,19 @@ export default function Recruiting() {
           </Widget>
         </Grid>
       </Section>
-      <Section background className="section-padding-y">
-        <Section className="main-wrapper section-margin-6 section-padding-x">
+      <Section background className="section-padding-y ">
+       
+        <Section className="main-wrapper section-margin-6 section-padding-x section-padding-y">
           <Grid>
-            <Widget size={4}>
-              <img src="/Cadre-Recrutement.png" width={204} />
+            <Widget size={4} className="position-relative" >
+            <img src="/Fleche-1.png" width={ screenWidth <= 600 ? 70 : 150} className="position-absolute retation-60" style={{top: screenWidth <= 600 ? -70 : -200, right: screenWidth <= 600 ? 10 : -600}} />
+
+              <div className={`d-flex justify-content-${ screenWidth <= 600 ? "center" : "start"}`}>
+                <img src="/Cadre-Recrutement.png" width={204} />
+                
+              </div>
+            {screenWidth <= 600 && <> <img src="/Fleche-1-1.png" width={40} className="position-absolute" style={{right: 0}} /> 
+              <p className="text-white text-center mb-4"><strong>Featured open positions</strong></p> </>}
               <p className="text-white">
                 <strong>
                   Cybersecurity EngineerFull Time
@@ -99,20 +107,24 @@ export default function Recruiting() {
                 -&gt; Designs technical solutions <br />
                 -&gt; Designs the architecture of an information technology system
               </p>
+              {screenWidth <= 600 && <div className="d-flex justify-content-center  mb-5">
+                <Button href="/unsolicited-application" title="Apply here" className="mt-4" />
+              </div>}
             </Widget>
-            <Widget size={4} className="d-flex justify-content-center align-items-center flex-column">
+            {screenWidth > 600 && <Widget size={4} className="d-flex justify-content-center align-items-center flex-column">
               <p className="text-white">
                 <strong>
                   Featured open positions
                 </strong>
               </p>
-              <img src="/Fleche-1-1.png" width={100} />
+             <img src="/Fleche-1-1.png" width={100} />
               <Button href="/unsolicited-application" title="Apply here" className="mt-4" />
-            </Widget>
+            </Widget>}
+
             <Widget size={4} className="d-flex flex-column justify-content-end align-items-center" >
               <Grid>
                 {services.map((item: any, index: number) => {
-                  return <Widget mobile={screenWidth <= 600 ? true : false} size={4}>
+                  return <Widget mobile={screenWidth <= 600 ? true : false} size={screenWidth <= 600 ? 6 : 4} className="d-flex justify-content-center mt-4">
                     <img src={item.icon} />
                   </Widget>
                 })}
@@ -128,7 +140,7 @@ export default function Recruiting() {
         </Section>
 
       </Section>
-      <Section className="main-wrapper section-margin-6 section-padding-x">
+      <Section className="main-wrapper section-margin-6 section-padding-x section-padding-y position-relative">
         <Card
           HeaderTitle="<h1>A simple
             and efficient</h1>"
@@ -157,28 +169,29 @@ export default function Recruiting() {
             </Widget>
           </Grid> : <Grid>
             <Widget size={12} className="d-flex justify-content-center mb-5">
-              <img src="/Ampoule-Recrutement_1.png" width={300}/>
+              <img src="/Ampoule-Recrutement_1.png" width={300} />
             </Widget>
-            {stepsArray.map((item: any, index: number)=>{
-            return <Widget className="d-flex justify-content-start">
-              <Card
-                HeaderTitle={item.title}
-                content={item.content}
-                styleContentPage="OurValuesheadertext"
-                styleHeaderPage="left-border"
-              />
-            </Widget>
-          })}
+            {stepsArray.map((item: any, index: number) => {
+              return <Widget className="d-flex justify-content-start">
+                <Card
+                  HeaderTitle={item.title}
+                  content={item.content}
+                  styleContentPage="OurValuesheadertext"
+                  styleHeaderPage="left-border"
+                />
+              </Widget>
+            })}
             <Widget>
 
             </Widget>
           </Grid>
         }
+              <img src="/Fleche-1-1.png" width={screenWidth<=600 ? 50 : 60 } className="position-absolute" style={{right: screenWidth<=600 ? 190: 400 }} />
 
       </Section>
 
       <Section background fullWidth className="section-padding-y">
-        <Section className="main-wrapper section-margin-6 section-padding-x">
+        <Section className="main-wrapper section-margin-6 section-padding-x section-padding-y">
           <Card
             HeaderTitle="<h1>Join us?</h1>"
             content="<p>You can also submit an unsolicited application, we will systematically answer it. </p>"
