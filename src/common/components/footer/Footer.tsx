@@ -11,9 +11,6 @@ export default function Footer() {
         window.scrollTo(0, 0)
     }
     return (
-
-
-
         <footer className="text-start text-lg-start text-muted  mt-auto ">
 
             <Section fullWidth={false} background={true}>
