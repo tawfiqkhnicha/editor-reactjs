@@ -1,7 +1,9 @@
+import { offres } from "@/helpers/offres/offres"
 import { useState } from "react"
+import Cardscroll from "../cardScroll/CardScroll"
 import { IScrollComponent } from "./IScrollComponent"
 
-export default function ScrollComponent({content, styleContentPage }: IScrollComponent) {
+export default function ScrollComponent({ content, styleContentPage }: IScrollComponent) {
 
     const [isOpen, setOpen] = useState(false)
 
@@ -14,10 +16,15 @@ export default function ScrollComponent({content, styleContentPage }: IScrollCom
             <div className="meta mx-5">
                 <img
                     className="image"
-                    src="/imagine.svg"   
+                    src="/imagine.svg"
                 />
             </div>
-            <div className="sub-item-container"dangerouslySetInnerHTML={{ __html: content.content }}     /> 
+            <div>
+                {offres.map(item => {
+                    return <Cardscroll imgsrc={item.icon} title1={item.title1} title2={item.title2} title3={item.title3} content={item.content} />
+
+                })}
+            </div>
         </div>
 
     )
