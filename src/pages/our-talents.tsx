@@ -45,10 +45,10 @@ export default function OurTalents() {
 
           groupArray(OurTalentPage['section_2'], 3).map((item: any, index: number) => {
 
-          return <Section disableMargin background={index % 2 !== 0} className="section-padding-x section-padding-y d-flex justify-content-center ">
+          return <Section key={index} disableMargin background={index % 2 !== 0} className="section-padding-x section-padding-y d-flex justify-content-center ">
             <Grid  key={index} className=" main-wrapper">
               {item.map((item: any, i: number) => {
-                return <Widget size={4} className="d-flex justify-content-center align-items-center " key={i} >
+                return <Widget key={i} size={4} className="d-flex justify-content-center align-items-center ">
                   <Section className="d-flex flex-column justify-ceontent-center align-items-center" >
                     <img src={item.picture} className="igure-img img-fluid" />
                     <h2 className={`figure-caption text-center description ${index % 2 !== 0 ? "text-white" : "globale-primary-color"} `}>{item.speciality}</h2>

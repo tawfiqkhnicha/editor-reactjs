@@ -32,7 +32,7 @@ export default function OurValues() {
           <div className="d-flex  flex-wrap-our-values     mx-1">
 
             {data.map((item, i: number) => (
-              <div className="content-ourvalues content  " >
+              <div key={i} className="content-ourvalues content  " >
                 <p className="headercontetn  " key={i} dangerouslySetInnerHTML={{ __html: item.title }} />
                 <p className="contentourvalues " key={i} dangerouslySetInnerHTML={{ __html: item.content }} />
 

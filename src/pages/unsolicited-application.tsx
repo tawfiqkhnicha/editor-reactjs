@@ -34,7 +34,7 @@ export default function UnsolicitedApplication() {
     <>
       <Section className="main-wrapper section-margin-6 section-padding-x">
         <Grid>
-          <Widget size={8}>
+          <Widget size={12}>
             <Card
               HeaderTitle={UnsolicitedApplicationPage["section_1"].title}
               content={UnsolicitedApplicationPage["section_1"].content}
@@ -42,17 +42,9 @@ export default function UnsolicitedApplication() {
               styleHeaderPage="left-border"
             />
           </Widget>
-          <Widget size={4}>
-
-          </Widget>
-        </Grid>
-        <Grid>
-          <Widget size={8}>
-
-          </Widget>
-          <Widget size={4} className="d-flex justify-content-center">
+          <Widget size={12} className={`d-flex justify-content-${screenWidth > 600 ? 'end': "center mb-5"} position-relative`}>
             <img src={UnsolicitedApplicationPage["section_1"].image} width={200} />
-
+            <img  src="/Fleche-1-recrutement.png"  className="position-absolute" width={screenWidth > 900 ? 65: 50} style={{left: screenWidth > 600 ? 350 : 60, top:  180}}/>
           </Widget>
         </Grid>
       </Section>
@@ -63,25 +55,25 @@ export default function UnsolicitedApplication() {
           <Grid>
             <Widget size={12}>
               <Grid>
-                <Widget size={6} className="mt-5">
-                  <Input type="text" placeholder="Phone*" />
+                <Widget size={6} mobile className="mt-5">
+                  <Input type="text" placeholder="First Name*" />
                 </Widget>
-                <Widget size={6} className="mt-5">
-                  <Input type="text" placeholder="Email*" />
+                <Widget size={6} mobile className="mt-5">
+                  <Input type="text" placeholder="Name*" />
                 </Widget>
               </Grid>
-              <Grid className="mt-5 w-100">
-                <Widget size={6} className="mt-4">
+              <Grid className="mt-4">
+                <Widget size={6} mobile className="mt-4">
                   <Input type="text" placeholder="Phone*" />
                 </Widget>
-                <Widget size={6} className="mt-4">
+                <Widget size={6} mobile className="mt-4">
                   <Input type="text" placeholder="Email*" />
                 </Widget>
               </Grid>
             </Widget>
             <Widget size={12} className="d-flex justify-content-start mt-5">
               <p className="label">Download your Cv here (PDF)*</p>
-              <div className="w-50">
+              <div className="w-30">
                 <Input type="file" background />
               </div>
             </Widget>
@@ -95,7 +87,7 @@ export default function UnsolicitedApplication() {
             </Widget>
             <Widget size={12} className="d-flex  mt-5">
               <div className="d-flex justify-content-start align-items-center">
-                <Button className="btn-padding btn-style" title="Send" href="/our-values" />
+                <Button className="btn-padding-m  btn-style" title="Send" href="/our-values" />
               </div>
             </Widget>
           </Grid>
@@ -103,25 +95,27 @@ export default function UnsolicitedApplication() {
         </Section>
 
       </Section>
-      <Section className="main-wrapper section-margin-6 section-padding-x">
+      <Section className="main-wrapper section-margin-6 section-padding-x position-relative ">
         <Card
           HeaderTitle={UnsolicitedApplicationPage["section_2"].title}
           content={UnsolicitedApplicationPage["section_2"].content}
           styleContentPage="OurValuesheadertext"
           styleHeaderPage="left-border"
         />
-         <Grid>
+         <Grid className="mb-lg-5">
           {UnsolicitedApplicationPage['section_3'].map((item: any, index: number)=>{
-              return <Widget size={12}>
+              return <Widget key={index} size={12}>
                 <Icon className={`mt-2 ${screenWidth <=600 ? "flex-column center-text": ""}`} textColor={`${screenWidth <= 600 ? "center-text": ""}`} icon={item.step} text={item.descreption}/>
               </Widget> 
           })}
           
          </Grid> 
 
+         <img src="/Fleche-1-1.png" width={screenWidth >900 ? 75 : 40} className="position-absolute " style={{right:screenWidth >900 ? 450 : 300, bottom: screenWidth >900 ? -200 : -100}}/>
+
       </Section>
 
-      <Section background fullWidth className="section-padding-y">
+      <Section background fullWidth className="section-padding-y ">
         <Section className="main-wrapper section-margin-6 section-padding-x">
           <Card
             HeaderTitle={UnsolicitedApplicationPage["section_4"].title}

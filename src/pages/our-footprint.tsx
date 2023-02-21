@@ -161,7 +161,7 @@ export default function OurFootprint() {
       <Section2 className="addressvalues main-wrapper " background={false} fullWidth={false}> 
         <div className="d-flex  flex-wrap-our-values     mx-1"> 
           {data.map((item, i: number) => (
-            <div className="content-location content  " >
+            <div key={i} className="content-location content  " >
               <p className="headercontetn  " key={i} dangerouslySetInnerHTML={{ __html: item.country }} />
               <p className="contentourvalues " key={i} dangerouslySetInnerHTML={{ __html: item.address }} /> 
             </div> 

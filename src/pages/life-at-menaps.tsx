@@ -43,7 +43,7 @@ export default function LifeAtMenaps() {
 
             <div className={`d-flex ${screenWidth <=900 ?  screenWidth <=600 ? "justify-content-center flex-column align-items-center " : "justify-content-start align-items-center ": "justify-content-center align-items-start" }   w-100 flex-wrap`}>
               {lifeAtMenapsPage["section_2"].icons.map((item: {icon: string, description: string, subDescription: string}, index: number)=>{
-                  return <div className={`d-flex justify-content-start align-items-center flex-column w-20 mt-4`}>
+                  return <div key={index} className={`d-flex justify-content-start align-items-center flex-column w-20 mt-4`}>
                                 <img src={item.icon} />
                                 <div className="d-flex justify-content-center align-items-center flex-column">
                                   <h2 className="main-description text-center">{item.description}</h2>
@@ -80,7 +80,7 @@ export default function LifeAtMenaps() {
                <div className="d-flex justify-content-start flex-column section-margin-6 ">
                 <p className="what-you-will-find mb-5 text-left ">{lifeAtMenapsPage['section_3'].section_2.you_will_find.title}</p>
                 {lifeAtMenapsPage['section_3'].section_2.you_will_find.items.map((item: string, index: number)=>{
-                  return <Icon className="mt-4" text={item} textColor="text-white" icon={lifeAtMenapsPage['section_3'].section_2.icon} />
+                  return <Icon key={index} className="mt-4" text={item} textColor="text-white" icon={lifeAtMenapsPage['section_3'].section_2.icon} />
 
                 })}
               </div>
@@ -90,7 +90,7 @@ export default function LifeAtMenaps() {
               <div className="d-flex justify-content-start  flex-column section-margin-6">
                 <p className="what-you-will-find mb-5 text-left del"><del>{lifeAtMenapsPage['section_3'].section_2.you_wont_find.title}</del></p>
                 {lifeAtMenapsPage['section_3'].section_2.you_wont_find.items.map((item: string, index: number)=>{
-                  return <Icon deletedText className="mt-4" text={item} textColor="text-white del" icon={lifeAtMenapsPage['section_3'].section_2.icon} />
+                  return <Icon  key= {index} deletedText className="mt-4" text={item} textColor="text-white del" icon={lifeAtMenapsPage['section_3'].section_2.icon} />
 
                 })}
               </div>
