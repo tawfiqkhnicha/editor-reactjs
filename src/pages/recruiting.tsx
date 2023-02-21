@@ -87,7 +87,7 @@ export default function Recruiting() {
         <Section className="main-wrapper section-margin-6 section-padding-x section-padding-y">
           <Grid>
             <Widget size={4} className="position-relative" >
-            <img src="/Fleche-1.png" width={ screenWidth <= 600 ? 70 : 150} className="position-absolute retation-60" style={{top: screenWidth <= 600 ? -70 : -200, right: screenWidth <= 600 ? 10 : -600}} />
+            <img src="/Fleche-1.png" width={ screenWidth <= 600 ? 70 :  150} className="position-absolute retation-60" style={{top: screenWidth <= 600 ? -70 : -200, right: screenWidth <= 600 ? 10 : screenWidth <= 900 ? -400 :  -600}} />
 
               <div className={`d-flex justify-content-${ screenWidth <= 600 ? "center" : "start"}`}>
                 <img src="/Cadre-Recrutement.png" width={204} />
@@ -133,7 +133,7 @@ export default function Recruiting() {
                 We are looking for the rare pearl.
                 Do not hesitate to consult our job offers!
               </p>
-              <Button href="/unsolicited-application" title="Consult our offers" className="my-4  btn-padding-m  btn-style" />
+              <Button href="/unsolicited-application" title="Consult our offers" className="my-4   btn-style" />
 
             </Widget>
           </Grid>

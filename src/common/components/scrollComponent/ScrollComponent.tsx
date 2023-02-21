@@ -20,8 +20,8 @@ export default function ScrollComponent({ content, styleContentPage }: IScrollCo
                 />
             </div>
             <div>
-                {offres.map(item => {
-                    return <Cardscroll imgsrc={item.icon} title1={item.title1} title2={item.title2} title3={item.title3} content={item.content} />
+                {offres.map((item, index) => {
+                    return <Cardscroll key={index} imgsrc={item.icon} title1={item.title1} title2={item.title2} title3={item.title3} content={item.content} />
 
                 })}
             </div>

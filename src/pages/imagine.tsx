@@ -5,10 +5,10 @@ import Grid from "@/common/components/grid/Grid";
 import ScrollComponent from "@/common/components/scrollComponent/ScrollComponent";
 import Section2 from "@/common/components/Section2/Section2";
 import Widget from "@/common/components/widget/Widget";
-import Widget2 from "@/common/components/widgetimagine/Widget2";
 import { quoi, comment } from "@/helpers/quoi/quoi";
 import Link from "next/link";
 import { offres } from "@/helpers/offres/offres";
+import Widget2 from "@/common/components/widget2/Widget2";
 export default function Imagine() {
   return (
     <>
