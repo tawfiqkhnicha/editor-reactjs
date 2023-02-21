@@ -3,12 +3,13 @@
 
 @media only screen and (max-width: 600px) {
 
-  .fleche-blog{
+  .fleche-blog {
     width: 12% !important;
     height: auto !important;
-    right: 33% !important;
-    bottom: 51% !important;
+    right: 34% !important;
+    bottom: 88% !important;
   }
+
   .cardClass {
     margin: 10% 0;
   }
@@ -41,7 +42,64 @@
     font-weight: bold;
 
   }
+
+  .fleche-vse-sme-solutions {
+    width: 19% !important;
+    right: 81% !important;
+    bottom: 95% !important;
+    height: 16% !important;
+  }
+
+  .icone-tpe-pme-intro {
+    width: 41% !important;
+    right: 28% !important;
+    bottom: -9% !important;
+
+  }
+
+  .vesfirstblock {
+    padding-bottom: 15% !important;
+    padding-top: 5% !important;
+  }
+
+  .areasofintervention {
+    margin-top: 21% !important;
+    padding-bottom: 5% !important;
+  }
+
+  .textvse {
+
+    font-weight: 300 !important;
+  }
+
+  .fleche-bottom {
+    right: -2% !important;
+    bottom: -16% !important;
+    height: 22% !important;
+  }
+
+  .etoile-solution {
+    right: 13% !important;
+    bottom: 57% !important;
+    width: 28% !important;
+    height: 28% !important;
+  }
+
+  .fleche-solution {
+    right: 23% !important;
+    ;
+    bottom: 82% !important;
+    width: 23% !important;
+    height: 24% !important;
+  }
+
+  .Nosdomaines {
+    text-align: center;
+    font-family: "Raleway", Sans-serif;
+    padding-left: 0% !important;
+  }
 }
+
 
 /* ---------------------------------------------- */
 .flex-wrap-our-values {
@@ -86,15 +144,19 @@
   text-decoration: none;
 
 }
+
 .category>li::marker {
- 
-  color: #5E626C; /* Change the color of the marker to red */
- 
+
+  color: #5E626C;
+  /* Change the color of the marker to red */
+
 }
+
 .category>li>a:hover {
- 
-  color: black; /* Change the color of the marker to red */
- 
+
+  color: black;
+  /* Change the color of the marker to red */
+
 }
 
 .categoryTitle {
@@ -113,7 +175,7 @@
   line-height: 1.5em;
   font-size: 14px;
   color: #777;
- 
+
 
 
 }
@@ -180,12 +242,13 @@
   border-radius: 14%;
   position: absolute;
   right: 5%;
-  top: 4%; 
+  top: 4%;
   background-color: #D79B54;
   padding: 1% 4%;
 }
+
 .addressvalues {
-  background-color: white; 
+  background-color: white;
   margin-top: 10% !important;
   margin-bottom: 16% !important;
 
@@ -199,11 +262,198 @@
   padding: 0% 1% 0% 1%;
 }
 
+
+.fleche-blog {
+  width: 12%;
+  height: auto;
+  right: 33%;
+  bottom: 51%;
+}
+
+.fleche-vse-sme-solutions {
+  width: 13%;
+  right: 76%;
+  bottom: 112%;
+  height: 77%;
+}
+
+
+.vesfirstblock {
+  padding-bottom: 16%;
+  padding-top: 5%;
+
+}
+
+.areasofintervention {
+  padding-top: 9%;
+  padding-bottom: 5%;
+}
+
+.icone-tpe-pme-intro {
+  width: 20%;
+  right: 4%;
+  bottom: 5%;
+
+}
+
+.textvse {
+  text-align: center;
+  padding-bottom: 5%;
+  color: white;
+  font-family: "Raleway", Sans-serif;
+  font-weight: 500;
+}
+
+.fleche-bottom {
+  right: -2%;
+  bottom: -68%;
+  height: 62%;
+}
+
+.ensavoirplus {
+  padding-top: 7%;
+  padding-bottom: 5%;
+}
+
+.Nosdomaines {
+  font-family: "Raleway", Sans-serif;
+  padding-left: 73%;
+}
+
+
+.cardsolutions {
+  box-sizing: none !important;
+}
+
+.cardsolutions:hover {
+  border-top: 10px solid #1EEDE2;
+  color: white;
+  background-color: #181236;
+  box-sizing: none !important;
+  height: 100%;
+  transition: color 0.3s ease-in;
+}
+
+.iconsolutions {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.titlesolutions {
+  font-family: "Raleway", Sans-serif;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+}
+
+.contentsolutions {
+  font-size: 18px;
+}
+
+.contentcardsolution {
+  padding-left: 10%;
+
+}
+
+.etoile-solution {
+  right: 9%;
+  bottom: 33%;
+  width: 17%;
+  height: 50%;
+}
+
+.fleche-solution {
+  right: 22%;
+  bottom: 68%;
+  width: 17%;
+  height: 50%;
+}
+
+.logo-imagine-vector {
+
+  display: block;
+  margin: 0 auto;
+  width: 56%;
+}
+
+.section1imagine {
+  margin-top: 10% !important;
+
+}
+
+.text1imagine {
+  margin:3% 0%;
+  font-weight: bold;
+  font-family: "Raleway", Sans-serif;
+  color: #3c4043;
+  text-align: center;
+
+}
+.text2imagine {
+  margin:01% 25% 25% 25%;
+  font-family: "Raleway", Sans-serif;
+  color: #3c4043;
+  text-align: justify;   /* nice  like word*/ 
+  font-weight: 500;
+}
+.text3imagine{ 
+  font-family: "Raleway", Sans-serif;
+  color: black; 
+  font-weight: 500;
+  text-align: center;
+}
  
-  .fleche-blog{
-    width: 12%;
-    height: auto;
-    right: 33%;
-    bottom: 51%;
-  }
- 
+
+.divider {
+  position: relative;
+  margin: 20px 0;
+}
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: black;
+}
+.imagine-section2{
+  padding: 4% 0%;
+}
+.main-wrapper2 {
+  width: 1079px;
+  margin: 0 auto;
+  max-width: 90%;
+margin-bottom: 5%;
+}
+.qouiItem {
+  background-color: white;
+  color:black;
+
+  width: 100%;
+  height: 100px; 
+  text-align: center;
+
+
+
+}
+.qouiItemtext
+{
+
+  color:black;
+  text-align: center;
+  margin: 12%  10px;
+
+
+}
+.pool {
+  width: 1079px;
+  right: 22%;
+  bottom: -40%;
+  height: 38%;
+  color: black;
+  
+}

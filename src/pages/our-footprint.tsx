@@ -173,7 +173,7 @@ export default function OurFootprint() {
       <img src="/fleche-empreinte.png" className="fleche-blog  position-absolute" />
         <Section2 className="my-5 main-wrapper " background={true} fullWidth={false}>
           <Grid>
-            <Card cardStyle="my-5" styleHeaderPage="text-white left-border " styleContentPage="text-white text-content " HeaderTitle="<h1>Trouvons ensemble</h1>" content="<p>les projets de demain </p>" />
+            <Card cardStyle="my-5" styleHeaderPage="text-white left-border " styleContentPage="text-white text-content " HeaderTitle="<h1>Interested</h1>" content="<p>in our news? </p>" />
             <Button2 styleButton="  button-width my-3" variant="link" title=" Discover them" href="/our-values" />
 
           </Grid>
