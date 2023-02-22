@@ -77,7 +77,7 @@ export default function Recruiting() {
               We want to surround ourselves with people who sharethe same values as us, and who are moving in the same direction."
             />
           </Widget>
-          <Widget size={6} className="d-flex justify-content-center">
+          <Widget size={6} className="d-flex justify-content-center mb-5">
             <img src="/Diamant-Vie-chez.png" width={250} />
           </Widget>
         </Grid>
@@ -87,7 +87,7 @@ export default function Recruiting() {
         <Section className="main-wrapper section-margin-6 section-padding-x section-padding-y">
           <Grid>
             <Widget size={4} className="position-relative" >
-            <img src="/Fleche-1.png" width={ screenWidth <= 600 ? 70 :  150} className="position-absolute retation-60" style={{top: screenWidth <= 600 ? -70 : -200, right: screenWidth <= 600 ? 10 : screenWidth <= 900 ? -400 :  -600}} />
+            <img src="/Fleche-1.png" width={ screenWidth <= 600 ? 70 :  150} className="position-absolute retation-60" style={{top: screenWidth <= 600 ? -70 : -200, right: screenWidth <= 600 ? 10 : screenWidth <= 900 ? -450 :  -600}} />
 
               <div className={`d-flex justify-content-${ screenWidth <= 600 ? "center" : "start"}`}>
                 <img src="/Cadre-Recrutement.png" width={204} />
@@ -108,7 +108,7 @@ export default function Recruiting() {
                 -&gt; Designs the architecture of an information technology system
               </p>
               {screenWidth <= 600 && <div className="d-flex justify-content-center  mb-5">
-                <Button href="/unsolicited-application" title="Apply here" className="mt-4" />
+                <Button href="/unsolicited-application" title="Apply here" className="mt-4  btn-padding-m btn-style" />
               </div>}
             </Widget>
             {screenWidth > 600 && <Widget size={4} className="d-flex justify-content-center align-items-center flex-column">
@@ -133,7 +133,7 @@ export default function Recruiting() {
                 We are looking for the rare pearl.
                 Do not hesitate to consult our job offers!
               </p>
-              <Button href="/unsolicited-application" title="Consult our offers" className="my-4   btn-style" />
+              <Button href="/unsolicited-application" title="Consult our offers" className="my-4   btn-padding-m  btn-style" />
 
             </Widget>
           </Grid>
