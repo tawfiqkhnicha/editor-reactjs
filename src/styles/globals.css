@@ -1190,8 +1190,6 @@ textarea::placeholder, input::placeholder {
     right: 8%;
     bottom: 25%;
     transform: rotate(-60deg);
-
-
   }
 
 }
@@ -1201,7 +1199,9 @@ textarea::placeholder, input::placeholder {
 
 @media only screen and (max-width: 900px) and (min-width: 600px) {
 
-
+.btn-padding-m{
+  padding: 25px 30px 25px 30px !important; 
+}
 .ampoule-image-1{
   position: absolute;
   width: 65%;
