@@ -2,6 +2,134 @@
 
 
 @media only screen and (max-width: 600px) {
+  .iframesection {
+    margin-bottom: 100% !important;
+
+  }
+
+  .iframe {
+    margin: 10% 10%;
+    height: 700px;
+  }
+
+  .rendezvoustitle {
+    text-align: center;
+    width: 100% !important;
+    font-size: 30px !important;
+    margin-bottom: 10% !important;
+    font-weight: 400 !important;
+  }
+
+  .img2expertise {
+    display: block !important;
+    ;
+    margin: 0 auto !important;
+    ;
+  }
+
+  .contentexpertise {
+    color: #5E626C;
+    width: 100% !important;
+    text-align: justify;
+  }
+
+  .containerbtn {
+    margin-left: 17% !important;
+    margin-bottom: 11% !important;
+  }
+
+  .bluebloc {
+    /* margin:0 28px 0 24px !important */
+
+  }
+
+  .list-container {
+    display: block !important;
+  }
+
+  .list-item {
+    flex-basis: 100% !important;
+  }
+
+  .damient-desc {
+    font-size: 15PX;
+    line-height: normal;
+  }
+
+  .textheaderdamien {
+    font-size: 20px !important;
+    color: black;
+    margin: 0% 5% 5%;
+    font-weight: 500;
+    font-family: "Helvetica", Sans-serif;
+    text-align: center;
+  }
+
+  .leftblocimagine {
+    margin: 0% 3%;
+  }
+
+  .damient-desc {
+
+
+    text-align: justify;
+    width: 100% !important;
+
+  }
+
+  .damien-img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .textdamien {
+    margin: 0% 8% 13% 6% !important;
+    text-align: center;
+    color: #181236;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 25px !important;
+    font-weight: normal;
+    line-height: 0.3em;
+    letter-spacing: 0px;
+    word-spacing: 0em;
+  }
+
+  .card-img-top {
+    width: 20% !important;
+  }
+
+  .cardscroll {
+    margin: 30% 0% !important;
+
+  }
+
+  .item {
+    display: block !important;
+  }
+
+  .meta {
+    margin-right: 5px;
+    position: relative !important;
+    top: 110px;
+    align-self: none !important;
+  }
+
+  .scrollmobile {
+    margin-top: 52%;
+  }
+
+  .qouiItem {
+    padding-bottom: 10%;
+    margin-bottom: 10%;
+    height: 116px;
+    margin-left: 7% !important;
+    margin-right: 7% !important;
+
+  }
+
+  .qouiItemtext {
+    margin: 8% 17px !important;
+  }
 
   .fleche-blog {
     width: 12% !important;
@@ -102,8 +230,8 @@
   .pool {
     width: 1079px !important;
     right: 5% !important;
-    bottom: -35% !important;
-    height: 23% !important;
+    bottom: -16% !important;
+    height: 19% !important;
     color: black !important;
   }
 
@@ -553,32 +681,36 @@
 }
 
 .card-img-top {
-  width: 10% ;
+  width: 10%;
   margin-top: 40% !important;
   margin-right: auto !important;
-  margin-bottom:5%  !important;
+  margin-bottom: 5% !important;
   margin-left: auto !important;
   display: block;
 }
-.title1-scroll{
+
+.title1-scroll {
   font-size: 20px !important;
   font-weight: 500;
   font-family: "Raleway", Sans-serif;
   margin: 0 0 20px;
 }
-.title2-scroll{
+
+.title2-scroll {
   font-size: 15px !important;
   font-weight: bold;
   font-family: "Raleway", Sans-serif;
   margin: 0 0 20px;
 }
-.title3-scroll{
+
+.title3-scroll {
   font-size: 15px !important;
   font-weight: bold;
   font-family: "Raleway", Sans-serif;
- 
+
 }
-.content-scroll{
+
+.content-scroll {
   width: 80%;
   color: #3C4043;
   font-size: 15px !important;
@@ -586,35 +718,38 @@
   margin: 0 auto;
   text-align: center;
 }
-.textdamien{
+
+.textdamien {
   text-align: center;
-    color:#181236;
-    font-family: "Helvetica", Sans-serif;
-    font-size: 36px;
-    font-weight: normal;
-    line-height: 1.2em;
-    letter-spacing: 0px;
-    word-spacing: 0em;
+  color: #181236;
+  font-family: "Helvetica", Sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.2em;
+  letter-spacing: 0px;
+  word-spacing: 0em;
 }
+
 .damien-img {
- 
+
   border-style: solid;
   border-width: 5px 5px 5px 5px;
   border-color: #18123629;
   border-radius: 100px 100px 100px 100px;
 }
-.damient-desc{
 
-  
-    color: #3C4043;
-    font-size: 100%;
-    font-weight: 400; 
-    width: 82%;
-     
+.damient-desc {
+
+
+  color: #3C4043;
+  font-size: 100%;
+  font-weight: 400;
+  width: 82%;
+
 }
 
-.damient-title1{
-  margin: 2% 0% 4%  0% ;
+.damient-title1 {
+  margin: 2% 0% 4% 0%;
   font-size: 24px;
   font-weight: 400;
   text-transform: capitalize;
@@ -622,4 +757,245 @@
   text-decoration: none;
   line-height: 1em;
   letter-spacing: -1px;
+}
+
+.textheaderdamien {
+  font-size: 25px;
+  color: black;
+  margin: 0% 5% 5%;
+  font-weight: 500;
+  font-family: "Helvetica", Sans-serif;
+}
+
+.bluebloc {
+  color: white;
+  padding-top: 6%;
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: #1c1735;
+}
+
+.text1imagineblocblue {}
+
+.text2imagineblocblue {
+  margin-bottom: 5%;
+}
+
+.domainelist>li {
+
+  margin-bottom: 3%;
+
+}
+
+.domainelist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.list-item {
+  flex-basis: 50%;
+}
+
+
+.domainelist>li>a {
+  color: #8998C2;
+  ;
+  font-family: "Raleway", Sans-serif;
+  font-weight: normal;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  margin-bottom: 3%;
+
+}
+
+.domainelist>li::marker {
+
+  color: #5E626C;
+  /* Change the color of the marker to red */
+
+}
+
+.domainelist>li>a:hover {
+
+  color: white;
+  /* Change the color of the marker to red */
+
+}
+
+.btnimagine2 {
+  background-color: #181236;
+  text-align: center;
+
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  border-radius: 30px;
+  font-family: "Raleway", Sans-serif;
+  font-weight: 500;
+
+  padding: 11px 42px;
+  letter-spacing: 0.2px;
+  color: white;
+  text-decoration: none;
+}
+
+.containerbtn {
+  margin-left: 41%;
+  margin-top: 5%;
+  margin-bottom: 22%;
+}
+
+.backgroundcolorblue {
+  padding: 3% 0% 2% 0%;
+  text-align: center;
+
+  color: white;
+  background-color: #181236;
+}
+
+.backgroundcolorblue>span {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Helvetica", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.5em;
+  letter-spacing: 0px;
+  word-spacing: 0em;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.title2expertise {
+  font-size: 16px;
+  color: #5E626C
+}
+
+.contentexpertise {
+  color: #5E626C;
+  width: 85%;
+  text-align: justify;
+}
+
+.textexpertise {
+  text-align: center;
+  color: white;
+  padding: 5%;
+  background-color: #181236;
+  ;
+}
+
+.rendezvoustitle {
+  width: 82%;
+  font-size: 36px;
+  margin-bottom: 10%;
+}
+
+.iframe {}
+
+.iframesection {
+  margin-top: 10%;
+  height: 680px;
+}
+
+.bloc1 {
+  padding: 0% 10%;
+  margin-top: 20%;
+  color: white;
+}
+
+.contactsection2 {
+  position: relative !important;
+}
+
+.title1contact {
+  font-family: "Raleway", Sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+}
+
+.cadreimg {
+  position: absolute;
+  left: 14%;
+  height: 76%;
+  width: 29%;
+  bottom: 2%;
+}
+
+.btncontact {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #D79B54;
+  border-radius: 3px 3px 3px 3px;
+  padding: 20px 40px 20px 40px;
+}
+
+.contactimg {
+  left: 18%;
+  height: 102%;
+  width: 26%;
+  bottom: -2%;
+}
+.title2contact {
+  font-family: "Raleway", Sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: white; 
+  margin-bottom: 10%;
+}
+.imgflech {
+  left: 18%;
+  height: 102%;
+  width: 26%;
+  bottom: -2%;
+}
+
+
+.addresses {
+  color: white; 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.address-container {
+  color: white; 
+  display: flex;
+  margin: 10px;
+}
+
+.flag {
+  color: white; 
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+
+.address-list {
+  color: white; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.address-list li {
+  color: white; 
+  margin-bottom: 5px;
+}
+.contactflagimg {
+  height: 48px;
+  width: 48px;
+  margin-right: 10px;
+  display: block;
+}
+ 
+.address-list-item{
+
 }
