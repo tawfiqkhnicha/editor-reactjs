@@ -69,7 +69,6 @@ export default function Recruiting() {
           styleContentPage="OurValuesheadertext"
           styleHeaderPage="left-border"
         />
-
         <Grid>
           <Widget size={6} className="d-flex align-items-center">
             <Card

@@ -1,4 +1,9 @@
-@import "\globals2.css";
+@import "./globals2.scss";
+@import "./variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+@import "./layout/_sidebar.scss";
+@import "./layout/_container.scss";
 
 .retation-60{
   transform: rotate(60deg);
