@@ -1,3 +1,7 @@
+import React from "react";
+import { useDispatch } from "react-redux";
+
+
 export  function   groupArray(array: any, rows: number) : any{
 
     let talents = [...Array(array.length/rows)]
@@ -5,3 +9,4 @@ export  function   groupArray(array: any, rows: number) : any{
     return talentsRow;
 
 }
+

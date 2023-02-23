@@ -87,11 +87,10 @@ export default function UnsolicitedApplication() {
             </Widget>
             <Widget size={12} className="d-flex  mt-5">
               <div className="d-flex justify-content-start align-items-center">
-                <Button className="btn-padding-m  btn-style" title="Send" href="/our-values" />
+                <Button className="btn-padding-m  btn-style" title="Send" variant="button"  action={()=> alert("hello world")}/>
               </div>
             </Widget>
           </Grid>
-
         </Section>
 
       </Section>
