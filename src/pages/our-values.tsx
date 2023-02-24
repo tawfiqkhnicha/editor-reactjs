@@ -26,8 +26,8 @@ export default function OurValues() {
         <img className="ourvaluesimage  " src="VALEURS-UK.png" />
       </Section2>
 
-      
-      <Section2 className="sectionourvalues "  background={false} fullWidth={false}>
+
+      <Section2 className="sectionourvalues " background={false} fullWidth={false}>
         <Section2 className="  section2-ourdna py-5  main-wrapper" background={false} fullWidth={false}>
           <div className="d-flex  flex-wrap-our-values     mx-1">
 
@@ -39,12 +39,15 @@ export default function OurValues() {
               </div>
 
             ))}
- 
-            
+
+
           </div>
         </Section2>
       </Section2>
-      <Section2 className="my-5 main-wrapper" background={false} fullWidth={false}>
+      <Section2 className="my-5 main-wrapper position-relative" background={false} fullWidth={false}>
+        <div className="image-starour-1ourvalues d-flex justify-content-end  mb-lg-5">
+          <img src="/fleche-contact-2-ourvalues.png" className="fleche-1ourvalues" />
+        </div>
         <Grid>
           <Card styleHeaderPage=" textstyle left-border " styleContentPage=" OurValuesheadertext   " HeaderTitle="<h1>Our origins?</h1>" content="<p> Discover here our genesis  .</p>" />
           <Button2 styleButton="  button-width" variant="link" title="The origin" href="/The origin" />

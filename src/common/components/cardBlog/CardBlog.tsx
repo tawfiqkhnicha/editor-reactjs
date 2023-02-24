@@ -13,7 +13,7 @@ export default function CardBlog({ imgsrc, Cardtitle, content ,href,tag  }: ICar
     return (
         <div className="card cardstyle shadow"  >
             <div className="textstyleblog rounded">{tag}</div>
-            <img className="card-img-top" src= {imgsrc}  alt="Card image cap" />
+            <img className="card-img-top-blog" src= {imgsrc}  alt="Card image cap" />
             <div className="card-body">
                 <h5 className="  categoryTitle">{Cardtitle}</h5>
                 <p className="  categoryContent">{content}</p>

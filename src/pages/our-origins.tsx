@@ -15,17 +15,17 @@ export default function OuerOrigins() {
 
       
       <Section className="main-wrapper" background={false} fullWidth={false}>
-        <Card HeaderTitle="<h1>La génèse</h1>" styleHeaderPage="  HeaderPage left-border " styleContentPage="text-content"
-          content={"<p>de notre histoire</br> MENAPS est né de la volonté de proposer un conseil intégré allant de la vision stratégique à la concrétisation opérationnelle allié à une forte dimension digitale,</p>"} />
+        <Card HeaderTitle="<h1>The origin</h1>" styleHeaderPage="  HeaderPage left-border " styleContentPage="text-content"
+          content={"<span>of our story</br>  MENAPS was born out of the desire to offer integrated consulting services starting from strategic vision to concrete operations combined with a strong digital dimension. </span>"} />
       </Section>
       <Section background={false} fullWidth={true}>
-        <ContentOurOrigins padding={true} styleContentPage="contentPage my-3" content={[{ year: "2017", content: ["Naissance de MENAPS", "Le constat : La transformation digitale est en pleine accélération, mais l’offre n’est pas en adéquation.", "Ouverture des bureaux à Toulouse (France),<br> Tunis (Tunisie), Casablanca (Maroc)"] }, { year: "2018", content: ["Le constat :<br>La transformation digitale est en pleine<br>accélération, mais l’offre n’est pas en adéquation."] }, { year: "2019", content: ["ahmed", "raed"] }, { year: "2020", content: ["ahmed", "raed"] }, { year: "2021", content: ["ahmed", "raed"] }]} />
+        <ContentOurOrigins padding={true} styleContentPage="contentPage my-3" content={[{ year: "2017", content: ["The findings:<br>Digital transformation is in full<br>acceleration, but the offer does not match the expectations of the customers.",] }, { year: "2019", content: [" Birth of MENAPS", "Opening of offices in Toulouse (France), <br>Tunis (Tunisia), Casablanca (Morocco)"] }, { year: "2020", content: ["Opening of offices in Toulouse (France) ", " Cross-Fertilization and diversification<br>in the automotive sector "] }, { year: "2021", content: ["Opening of offices in Toulouse (France) ", " Cross-Fertilization and diversification<br>in the automotive sector "] }]} />
       </Section>
       <Section className=" "  background={true} fullWidth={false}> 
-      <Section className="my-5 main-wrapper " background={true} fullWidth={false}>
+      <Section className="mt-2 main-wrapper " background={true} fullWidth={false}>
         <Grid>
-          <Card cardStyle="my-5" styleHeaderPage="text-white left-border " styleContentPage="text-white text-content " HeaderTitle="<h1>Trouvons ensemble</h1>" content="<p>les projets de demain </p>" />
-          <Button2 styleButton="  button-width my-3" variant="link" title=" Discover them" href="/our-values" />
+          <Card cardStyle="my-5" styleHeaderPage="text-white left-border " styleContentPage="text-white text-content " HeaderTitle="<h1>Let's find</h1>" content="<p>tomorrow's projects together</p>" />
+          <Button2 styleButton="  button-width my-1" variant="link" title="Let's talk about it" href="/our-values" />
 
         </Grid>
       </Section>
