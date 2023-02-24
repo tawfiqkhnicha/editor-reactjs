@@ -14,7 +14,7 @@ export default function Carousel(){
           <Widget size={6} className="" >
           </Widget>
           <Widget size={6} className="footprint" >
-          <Card styleHeaderPage="slidertitle  text-white" styleContentPage="text-white slidercontent " HeaderTitle="<h1>MENAPS,</h1>" content="<span style='text-align:justify ; letter-spacing: 1px !important;' class='letter-spacing' >Groupe de <span style='color:#05f2f2;'>conseil intégré,</br></span>stratégique & opérationnel, à </br>forte dimension d’innovation</br>technologique & digitale</span></br>" />            <Button2 styleButton="    buttonSlider my-3" variant="link" title="Discutons-en" href="/our-values" />
+          <Card styleHeaderPage="slidertitle  text-white" styleContentPage="text-white slidercontent " HeaderTitle="<h1>MENAPS,</h1>" content="  <span style='text-align: left; line-height: 23px; letter-spacing: 0px; font-weight: 500;  ' data-stylerecorder='true'> is an <span style='color: rgb(5, 242, 242); text-align: left; line-height: 23px; letter-spacing: 0px; font-weight: 500;  ' data-stylerecorder='true'>integrated,</span> strategic and <br>operational consulting group, <br> with a strong dimension of <br>technologicaland digital innovation</span>" />            <Button2 styleButton="    buttonSlider my-3" variant="link" title="Let's talk about it " href="/our-values" />
           </Widget>
         </Grid>
       </div>

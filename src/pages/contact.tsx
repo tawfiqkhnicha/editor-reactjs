@@ -1,8 +1,10 @@
 import Button from "@/common/components/button/Button";
+import Button2 from "@/common/components/button2/Button2";
 import Card from "@/common/components/card/Card";
 import Grid from "@/common/components/grid/Grid";
 import Icon from "@/common/components/icon/Icon";
 import Section from "@/common/components/Section/Section";
+import Section2 from "@/common/components/Section2/Section2";
 import Typography from "@/common/components/typography/Typography";
 import Widget from "@/common/components/widget/Widget";
 import Input from "@/common/forms/input/Input";
@@ -18,19 +20,19 @@ export default function Contact() {
     country: '/franceflag.png', addresses: ['• 18 Place Roguet, 31300 Toulouse, France', '• Tour Coeur Défense 110 Esplanade du Général de Gaulle, 92400 Courbevoie, Ile de France, France']
   },
   {
-    country: '/franceflag.png',
+    country: '/tunisiaflag.png',
     addresses: [
       '• 14 avenue de la Bourse - Lac 2 Tunis 1053, Tunisie'
     ]
   },
   {
-    country: '/franceflag.png',
+    country: '/morocco-flag.png',
     addresses: [
       '• 34 Boulevard Zerktouni Casablanca 20000, Maroc'
     ]
   },
   {
-    country: '/franceflag.png',
+    country: '/india-flag.png',
     addresses: [
       '• 1321, 27th Main Rd, PWD Quarters, Sector 2, HSR Layout, Bengaluru, Karnataka 560102, Inde'
     ]
@@ -69,14 +71,14 @@ export default function Contact() {
       </Section>
 
 
-      <Section fullWidth background className="section-padding-y position-relative ">
+      <Section2 fullWidth background className=" section2contact section-padding-y position-relative ">
         <img src="/cadre-contact.png" className="cadreimg d-md-block d-none " width={250} />
 
 
-        <Section className="main-wrapper main-wrapper section-margin-0 section-padding-x">
+        <Section className="  main-wrapper section-margin-0 section-padding-x">
           <Grid >
             <Widget size={6} className="bloc1 d-flex justify-content-start flex-column section-padding-x ">
-              <Grid className="w-100">
+              <Grid className="gridform">
                 <Widget size={12} mobile className="mt-2">
                   <div className="title1contact">You want to know more?<br />Contact us here</div>
                 </Widget>
@@ -89,7 +91,7 @@ export default function Contact() {
                 <Widget size={12} mobile className="mt-2">
                   <Textarea placeholder="Message*" cols={40} rows={10} />
                 </Widget>
-                <Widget size={12} mobile className="mt-2">
+                <Widget size={12} mobile className="mt-5">
                   <Link href={'/*'} className={`    btncontact  `}>send </Link>
                 </Widget>
 
@@ -97,11 +99,7 @@ export default function Contact() {
             </Widget >
 
 
-
-
-
-
-            <Widget size={6} className={`   `}>
+            <Widget size={6} className={`  bloc2 `}>
               <div className="title2contact">You can write directly to hello@menaps.com</div>
               <div className=" text-center mb-5 "   >
                 <img src="/fleche-contact-22.png   " className=" text-center imgflech" />
@@ -123,7 +121,19 @@ export default function Contact() {
           </Grid>
 
         </Section>
-      </Section>
+      </Section2>
+
+      <Section2 className=" joinus main-wrapper position-relative" background={false} fullWidth={false}>
+        <div className="imgflech2container text-center mb-5 "   >
+          <img src="/fleche-contact-2-ourvalues.png   " className=" text-center imgflech2" />
+        </div>
+        <Card styleHeaderPage="HeaderPage left-border " HeaderTitle="<h1>Join us?</h1>" styleContentPage="OurValuesheadertext   "
+          content={"<p>Do not hesitate to consult our open business activities, it could match with our MENAPS mindset.</p>"} />
+
+        <Button2 styleButton="   btncontact2" variant="link" title="The origin" href="/The origin" />
+
+      </Section2>
+
 
     </>
   )

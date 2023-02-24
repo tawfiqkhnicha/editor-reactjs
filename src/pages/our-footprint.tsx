@@ -24,7 +24,7 @@ export default function OurFootprint() {
 
       <Section className="main-wrapper" background={false} fullWidth={false}>
         <Card HeaderTitle="<h1>MENAPS expands its borders.</h1>" styleHeaderPage=" HeaderPage left-border " styleContentPage="text-content"
-          content={"<p>de notre histoire</br> MENAPS est né de la volonté de proposer un conseil intégré allant de la vision stratégique à la concrétisation opérationnelle allié à une forte dimension digitale,</p>"} />
+          content={"<p>Drawing its resources from the diversity of its talents, the group is inspired by all the best practices worldwide and is penetrating new international markets with high human and technical potential.</p>"} />
       </Section>
 
       <Section className="  section-margin-6">
@@ -32,7 +32,7 @@ export default function OurFootprint() {
       </Section>
       <Section2 className=" gallerywallaper " background={true} fullWidth={false}>
         <div className="secltion-expbg2  d-none  d-md-block"><img src="/carre-bg2.png" /></div>
-        <Card cardStyle="main-wrapper mainindex text-white my-5" styleHeaderPage="text-white left-border " styleContentPage="text-white text-content " HeaderTitle="<h1>Nos locaux</h1>" content="<p>sont pensés pour le bien-etre de nos salariés .</p>" />
+        <Card cardStyle="main-wrapper mainindex text-white my-5" styleHeaderPage="text-white left-border " styleContentPage="text-white text-content " HeaderTitle="<h1>our office</h1>" content="<p>are designed for our employees.</p>" />
         <GalleryFootprint padding={true} data={[
           {
             customOverlay: (

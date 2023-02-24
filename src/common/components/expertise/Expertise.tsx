@@ -39,7 +39,7 @@ export default function Expertise({ image1, image2, title1, title2, text }: IExp
           <p className="   title2expertise">{title2}</p>
         </div>
       </div>
-      <div className="      mt-4 justify-content-center">
+      <div className="  mt-4 justify-content-center">
          
           <p className=" contentexpertise">{text}</p>
          

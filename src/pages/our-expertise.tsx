@@ -78,17 +78,7 @@ export default function OurExpertise() {
 
 
               
-      <Section background={true} fullWidth={false} className="section-padding-y position-relative ">
-
-<img src="/Fleche-exp-2.png" className="fleche-exp-2 flech_width position-absolute  d-none  d-md-block" />
-      <Section className="my-5 main-wrapper " background={true} fullWidth={false}>
-        <Grid>
-          <Card styleHeaderPage="text-white left-border my-5" styleContentPage="text-white text-content " HeaderTitle="<h2>Trouvons ensemble</H2>" content="<p>les projets de demain </p>" />
-          <Button2 styleButton="  button-width my-3" variant="link" title=" Discover them" href="/our-values" />
-
-        </Grid>
-      </Section>
-      </Section>
+      
 
 
 

@@ -12,9 +12,9 @@ import Widget2 from "@/common/components/widget2/Widget2";
 import Expertise from "@/common/components/expertise/Expertise";
 export default function Imagine() {
   let data = [{ image1: "/majd.png", image2: "/aero.png", title1: "Majd Benabdallah", title2: "Secteur Aéronautique", text: "Majd dispose d’une expérience de plus de 15 ans en aéronautique auprès de grands groupes internationaux (Airbus, Bombardier, Safran, Stelia Aerospace) et leur écosystème. Ses compétences combinent non seulement l’aspect métier (Électrique, Mécanique, Structure en conception et calcul stress) mais aussi une forte dimension Processus, Méthodes et Outils régissant le cycle de vie de développement d’un programme avion. Durant son parcours il a travaillé sur différents programmes tel que le A350, A380, A320 Neo, CSeries / A220, Global 7000/8000." },
-  { image1: "/majd.png", image2: "/aero.png", title1: "Majd Benabdallah", title2: "Secteur Aéronautique", text: "Majd dispose d’une expérience de plus de 15 ans en aéronautique auprès de grands groupes internationaux (Airbus, Bombardier, Safran, Stelia Aerospace) et leur écosystème. Ses compétences combinent non seulement l’aspect métier (Électrique, Mécanique, Structure en conception et calcul stress) mais aussi une forte dimension Processus, Méthodes et Outils régissant le cycle de vie de développement d’un programme avion. Durant son parcours il a travaillé sur différents programmes tel que le A350, A380, A320 Neo, CSeries / A220, Global 7000/8000." }, { title: "At Menaps integrity is an imperative.", content: " A strong commitment to uprightness, moral rigor and a sense of ethics, is one of the essential foundations values of the Menaps Group.   Interact with respect, act with transparency, conduct yourself with probity, loyalty and fidelity is more than an expectation, a requirement for everyone, with everyone." },
-  { image1: "/majd.png", image2: "/aero.png", title1: "Majd Benabdallah", title2: "Secteur Aéronautique", text: "Majd dispose d’une expérience de plus de 15 ans en aéronautique auprès de grands groupes internationaux (Airbus, Bombardier, Safran, Stelia Aerospace) et leur écosystème. Ses compétences combinent non seulement l’aspect métier (Électrique, Mécanique, Structure en conception et calcul stress) mais aussi une forte dimension Processus, Méthodes et Outils régissant le cycle de vie de développement d’un programme avion. Durant son parcours il a travaillé sur différents programmes tel que le A350, A380, A320 Neo, CSeries / A220, Global 7000/8000." },
-  { image1: "/majd.png", image2: "/aero.png", title1: "Majd Benabdallah", title2: "Secteur Aéronautique", text: "Majd dispose d’une expérience de plus de 15 ans en aéronautique auprès de grands groupes internationaux (Airbus, Bombardier, Safran, Stelia Aerospace) et leur écosystème. Ses compétences combinent non seulement l’aspect métier (Électrique, Mécanique, Structure en conception et calcul stress) mais aussi une forte dimension Processus, Méthodes et Outils régissant le cycle de vie de développement d’un programme avion. Durant son parcours il a travaillé sur différents programmes tel que le A350, A380, A320 Neo, CSeries / A220, Global 7000/8000." },]
+  { image1: "/emmanuel.png", image2: "/aero.png", title1: "Emmanuel Strub", title2: "Secteur Aéronautique", text: "Majd dispose d’une expérience de plus de 15 ans en aéronautique auprès de grands groupes internationaux (Airbus, Bombardier, Safran, Stelia Aerospace) et leur écosystème. Ses compétences combinent non seulement l’aspect métier (Électrique, Mécanique, Structure en conception et calcul stress) mais aussi une forte dimension Processus, Méthodes et Outils régissant le cycle de vie de développement d’un programme avion. Durant son parcours il a travaillé sur différents programmes tel que le A350, A380, A320 Neo, CSeries / A220, Global 7000/8000." }, { title: "At Menaps integrity is an imperative.", content: " A strong commitment to uprightness, moral rigor and a sense of ethics, is one of the essential foundations values of the Menaps Group.   Interact with respect, act with transparency, conduct yourself with probity, loyalty and fidelity is more than an expectation, a requirement for everyone, with everyone." },
+  { image1: "/mehdi.png", image2: "/aero.png", title1: "Mehdi Sekkouri", title2: "Secteur Aéronautique", text: "Majd dispose d’une expérience de plus de 15 ans en aéronautique auprès de grands groupes internationaux (Airbus, Bombardier, Safran, Stelia Aerospace) et leur écosystème. Ses compétences combinent non seulement l’aspect métier (Électrique, Mécanique, Structure en conception et calcul stress) mais aussi une forte dimension Processus, Méthodes et Outils régissant le cycle de vie de développement d’un programme avion. Durant son parcours il a travaillé sur différents programmes tel que le A350, A380, A320 Neo, CSeries / A220, Global 7000/8000." },
+  { image1: "/michel.png", image2: "/aero.png", title1: "Michel Rascol", title2: "Secteur Aéronautique", text: "Majd dispose d’une expérience de plus de 15 ans en aéronautique auprès de grands groupes internationaux (Airbus, Bombardier, Safran, Stelia Aerospace) et leur écosystème. Ses compétences combinent non seulement l’aspect métier (Électrique, Mécanique, Structure en conception et calcul stress) mais aussi une forte dimension Processus, Méthodes et Outils régissant le cycle de vie de développement d’un programme avion. Durant son parcours il a travaillé sur différents programmes tel que le A350, A380, A320 Neo, CSeries / A220, Global 7000/8000." },]
   const domaine = [
     "Gestion De Projet", "Dev Fullstack", "Data & IA", "Cybersécurité", "Robotique", "Big Data", "Dev Ops", "Communication", "Marketing Digital"
   ];
@@ -24,14 +24,14 @@ export default function Imagine() {
         <img src="/logo-imagine-vector.svg" className="logo-imagine-vector" />
         <p className="text1imagine"  >Un accompagnement stratégique et opérationnel pour les entrepreneurs.</p>
         <p className="text2imagine" ><em>imagine</em> investit dans les projets digitaux et technologiques. Nous fournissons un soutien opérationnel qualifié aux entrepreneurs et nous les aidons à construire des entreprises leaders de leurs marchés.</p>
-        <p className="text3imagine "  >Nos expertises</p>
+        <p className="text3imagine d-md-block d-none"  >Nos expertises</p>
 
       </Section2>
       <div className="divider"></div>
 
       <Section2 className="position-relative text-white imagine-section2  " background={true} fullWidth={false}>
         <Section2 className="  main-wrapper2  position-relative " background={true} fullWidth={false}>
-          <p>Fort de plus de 100 ans d’expérience terrain cumulée dans les services digitaux, l’innovation et les nouvelles technologies auprès de grands groupes dans différents secteurs, MENAPS met à la disposition de votre projet ses experts ainsi qu’un accès privilégié à son réseau de clients  .</p>
+          <p className="textexperience">Fort de plus de 100 ans d’expérience terrain cumulée dans les services digitaux, l’innovation et les nouvelles technologies auprès de grands groupes dans différents secteurs, MENAPS met à la disposition de votre projet ses experts ainsi qu’un accès privilégié à son réseau de clients  .</p>
           <h1 className="text-center" >Quoi ?</h1>
           <Grid className="    ">
             {quoi.map((item, index) => {
@@ -103,8 +103,8 @@ export default function Imagine() {
         </div>
       </Section2>
 
-      <Section2 className="     "  >
-        <h1 className="text-center text-offres" >Nos secteurs d’expertise</h1>
+      <Section2 className="  nossecteurs"  >
+        <h1 className="text-center text-offres mb-5" >Nos secteurs d’expertise</h1>
         <div className={` main-wrapper     mt-4    `}>
           <div className="textexpertise"><span>L’expérience du groupe MENAPS sur ces trois secteurs historiques permet à imagine d’offrir un accompagnement enrichi sur ces thématiques et un accès privilégié à des interlocuteurs C-Level de ces industries.</span></div>
 
@@ -135,10 +135,10 @@ export default function Imagine() {
             </div>
           </Widget2>
 
-          <Widget size={6} className=" iframe  shadow-lg  mb-lg-4 mt-lg-4  mb-sm-4 mt-sm-4">
+          <Widget2 size={6} className=" iframe mx-auto shadow-lg  mb-lg-4 mt-lg-4  mb-sm-4 mt-sm-4">
 
           <iframe src="https://calendly.com/damien-bigot/imag-ne-by-menaps?embed_domain=menaps.com&amp;embed_type=Inline&amp;hide_gdpr_banner=1" width="100%" height="100%" frameborder="0"></iframe>
-          </Widget>
+          </Widget2>
         </Grid>
 
       </Section2>
