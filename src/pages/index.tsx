@@ -32,13 +32,12 @@ export default function Home() {
     window.addEventListener('resize', handleWindowResize);
     return () => window.removeEventListener('resize', handleWindowResize);
 
-  },)
+  },[screenWidth])
 
 
   return (
 
     < >
-        <Carousel/> 
 
       <Section className={`main-wrapper  section-padding-x position-relative  ${screenWidth <= 600 ? "mobile-margin" : "section-margin-6"}`}>
 
@@ -53,24 +52,23 @@ export default function Home() {
       </Section>
 
       <Section background={true} fullWidth={false} className="section-padding-y position-relative ">
-         <img src="/Fleche-2-Home.png" className="fleche-2-home flech_width position-absolute" />
+         <img src="/Fleche-2-Home.png" className="fleche-2-home flech_width position-absolute " />
         <Section className={screenWidth > 900 ? "w-100 m-auto" : "main-wrapper"}>
-          <Grid>
-            <Widget size={screenWidth > 600 && screenWidth <= 900 ? 6 : 6} className={`order-xl-1 order-lg-1 order-md-1 order-2 order-sm-2  d-flex align-items-center ${screenWidth > 900 ? "justify-content-center" : "justify-content-center"}`}>
+          <Grid className="main-wrapper">
+            <Widget size={screenWidth > 600 && screenWidth <= 900 ? 6 : 6} className={`order-xl-1 order-lg-1 order-md-1 order-2 order-sm-2  d-flex align-items-center ${screenWidth > 900 ? "justify-content-start" : "justify-content-center"}`}>
               <Button className="btn-padding btn-style" variant="link" title=" Discover them" href="/our-values" />
             </Widget>
             <Widget size={screenWidth > 600 && screenWidth <= 900 ? 6 : 6} className={`order-xl-2 order-lg-2 order-md-2 order-1 order-sm-1 d-flex align-items-center justify-content-start mt-5`}>
               <Card 
               
-              cardStyle={`${screenWidth > 900 ? "w-80" : ""}`} styleHeaderPage="text-white left-border HeaderPage" styleContentPage="text-white OurValuesheadertext" HeaderTitle={HomePageData['section_2'].title}
+               styleHeaderPage="text-white left-border HeaderPage" styleContentPage="text-white OurValuesheadertext" HeaderTitle={HomePageData['section_2'].title}
                content={HomePageData['section_2'].content} />
             </Widget>
           </Grid>
         </Section>
-
       </Section>
 
-      <Section background={false} fullWidth={false} className="main-wrapper section-margin-6 section-margin-15 section-padding-x position-relative margin-bottom-xxl">
+      <Section background={false} fullWidth={false} className="main-wrapper section-margin-6 section-margin-15 section-padding-x position-relative margin-bottom-xxl ">
         <img src="/Fleche-3-Home.png" className="fleche-3-home position-absolute" />
         <Grid>
           <Widget size={6} className={` d-flex ${screenWidth <= 600 ? "justify-content-center " : "justify-content-start " } align-items-start mt-mobile`}>

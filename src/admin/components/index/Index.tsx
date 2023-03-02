@@ -31,8 +31,8 @@ export default function Index() {
 
   const dispatch = useDispatch()
 
-  function navigateTo(){
-    dispatch.pageModel.setPage({ page: "Page" })
+  function newPage(){
+    dispatch.pageModel.newPage()
   }
   
 
@@ -40,8 +40,7 @@ export default function Index() {
     {
       name: "add new page",
       icon: "bi bi-plus",
-      action:  navigateTo
-
+      action:  newPage
     }
   ]
 

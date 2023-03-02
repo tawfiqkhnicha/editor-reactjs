@@ -10,7 +10,7 @@ const FullLayout = ({ children }: any) => {
   };
 
   return (
-    <main>
+    <main className="admin-bg"> 
       <div className="pageWrapper d-md-block d-lg-flex">
         {/******** Sidebar **********/}
         <aside
@@ -22,7 +22,7 @@ const FullLayout = ({ children }: any) => {
         {/********Content Area**********/}
         <div className="contentArea">
           <Header showMobmenu={() => showMobilemenu()} />
-          <Container className="p-4 wrapper" fluid>
+          <Container className="p-4 wrapper " fluid>
             <div>{children}</div>
           </Container>
         </div>

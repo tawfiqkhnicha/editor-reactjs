@@ -3,5 +3,5 @@ import Page from "./components/page/Page";
 
 export const AdminComponents = {
      Index,
-    Page 
+     Page 
 }
