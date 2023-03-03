@@ -55,7 +55,6 @@ export const pageModel = createModel()({
         },
         addChild(state, payload) {
 
-            console.log(payload);
 
             findNestedItem(state.content, payload.id, payload.component)
 

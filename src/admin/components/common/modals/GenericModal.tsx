@@ -22,9 +22,10 @@ export default function GenericModal({ modal, toggle, className, closeBtn, confi
 
     const selectComponent = (component: IComponent)=>{
 
-        dispatch.pageModel.addChild({id: id, component: component})
+        let newComponent = JSON.parse(JSON.stringify({...component, id: Math.floor(Math.random() * 101)}))    
+
+        dispatch.pageModel.addChild({id: id, component: newComponent})
         toggle();
-        console.log(id);
         
         confirmBtn
     }

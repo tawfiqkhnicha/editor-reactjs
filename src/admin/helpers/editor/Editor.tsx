@@ -20,6 +20,8 @@ export default function Editor(data: IComponent): React.ReactNode {
     };
     const changeId = (id: number) => {
         setId(id)
+        console.log(id);
+        
         toggle()
     }
 
@@ -59,6 +61,7 @@ export default function Editor(data: IComponent): React.ReactNode {
 
         return <div className=" d-flex flex-column justify-content-center mb-2">
             <div className=" d-flex justify-content-between border border-bottom-0">
+                {id}
                 <button className="btn"> <i className="bi bi-gear-fill"></i></button>
                 <button className="btn" onClick={() => deleteElement(id)}> <i className="bi bi-x-lg"></i></button>
             </div>

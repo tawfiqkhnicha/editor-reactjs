@@ -3,7 +3,7 @@
 export interface IComponent {
     type: string,
     icon?: string
-    id: number
+    id: number | null,
     category: "ATOMIC" | "CONTAINER",
     props?: {
         [key: string]: unknown;
