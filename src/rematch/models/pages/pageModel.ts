@@ -42,6 +42,7 @@ export const pageModel = createModel()({
             return {
                 ...state,
                 page: "Page",
+                title: "untitled-page",
                 content: {
                     type: "Card",
                     id: 1,
@@ -56,8 +57,10 @@ export const pageModel = createModel()({
 
             console.log(payload);
 
-            findNestedItem(state.content, payload, { type: "Card", id: 4, category: "CONTAINER", props: { title: "test" }, childrens: [] })
+            findNestedItem(state.content, payload.id, payload.component)
 
+            console.log(state);
+            
             return state;
 
         },

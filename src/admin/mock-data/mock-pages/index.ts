@@ -13,8 +13,5 @@ export const index = {
             type: "Card",
             category: "CONTAINER",
         }
-
-
-
     ]
 }

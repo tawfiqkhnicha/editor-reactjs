@@ -29,10 +29,18 @@ export function findNestedItem(obj: IComponent, id: number, component: IComponen
 
 export function deleteNestedItem(arr: IComponent[], id: number) {
 
-
-    arr.filter(item => {
+    arr.map((item, index) => {
         if (item.id === id) {
-            return item.id !== id
+
+            if(index === 0){
+                console.log("the index is "+0);
+                return    arr.shift()
+            }else{
+                console.log("the index is "+index);
+                
+                return   arr.splice(index, index);
+            }
+            
         } else if (item.childrens) {
             return deleteNestedItem(item.childrens, id)
         }
