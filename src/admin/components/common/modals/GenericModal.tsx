@@ -9,8 +9,8 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { IGenericModal } from './IGenericModal';
 import { IComponent } from '@/admin/helpers/interfaces/IComponent';
-
-export default function GenericModal({ modal, toggle, className, closeBtn, confirmBtn, id, props }: IGenericModal) {
+import uuid from 'react-uuid';
+export default function GenericModal({ modal, toggle, className, closeBtn, confirmBtn, id , props }: IGenericModal) {
 
     const dispatch = useDispatch();
 
@@ -37,7 +37,7 @@ export default function GenericModal({ modal, toggle, className, closeBtn, confi
 
     const selectComponent = (component: IComponent) => {
 
-        let newComponent = JSON.parse(JSON.stringify({ ...component, id: Math.floor(Math.random() * 101) }))
+        let newComponent = JSON.parse(JSON.stringify({...component, id:  uuid().toString()}))    
 
         dispatch.pageModel.addChild({ id: id, component: newComponent })
         toggle();

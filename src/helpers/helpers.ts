@@ -11,8 +11,8 @@ export function groupArray(array: any, rows: number): any {
 
 }
 
-export function findNestedItem(obj: IComponent, id: number, component: IComponent): any {
-    if (obj.id === id) {
+export function findNestedItem(obj: IComponent, id: string, component: IComponent): any {
+    if (obj.id === id) {//first element in  page
         obj.childrens?.push(component)
         return
     } else {
@@ -25,7 +25,7 @@ export function findNestedItem(obj: IComponent, id: number, component: IComponen
 }
 
 
-export function deleteNestedItem(arr: IComponent[], id: number) {
+export function deleteNestedItem(arr: IComponent[], id: string) {
 
     arr.map((item, index) => {
         if (item.id === id) {
