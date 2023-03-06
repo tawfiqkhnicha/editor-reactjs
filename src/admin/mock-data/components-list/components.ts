@@ -4,17 +4,18 @@ export const Components = [
         type: "Card",
         icon: "bi bi-window",
         id: null,
-        category: 'CONTAINER',
-        props: {},
+        category: 'ATOMIC',
+        props: {HeaderTitle: "<h1>test</h1>", content: "<p>hello world</p>"},
         childrens: []
     },
  
     {
-        type: "Button",
-        icon: "bi bi-fast-forward-btn",
+        type: "Carousel",
+        icon: "bi bi-window",
         id: null,
         category: 'ATOMIC',
-        props: {title: "test"},
+        props: {HeaderTitle: "<h1>test</h1>", content: "<p>hello world</p>"},
         childrens: []
-    }
+    },
+    
 ]

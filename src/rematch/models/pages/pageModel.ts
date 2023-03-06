@@ -44,10 +44,10 @@ export const pageModel = createModel()({
                 page: "Page",
                 title: "untitled-page",
                 content: {
-                    type: "Card",
+                    type: "Div",
                     id: 1,
                     category: "CONTAINER",
-                    props: {},
+                    props: {className: ""},
                     childrens: []
                 }
             }

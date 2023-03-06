@@ -1,7 +1,10 @@
-
-import Button from "@/admin/mock-data/mock-components/Button/Button"
-import Card from "@/admin/mock-data/mock-components/Card/Card"
+import Card from "@/common/components/card/Card"
+import Div from "@/admin/mock-data/mock-components/Card/Card"
+import Carousel from "@/common/components/carousel/Carousel"
 export const siteComponents = {
-    Button,
-    Card
+    
+    Card,
+    Div,
+    Carousel
+
 }

@@ -30,12 +30,9 @@ export function deleteNestedItem(arr: IComponent[], id: number) {
     arr.map((item, index) => {
         if (item.id === id) {
 
-            if(index === 0){
-                
-                return    arr.shift()
-            }else{                
-                return   arr.splice(index, index);
-            }
+                        
+                return   arr.splice(index, 1);
+            
             
         } else if (item.childrens) {
             return deleteNestedItem(item.childrens, id)

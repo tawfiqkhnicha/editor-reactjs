@@ -14,20 +14,31 @@ export default function Editor(data: IComponent): React.ReactNode {
     const forceUpdate = React.useReducer(() => ({}), {})[1] as () => void
 
     const [modal, setModal] = useState(false);
-    const [componentId, setId] = useState(0)
+    const [componentId, setId] = useState(0);
+    const[componentProps, setComponentProps] = useState(undefined)
     const toggle = () => {
+        
         setModal(!modal)
+        
+        if(modal === true){
+            setComponentProps(undefined)
+        }
+       console.log(componentProps)
     };
     const changeId = (id: number) => {
-        setId(id)
-        console.log(id);
-        
+        setId(id)        
         toggle()
     }
 
     const closeModal = () => {
         setModal(false);
         console.log(modal)
+    }
+
+    const setProps = (props: any)=>{
+        setComponentProps(props)
+        toggle();
+
     }
 
     function createComponent(component: IComponent): React.ReactNode {
@@ -61,8 +72,8 @@ export default function Editor(data: IComponent): React.ReactNode {
 
         return <div className=" d-flex flex-column justify-content-center mb-2">
             <div className=" d-flex justify-content-between border border-bottom-0">
-                {id}
-                <button className="btn"> <i className="bi bi-gear-fill"></i></button>
+            {!props}
+                <button className="btn" disabled={!props  ? true: false} onClick={()=>setProps(props)}> <i className="bi bi-gear-fill"></i></button>
                 <button className="btn" onClick={() => deleteElement(id)}> <i className="bi bi-x-lg"></i></button>
             </div>
             <div className="w-80 border border w-100">
@@ -80,7 +91,7 @@ export default function Editor(data: IComponent): React.ReactNode {
 
             </div>
 
-            <GenericModal modal={modal} toggle={toggle} closeBtn={closeBtn} id={componentId} confirmBtn={forceUpdate} />
+            <GenericModal modal={modal} toggle={toggle} closeBtn={closeBtn} id={componentId} confirmBtn={forceUpdate} props={componentProps} />
 
         </div>
     }

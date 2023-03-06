@@ -8,4 +8,5 @@ export interface IGenericModal{
     closeBtn: React.ReactNode,
     data?: IComponent[], 
     confirmBtn: ()=>void,
+    props?: any
 }
