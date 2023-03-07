@@ -38,7 +38,7 @@ export default function Home() {
   return (
 
     < >
-
+ <Carousel/>
       <Section className={`main-wrapper  section-padding-x position-relative  ${screenWidth <= 600 ? "mobile-margin" : "section-margin-6"}`}>
 
          <img src="/Fleche-1-Home.png" className="fleche-1-home flech_width position-absolute" />
