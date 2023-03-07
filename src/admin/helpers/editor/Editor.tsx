@@ -15,18 +15,17 @@ export default function Editor(data: IComponent): React.ReactNode {
 
     const [modal, setModal] = useState(false);
     const [componentId, setId] = useState(0);
-    const[componentProps, setComponentProps] = useState(undefined)
+    const [componentProps, setComponentProps] = useState(undefined)
     const toggle = () => {
-        
-        setModal(!modal)
-        
-        if(modal === true){
+        if (modal === true) {
             setComponentProps(undefined)
         }
-       console.log(componentProps)
+        setModal(!modal)
+
+
     };
     const changeId = (id: number) => {
-        setId(id)        
+        setId(id)
         toggle()
     }
 
@@ -35,11 +34,16 @@ export default function Editor(data: IComponent): React.ReactNode {
         console.log(modal)
     }
 
-    const setProps = (props: any)=>{
+    const setProps = (props: any) => {
         setComponentProps(props)
+        console.log(componentProps);
+        
         toggle();
 
+
     }
+
+
 
     function createComponent(component: IComponent): React.ReactNode {
 
@@ -72,8 +76,8 @@ export default function Editor(data: IComponent): React.ReactNode {
 
         return <div className=" d-flex flex-column justify-content-center mb-2">
             <div className=" d-flex justify-content-between border border-bottom-0">
-            {!props}
-                <button className="btn" disabled={!props  ? true: false} onClick={()=>setProps(props)}> <i className="bi bi-gear-fill"></i></button>
+                {!props}
+                <button className="btn" disabled={!props ? true : false} onClick={() => setProps(props)}> <i className="bi bi-gear-fill"></i></button>
                 <button className="btn" onClick={() => deleteElement(id)}> <i className="bi bi-x-lg"></i></button>
             </div>
             <div className="w-80 border border w-100 p-4">
@@ -91,8 +95,8 @@ export default function Editor(data: IComponent): React.ReactNode {
 
             </div>
 
-            <GenericModal modal={modal} toggle={toggle} closeBtn={closeBtn} id={componentId} confirmBtn={forceUpdate} props={componentProps} />
-
+           {modal && <GenericModal modal={modal} toggle={toggle} closeBtn={closeBtn} id={componentId} confirmBtn={forceUpdate} props={componentProps} />
+} 
         </div>
     }
 

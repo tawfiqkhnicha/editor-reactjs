@@ -9,4 +9,5 @@ export interface IGenericModal{
     data?: IComponent[], 
     confirmBtn: ()=>void,
     props?: any
+    editProps?: (event: any, key: any)=>void 
 }
