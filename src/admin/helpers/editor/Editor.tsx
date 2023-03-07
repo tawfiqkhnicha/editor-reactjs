@@ -76,7 +76,7 @@ export default function Editor(data: IComponent): React.ReactNode {
 
         return <div className=" d-flex flex-column justify-content-center mb-2">
             <div className=" d-flex justify-content-between border border-bottom-0">
-                {!props}
+                {id}
                 <button className="btn" disabled={!props ? true : false} onClick={() => setProps(props)}> <i className="bi bi-gear-fill"></i></button>
                 <button className="btn" onClick={() => deleteElement(id)}> <i className="bi bi-x-lg"></i></button>
             </div>
