@@ -76,7 +76,7 @@ export default function Editor(data: IComponent): React.ReactNode {
                 <button className="btn" disabled={!props  ? true: false} onClick={()=>setProps(props)}> <i className="bi bi-gear-fill"></i></button>
                 <button className="btn" onClick={() => deleteElement(id)}> <i className="bi bi-x-lg"></i></button>
             </div>
-            <div className="w-80 border border w-100">
+            <div className="w-80 border border w-100 p-4">
                 {React.createElement(
                     siteComponents[type],
                     props,
