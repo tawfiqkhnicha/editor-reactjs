@@ -6,12 +6,12 @@ const initialState: { page: string, content: IComponent } = {
     page: "Index",
     content: {
         type: "Card",
-        id: 1,
+        id: "1",
         category: "CONTAINER",
         childrens: [
             {
                 type: "Button",
-                id: 2,
+                id: "2",
                 category: "ATOMIC",
                 props: {
                     title: "click me!",
@@ -19,7 +19,7 @@ const initialState: { page: string, content: IComponent } = {
             },
             {
                 type: "Card",
-                id: 3,
+                id: "3",
                 category: "CONTAINER",
                 childrens: []
             }

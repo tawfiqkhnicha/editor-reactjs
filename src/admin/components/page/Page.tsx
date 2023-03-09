@@ -26,55 +26,65 @@ export default function Page() {
 
         setTitle(event.target.value)
     }
-    const [buttonSize, setButtonSize] = useState(3);
+    const [buttonSize, setButtonSize] = useState("3");
 
-    const handleButtonClick = (size) => {
-        setButtonSize(size);
-    };
 
-    let xs = 8;
-    if (buttonSize === 3) {
-        xs = 3;
+    const [xs, setXs] = useState("laptop") 
+    const handleButtonClick = (size: any) => {
+        
+   
+
+    if (size === "3") {
+        setXs("phone");
     }
-    if (buttonSize === 5) {
-        xs = 5;
-    } else if (buttonSize === 8) {
-        xs = 8  ;
+    if (size === "5") {
+        console.log(5)
+        setXs("laptop");
+    } else if (size === "8") {
+        setXs("large");
     }
+}
     return (
         <Container fluid >
 
             <Row className="mt-5">
-                <Col xs={xs}>
-                    <div className="d-flex justify-content-center">
+                <Col className=" mb-4 " xs={12} >
+                    <div className=" d-flex  justify-content-center ">
                         <button
-                            className="btn btn-light mx-2"
-                            onClick={() => handleButtonClick(3)} 
+                            className="btn btn-success mx-2"
+                            onClick={() => handleButtonClick("3")}
                         >
                             <i className="bi bi-phone me-2"></i>
                             Smartphone
                         </button>
                         <button
-                            className="btn btn-light mx-2"
-                            onClick={() => handleButtonClick(5)} 
+                            className="btn btn-warning mx-2"
+                            onClick={() => handleButtonClick("5")}
                         >
                             <i className="bi bi-laptop me-2"></i>
                             Laptop
                         </button>
                         <button
-                            className="btn btn-light mx-2"
-                            onClick={() => handleButtonClick(8)}
-                        
+                            className="btn btn-danger mx-2"
+                            onClick={() => handleButtonClick("8")}
+
                         >
                             <i className="bi bi-window-fullscreen me-2"></i>
-                            Screen
+                           Large Screen
                         </button>
                     </div>
-                    <Card>
-                        <CardBody>{Editor(pageContent)}</CardBody>
-                    </Card>
                 </Col>
-                <Col xs={4} >
+                <Col className="  justify-content-center   "  >
+                    <div className={`justify-content-center mx-auto ${xs == 'phone' ? 'width-3buttons-phone' : ''} ${xs == 'laptop' ? "width-3buttons-laptop" : ''} ${xs == 'large' ? 'width-3buttons-large' : ''}`}>
+                        <Card className="  card-admin " >
+                            <CardBody>{Editor(pageContent)}</CardBody>
+                        </Card>
+                    </div>
+                </Col>
+
+
+
+                <Col xs={12} >
                     <Card>
                         <CardHeader className="bg-white">
                             <div className="d-flex justify-content-end">
