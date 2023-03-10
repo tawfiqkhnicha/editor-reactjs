@@ -6,7 +6,7 @@ const initialState: { page: string, content: IComponent } = {
     page: "Index",
     content: {
         type: "Card",
-        id: "1",
+        id: 1,
         category: "CONTAINER",
         childrens: [
             {
