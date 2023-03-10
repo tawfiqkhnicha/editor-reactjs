@@ -1,7 +1,7 @@
 import { IComponent } from "@/admin/helpers/interfaces/IComponent";
 
 export interface IGenericModal{
-    id: number ,
+    id: string ,
     modal: boolean,
     toggle: ()=> void,
     className?: string,
@@ -9,4 +9,5 @@ export interface IGenericModal{
     data?: IComponent[], 
     confirmBtn: ()=>void,
     props?: any
+    editProps?: (event: any, key: any)=>void 
 }

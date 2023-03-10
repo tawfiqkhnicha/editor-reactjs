@@ -1,5 +1,5 @@
 import Card from "@/common/components/card/Card"
-import Div from "@/admin/mock-data/mock-components/Card/Card"
+import Div from "@/admin/mock-data/mock-components/Card/Div"
 import Carousel from "@/common/components/carousel/Carousel"
 import Grid from "@/common/components/grid/Grid"
 import Grid2 from "@/common/components/grid2/Grid2"
@@ -48,7 +48,4 @@ import Widget2 from "@/common/components/widget2/Widget2"
     DataTable,
     GalleryFootprint,
     Expertise
-  
-    
-
 }

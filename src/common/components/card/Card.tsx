@@ -5,11 +5,7 @@ import { ICard } from "./ICard"
 
 export default function Card({ HeaderTitle, styleHeaderPage, content, styleContentPage, cardStyle, bottomTitle }: ICard) {
 
-    const [isOpen, setOpen] = useState(false)
-
-    const toggleDropdown = (visibility: boolean) => {
-        setOpen(visibility)
-    }
+   
 
     return (
         <section className={` ${cardStyle ? cardStyle : ""} `}>

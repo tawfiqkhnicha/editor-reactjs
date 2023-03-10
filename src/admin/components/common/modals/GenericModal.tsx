@@ -1,6 +1,8 @@
 
 import { Components } from '@/admin/mock-data/components-list/components';
-import { useState } from 'react';
+import { useFormik, FormikProvider, FieldArray } from 'formik';
+
+import { useEffect, useState } from 'react';
 import {
     Button, Modal, ModalHeader, ModalBody, ModalFooter, Nav, NavItem, NavLink, Col, TabContent, TabPane, Row,
     Card, CardTitle, CardText, Container, FormGroup, Label, Input
@@ -10,26 +12,29 @@ import { useDispatch, useSelector } from 'react-redux';
 import { IGenericModal } from './IGenericModal';
 import { IComponent } from '@/admin/helpers/interfaces/IComponent';
 import uuid from 'react-uuid';
-export default function GenericModal({ modal, toggle, className, closeBtn, confirmBtn, id , props }: IGenericModal) {
+
+export default function GenericModal({ modal, toggle, className, closeBtn, confirmBtn, id, props }: IGenericModal) {
 
     const dispatch = useDispatch();
-
     const [filter, setFilter] = useState("")
 
-    const [componentProps, setComponentProps] = useState(props);
+  
+    const handleSubmit = (values: any) => {
 
-    const setProps = (e: any, key: any) =>{
+        console.log(id);
+        dispatch.pageModel.addProps({ id: id, props: values })
+        toggle();
 
-        setComponentProps(()=>{
-            componentProps[key] = e.target.value;
-            return componentProps
-        }) 
-
-        console.log(componentProps);
         
-
-
     }
+
+    const formik = useFormik({
+        initialValues: props,
+        validateOnChange: false,
+        validateOnBlur: false,
+        onSubmit: handleSubmit,
+    })
+
 
     const handleChange = function (event: any) {
         setFilter(event.target.value)
@@ -37,19 +42,21 @@ export default function GenericModal({ modal, toggle, className, closeBtn, confi
 
     const selectComponent = (component: IComponent) => {
 
-        let newComponent = JSON.parse(JSON.stringify({...component, id:  uuid().toString()}))    
+        let newComponent = JSON.parse(JSON.stringify({ ...component, id: uuid().toString() }))
 
         dispatch.pageModel.addChild({ id: id, component: newComponent })
         toggle();
 
-        confirmBtn
+       // confirmBtn()
     }
 
-    const validate = ()=>{
+    const validate = () => {
 
-        console.log()
         toggle()
     }
+
+
+
 
     return (
         <Modal isOpen={modal} toggle={toggle} className={className} size={props !== undefined ? "lg" : "xl"} centered fullscreen="xl">
@@ -65,33 +72,28 @@ export default function GenericModal({ modal, toggle, className, closeBtn, confi
                         </div>
                     </div>
                 </div>
-                <Container className={`d-flex  ${props ? "justify-content-start" : "justify-content-center"} align-items-start`}>
+                <Container className={`d-flex  ${props ? "justify-content-start flex-column" : "justify-content-center"} align-items-start`}>
                     {
-                        props ? Object.keys(props).map((item, index)=>{
+                        props ? Object.keys(props).map((item, index) => {
 
-                            return    <>
-                            <FormGroup row className='w-75 d-flex'>
-                                <Label
-                                    sm={2}
-                                >
-                                    {item}
-                                </Label>
-                                <Col sm={10}>
-                                    <Input
-                                        type="text"
-                                        value={props[item]}
-
-                                    />
-                                </Col>
-                            </FormGroup>
-                        </>
+                            return <>
+                               {item.toLowerCase().indexOf(filter) > -1 && <FormGroup row className='w-75 d-flex'>
+                                    <Label
+                                        sm={2}
+                                    >
+                                        {item}
+                                    </Label>
+                                    <Col sm={10}>
+                                        <Input
+                                            type="text"
+                                            onChange={formik.handleChange}
+                                            value={formik.values[item]}
+                                            name={item}
+                                        />
+                                    </Col>
+                                </FormGroup> }
+                            </>
                         })
-                         
-
-
-
-
-
                             :
                             <Row xs="6" className='d-flex justify-content-center align-items-center '>
                                 {Components.map((item) => {
@@ -110,9 +112,9 @@ export default function GenericModal({ modal, toggle, className, closeBtn, confi
                 <Button color="secondary" onClick={toggle}>
                     Cancel
                 </Button>
-                <Button color="secondary" onClick={validate}>
+               {props &&  <Button color="secondary" onClick={formik.handleSubmit}>
                     validate
-                </Button>
+                </Button> }
             </ModalFooter>
         </Modal>
     )

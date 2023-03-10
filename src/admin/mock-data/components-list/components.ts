@@ -5,7 +5,7 @@ export const Components = [
         icon: "bi bi-window",
         id: null,
         category: 'ATOMIC',
-        props: {HeaderTitle: "<h1>test</h1>", content: "<p>hello world</p>"},
+        props: {HeaderTitle:{type: "text", value: "<h1>test</h1>" }, content: "<p>test</p>"},
         childrens: []
     },
  

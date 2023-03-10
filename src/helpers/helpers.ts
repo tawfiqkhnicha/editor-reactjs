@@ -24,6 +24,22 @@ export function findNestedItem(obj: IComponent, id: string, component: IComponen
     }
 }
 
+export function addProps(obj: IComponent, id: string, props: any): any {
+
+    console.log({objId: obj.id, id: id})
+
+    if (obj.id === id) {
+      
+        obj.props = JSON.parse(JSON.stringify(props))
+        return
+    } else {
+        obj.childrens?.map((item: IComponent) => {
+
+            return addProps(item, id, props)
+        }
+        )
+    }
+}
 
 export function deleteNestedItem(arr: IComponent[], id: string) {
 
@@ -42,4 +58,14 @@ export function deleteNestedItem(arr: IComponent[], id: string) {
     console.log(arr);
 
 
+}
+
+export function formatObject(obj: any){
+
+    const initialObject = JSON.parse(JSON.stringify(obj))
+    const formatedObj = {}
+    Object.keys(initialObject).map((item, index)=>{
+        Object.assign(formatedObj, {[item]: obj[item].value} );   
+    })
+    return formatedObj
 }
