@@ -9,9 +9,6 @@ const initialState: { page: string, content: IComponent } = {
         id: "",
         category: "CONTAINER",
         childrens: [
-           
-
-
         ]
     }
 }
