@@ -80,7 +80,7 @@ export default function GenericModal({ modal, toggle, className, closeBtn, confi
                                {item.toLowerCase().indexOf(filter) > -1 && <FormGroup row className='w-75 d-flex'>
                                     <Label
                                         sm={2}
-                                    >
+                                    > 
                                         {item}
                                     </Label>
                                     <Col sm={10}>
