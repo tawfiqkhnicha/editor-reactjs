@@ -20,19 +20,20 @@ export default function GenericModal({ modal, toggle, className, closeBtn, confi
 
   
     const handleSubmit = (values: any) => {
-        console.log(values);
-        console.log(id)
+
+        console.log(id);
+        dispatch.pageModel.addProps({ id: id, props: values })
+        toggle();
+
+        
     }
+
     const formik = useFormik({
         initialValues: props,
         validateOnChange: false,
         validateOnBlur: false,
         onSubmit: handleSubmit,
     })
-
-
-
-
 
 
     const handleChange = function (event: any) {
@@ -46,7 +47,7 @@ export default function GenericModal({ modal, toggle, className, closeBtn, confi
         dispatch.pageModel.addChild({ id: id, component: newComponent })
         toggle();
 
-        confirmBtn
+       // confirmBtn()
     }
 
     const validate = () => {
@@ -71,12 +72,12 @@ export default function GenericModal({ modal, toggle, className, closeBtn, confi
                         </div>
                     </div>
                 </div>
-                <Container className={`d-flex  ${props ? "justify-content-start" : "justify-content-center"} align-items-start`}>
+                <Container className={`d-flex  ${props ? "justify-content-start flex-column" : "justify-content-center"} align-items-start`}>
                     {
                         props ? Object.keys(props).map((item, index) => {
 
                             return <>
-                                <FormGroup row className='w-75 d-flex'>
+                               {item.toLowerCase().indexOf(filter) > -1 && <FormGroup row className='w-75 d-flex'>
                                     <Label
                                         sm={2}
                                     >
@@ -90,7 +91,7 @@ export default function GenericModal({ modal, toggle, className, closeBtn, confi
                                             name={item}
                                         />
                                     </Col>
-                                </FormGroup>
+                                </FormGroup> }
                             </>
                         })
                             :
@@ -111,9 +112,9 @@ export default function GenericModal({ modal, toggle, className, closeBtn, confi
                 <Button color="secondary" onClick={toggle}>
                     Cancel
                 </Button>
-                <Button color="secondary" onClick={formik.handleSubmit}>
+               {props &&  <Button color="secondary" onClick={formik.handleSubmit}>
                     validate
-                </Button>
+                </Button> }
             </ModalFooter>
         </Modal>
     )

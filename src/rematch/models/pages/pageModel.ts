@@ -1,29 +1,15 @@
 import { IComponent } from '@/admin/helpers/interfaces/IComponent'
-import { deleteNestedItem, findNestedItem } from '@/helpers/helpers'
+import { addProps, deleteNestedItem, findNestedItem } from '@/helpers/helpers'
 import { createModel } from '@rematch/core'
 
 const initialState: { page: string, content: IComponent } = {
     page: "Index",
     content: {
-        type: "Card",
-        id: 1,
+        type: "",
+        id: "",
         category: "CONTAINER",
         childrens: [
-            {
-                type: "Button",
-                id: 2,
-                category: "ATOMIC",
-                props: {
-                    title: "click me!",
-                },
-            },
-            {
-                type: "Card",
-                id: 3,
-                category: "CONTAINER",
-                childrens: []
-            }
-
+           
 
 
         ]
@@ -45,7 +31,7 @@ export const pageModel = createModel()({
                 title: "untitled-page",
                 content: {
                     type: "Div",
-                    id: 1,
+                    id: "1",
                     category: "CONTAINER",
                     props: {className: ""},
                     childrens: []
@@ -74,6 +60,13 @@ export const pageModel = createModel()({
             }
 
             return state
+        },
+
+        addProps(state, payload){
+            addProps(state.content, payload.id, payload.props)
+                        
+            return state;
+
         }
 
     },

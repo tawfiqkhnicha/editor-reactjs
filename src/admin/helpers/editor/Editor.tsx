@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { IComponent } from "@/admin/helpers/interfaces/IComponent";
 import { siteComponents } from "@/admin/helpers/import/SiteComponents";
 import { useDispatch, useSelector } from 'react-redux';
 import GenericModal from "@/admin/components/common/modals/GenericModal";
+import { formatObject } from "@/helpers/helpers";
 
 
 
@@ -13,18 +14,25 @@ export default function Editor(data: IComponent): React.ReactNode {
 
     const forceUpdate = React.useReducer(() => ({}), {})[1] as () => void
 
+    const componentRef = useRef(null);
+
+
     const [modal, setModal] = useState(false);
-    const [componentId, setId] = useState(0);
+    const [componentId, setId] = useState("0");
     const [componentProps, setComponentProps] = useState(undefined)
     const toggle = () => {
         if (modal === true) {
             setComponentProps(undefined)
+            console.log(data)
         }
+
         setModal(!modal)
+        forceUpdate();
+
 
 
     };
-    const changeId = (id: number) => {
+    const changeId = (id: string) => {
         setId(id)
         toggle()
     }
@@ -34,15 +42,16 @@ export default function Editor(data: IComponent): React.ReactNode {
         console.log(modal)
     }
 
-    const setProps = (props: any) => {
+    const setProps = (props: any, id: string) => {
+        setId(id)
         setComponentProps(props)
-        console.log(componentProps);
-        
         toggle();
-
-
     }
-
+    const closeBtn = (
+        <button className="btn" style={{ fontSize: 16 }} onClick={toggle} type="button">
+            &times;
+        </button>
+    );
 
 
     function createComponent(component: IComponent): React.ReactNode {
@@ -53,31 +62,22 @@ export default function Editor(data: IComponent): React.ReactNode {
 
         let { type, id, category, props, childrens } = component;
 
-        const addChild = function (id: number) {
+      
 
-            dispatch.pageModel.addChild(id)
-            forceUpdate()
-
-        }
-
-        const deleteElement = function (id: number) {
+        const deleteElement = function (id: string) {
             dispatch.pageModel.deleteElement(id)
             forceUpdate()
         }
 
 
 
-        const closeBtn = (
-            <button className="btn" style={{ fontSize: 16 }} onClick={toggle} type="button">
-                &times;
-            </button>
-        );
+       
+       console.log(formatObject({className: {type: "text", value: "test"}}))
 
-
-        return <div className=" d-flex flex-column justify-content-center mb-2">
+        return <div  className=" d-flex flex-column justify-content-center mb-2">
             <div className=" d-flex justify-content-between border border-bottom-0">
-                {id}
-                <button className="btn" disabled={!props ? true : false} onClick={() => setProps(props)}> <i className="bi bi-gear-fill"></i></button>
+                
+                <button className="btn" disabled={!props ? true : false} onClick={() => setProps(props, id)}> <i className="bi bi-gear-fill"></i></button>
                 <button className="btn" onClick={() => deleteElement(id)}> <i className="bi bi-x-lg"></i></button>
             </div>
             <div className="w-80 border border w-100 p-4">
@@ -95,8 +95,7 @@ export default function Editor(data: IComponent): React.ReactNode {
 
             </div>
 
-           {modal && <GenericModal modal={modal} toggle={toggle} closeBtn={closeBtn} id={componentId} confirmBtn={forceUpdate} props={componentProps} />
-} 
+
         </div>
     }
 
@@ -109,6 +108,12 @@ export default function Editor(data: IComponent): React.ReactNode {
 
     }
 
-    return render(data);
+    return <>
+               {modal && <GenericModal modal={modal} toggle={toggle} closeBtn={closeBtn} id={componentId} confirmBtn={forceUpdate} props={componentProps} />
+
+} 
+
+{render(data)}
+    </>
 
 }
